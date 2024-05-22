@@ -26,7 +26,7 @@ class ShipCell(FromDictMixin):
 
     @property
     def is_hit(self):
-        """whether or not the cell has been hit"""
+        """whether the cell has been hit"""
         return self._is_hit
 
     @is_hit.setter
@@ -37,5 +37,6 @@ class ShipCell(FromDictMixin):
         """check if cell is hit. if so change `is_hit` and return True"""
         if pos == self.pos:
             self.is_hit = True
+            print(f"CELL HIT: {str(self)}")
             return True
         return False

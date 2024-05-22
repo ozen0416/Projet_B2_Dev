@@ -19,11 +19,12 @@ class Ship(FromDictMixin):
     - `is_sunk`: whether the ship is sunk or not 
 
     """
+
     def __init__(self, size: int, pos: Vector2, vertical: bool = False) -> None:
-        self._size:         int = size
-        self._pos:          Vector2 = pos
-        self._ship_cells:   List[ShipCell] = []
-        self._is_sunk:      bool = False
+        self._size: int = size
+        self._pos: Vector2 = pos
+        self._ship_cells: List[ShipCell] = []
+        self._is_sunk: bool = False
 
         for i in range(self._size):
             if vertical:
@@ -54,16 +55,21 @@ class Ship(FromDictMixin):
 
     def check_for_hit(self, pos: Vector2) -> Status:
         status = Status.MISS
+
         for cell in self._ship_cells:
             if cell.check_for_hit(pos):
                 status = Status.HIT
+                print(f"SHIP HIT: {str(self)}")
                 break
-        if self.check_for_sunk(): status = Status.SUNK
+
+        if status == Status.HIT and self.check_for_sunk():
+            status = Status.SUNK
+
         return status
 
     def check_for_sunk(self) -> bool:
         for cell in self._ship_cells:
             if not cell.is_hit:
-                return False 
-        self._is_sunk = True 
+                return False
+        self._is_sunk = True
         return True
