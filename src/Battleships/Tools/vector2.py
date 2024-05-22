@@ -7,36 +7,30 @@ class Vector2:
     """
     Vector2 class for easier coordinates manipulation
 
-    - `pos_x`: x position of the vector
-    - `pos_y`: y position
+    - `x`: x position of the vector
+    - `y`: y position
     """
-    def __init__(self, pos_x: int, pos_y: int):
-        self._pos_x: int = pos_x
-        self._pos_y: int = pos_y
+    def __init__(self, x: int, y: int):
+        self._x: int = x
+        self._y: int = y
 
     @property
-    def pos_x(self):
+    def x(self):
         """x position on the map"""
-        return self._pos_x
+        return self._x
 
     @property
-    def pos_y(self):
+    def y(self):
         """y position on the map"""
-        return self._pos_y
+        return self._y
 
-    @pos_x.setter
-    def pos_x(self, value: int):
-        self._pos_x = value
+    @x.setter
+    def x(self, value: int):
+        self._x = value
 
-    @pos_y.setter
-    def pos_y(self, value: int):
-        self._pos_y = value
-
-    def __eq__(self, other: Vector2):
-        return self.pos_x == other.pos_x and self.pos_y == other.pos_y
-
-    def __add__(self, other: Vector2):
-        return Vector2(self._pos_x + other.pos_x, self._pos_y + other.pos_y)
+    @y.setter
+    def y(self, value: int):
+        self._y = value
 
     @staticmethod
     def one():
@@ -62,3 +56,16 @@ class Vector2:
     def right():
         return Vector2(1,0)
 
+    def __mul__(self, other):
+        if isinstance(other, Vector2):
+            return Vector2(self.x * other.x, self.y * other.y)
+        elif isinstance(other, int):
+            return Vector2(self.x * other, self.y * other)
+        else:
+            raise TypeError("Multiplication is only supported between Vector2 instances or scalars.")
+
+    def __eq__(self, other: Vector2):
+        return self.x == other.x and self.y == other.y
+
+    def __add__(self, other: Vector2):
+        return Vector2(self.x + other.x, self.y + other.y)
