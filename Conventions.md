@@ -1,7 +1,7 @@
 ### Git
 Commit message example:
 ```sh
-git commit -m "[STATUS] detailed description"
+git commit -m "[STATUS/STATUS1/...] detailed description"
 ```
 
 STATUSES:
