@@ -1,3 +1,5 @@
+from typing import List
+
 from ship_cell import ShipCell
 
 class Ship:
@@ -10,33 +12,32 @@ class Ship:
     - `vertical`: *optional* is the ship placed vertically or not on the map
 
     """
-    def __init__(self, size:int, pos_x:int, pos_y:int, vertical:bool=False) -> None:
-        self._size = size
-        self._pos_x = pos_x
-        self._pos_y = pos_y
-
-        self._ship_cells = []
+    def __init__(self, size: int, pos_x: int, pos_y: int, vertical: bool = False) -> None:
+        self._size:         int = size
+        self._pos_x:        int = pos_x
+        self._pos_y:        int = pos_y
+        self._ship_cells:   List[ShipCell] = []
 
         for i in range(self._size):
             if vertical:
                 ship_cell = ShipCell(self._pos_x, self._pos_y + i)
             else:
                 ship_cell = ShipCell(self._pos_x + i, self._pos_y)
-            
+
             self._ship_cells.append(ship_cell)
 
     @property
-    def pos_x(self):
+    def pos_x(self) -> int:
         """x position on the map"""
         return self._pos_x
 
     @property
-    def pos_y(self):
+    def pos_y(self) -> int:
         """y position on the map"""
         return self._pos_y
 
     @property
-    def size(self):
+    def size(self) -> int:
         """size of the ship, wich is its number of cells"""
         return self._size
 
