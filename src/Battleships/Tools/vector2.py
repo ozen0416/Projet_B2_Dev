@@ -1,4 +1,5 @@
 """Vector2 class for easier manipulation inside of game code of 2D coordinates"""
+from __future__ import annotations
 
 
 class Vector2:
@@ -30,5 +31,5 @@ class Vector2:
     def pos_y(self, value: int):
         self._pos_y = value
 
-    def __eq__(self, other):
+    def __eq__(self, other: Vector2):
         return self.pos_x == other.pos_x and self.pos_y == other.pos_y
