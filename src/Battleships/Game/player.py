@@ -20,7 +20,15 @@ class Player(FromDictMixin):
             status = ship.check_for_hit(pos)
             if status != Status.MISS:
                 break
+        status = self.check_all_sunk(status) if status == Status.SUNK else status
         return status
+
+    def check_all_sunk(self, status) -> Status:
+        for ship in self._ships:
+            if not ship.is_sunk:
+                return status
+        return Status.ALL_SUNK
+
 
     def __repr__(self):
         ships_str = [str(ship) for ship in self._ships]

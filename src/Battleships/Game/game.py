@@ -1,5 +1,5 @@
 """Game manager for our battleships game"""
-from src.Battleships.Tools import FromDictMixin, Vector2
+from src.Battleships.Tools import FromDictMixin, Vector2, Status
 from .player import Player
 
 
@@ -17,14 +17,13 @@ class Game(FromDictMixin):
     first_player: Player
     second_player: Player
     turn: int
-
-    def __init__(self, *args, **kwargs):
-        pass
-
-    def process_attack(self):
-        pass
+    finished: bool = False
 
     def process_turn(self, target_cell: Vector2):
+        if self.finished:
+            return
+
+        self.turn += 1
         first_player_turn = self.turn % 2
 
         if first_player_turn:
@@ -32,7 +31,8 @@ class Game(FromDictMixin):
         else:
             result = self.first_player.check_ship_hit(target_cell)
 
-        self.turn += 1
+        if result == Status.ALL_SUNK:
+            self.finished = True
 
         return result
 
