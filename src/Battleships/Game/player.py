@@ -1,11 +1,11 @@
 from typing import List
 
 from src.Battleships.Game.ship import Ship
-from src.Battleships.Tools.vector2 import Vector2
-from src.Battleships.Tools.enums import Status
+from src.Battleships.Tools import Vector2, Status, FromDictMixin
 
 
-class Player:
+class Player(FromDictMixin):
+    _ships: List[Ship]
     """
     Class for each player to keep track of the ships a player has
 
@@ -21,3 +21,7 @@ class Player:
             if status != Status.MISS:
                 break
         return status
+
+    def __repr__(self):
+        ships_str = [str(ship) for ship in self._ships]
+        return f"Player({', '.join(ships_str)})"

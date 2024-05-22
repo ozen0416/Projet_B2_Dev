@@ -1,11 +1,14 @@
 from typing import List
 
-from ship_cell import ShipCell
-from src.Battleships.Tools.enums import Status
-from ..Tools import Vector2
+from .ship_cell import ShipCell
+from src.Battleships.Tools import Status, Vector2, FromDictMixin
 
 
-class Ship:
+class Ship(FromDictMixin):
+    _size: int
+    _pos: Vector2
+    _ship_cells: List[ShipCell]
+    _is_sunk: bool
     """
     Ship class, intended to keep track of individual ShipCell.
 
@@ -24,11 +27,15 @@ class Ship:
 
         for i in range(self._size):
             if vertical:
-                ship_cell = ShipCell(self._pos + Vector2(0, i))
+                ship_cell = ShipCell(self._pos + Vector2.up() * i)
             else:
-                ship_cell = ShipCell(self._pos + Vector2(i, 0))
+                ship_cell = ShipCell(self._pos + Vector2.right() * i)
 
             self._ship_cells.append(ship_cell)
+
+    def __repr__(self):
+        ship_cells = [str(ship_cell) for ship_cell in self._ship_cells]
+        return f"Ship(size: {self._size}, pos: {self.pos}, ship_cells: {', '.join(ship_cells)}, is_sunk: {self.is_sunk})"
 
     @property
     def pos(self) -> Vector2:

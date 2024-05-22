@@ -1,8 +1,10 @@
 """ShipCell python file"""
-from ..Tools import Vector2
+from src.Battleships.Tools import Vector2, FromDictMixin
 
 
-class ShipCell:
+class ShipCell(FromDictMixin):
+    _pos: Vector2
+    _is_hit: bool
     """
     ShipCell class, intended to store
     information about a cell of a ship
@@ -10,9 +12,12 @@ class ShipCell:
     - `pos`: x, y position on the map
     - `is_hit`: whether the cell has been hit
     """
-    def __init__(self, pos: Vector2, is_hit: bool=False):
+    def __init__(self, pos: Vector2, is_hit: bool = False):
         self._pos: Vector2 = pos
         self._is_hit: bool = is_hit
+
+    def __repr__(self):
+        return f"ShipCell(pos: {self.pos}, is_hit: {self.is_hit})"
 
     @property
     def pos(self):

@@ -1,7 +1,6 @@
 """Vector2 class for easier manipulation inside of game code of 2D coordinates"""
 from __future__ import annotations
 
-from __future__ import annotations
 
 class Vector2:
     """
@@ -69,3 +68,6 @@ class Vector2:
 
     def __add__(self, other: Vector2):
         return Vector2(self.x + other.x, self.y + other.y)
+
+    def __repr__(self):
+        return f"Vector2(x: {self.x}, y: {self.y})"
