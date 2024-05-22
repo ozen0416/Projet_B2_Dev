@@ -1,5 +1,5 @@
 """ShipCell python file"""
-from src.Battleships.Tools import Vector2, FromDictMixin
+from src.Server.Tools import Vector2, FromDictMixin
 
 
 class ShipCell(FromDictMixin):

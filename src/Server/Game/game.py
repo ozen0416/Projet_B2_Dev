@@ -1,5 +1,5 @@
 """Game manager for our battleships game"""
-from src.Battleships.Tools import FromDictMixin, Vector2, Status
+from src.Server.Tools import FromDictMixin, Vector2, Status
 from .player import Player
 
 

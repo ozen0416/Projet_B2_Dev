@@ -1,7 +1,7 @@
 from typing import List
 
-from src.Battleships.Game.ship import Ship
-from src.Battleships.Tools import Vector2, Status, FromDictMixin
+from src.Server.Game.ship import Ship
+from src.Server.Tools import Vector2, Status, FromDictMixin
 
 
 class Player(FromDictMixin):
