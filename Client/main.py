@@ -1,8 +1,6 @@
-import asyncio
 import sys
 
-from application.app import App
-from Network import Client
+from Client.client.application.app import App
 
 if __name__ == "__main__":
     #client = HTTPClient()

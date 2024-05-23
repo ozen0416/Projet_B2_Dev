@@ -1,11 +1,11 @@
-"""Game manager for our battleships game"""
-from src.Server.Tools import FromDictMixin, Vector2, Status
+"""game manager for our battleships game"""
+from Server.server.tools import FromDictMixin, Vector2, Status
 from .player import Player
 
 
 class Game(FromDictMixin):
     """
-    Game Manager, stores all required data for the
+    game Manager, stores all required data for the
     game to be functional. Also contains methods to
     instantiate and make the game progress
 
@@ -37,4 +37,4 @@ class Game(FromDictMixin):
         return result
 
     def __repr__(self):
-        return f"Game(first_player: {self.first_player}, second_player: {self.second_player}, turn: {self.turn})"
+        return f"game(first_player: {self.first_player}, second_player: {self.second_player}, turn: {self.turn})"

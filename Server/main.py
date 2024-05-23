@@ -1,6 +1,6 @@
 import asyncio
 
-from Network import Server
+from Server.server.network import Server
 
 if __name__ == "__main__":
     server = Server()
