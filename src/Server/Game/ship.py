@@ -5,10 +5,6 @@ from src.Server.Tools import Status, Vector2, FromDictMixin
 
 
 class Ship(FromDictMixin):
-    _size: int
-    _pos: Vector2
-    _ship_cells: List[ShipCell]
-    _is_sunk: bool
     """
     Ship class, intended to keep track of individual ShipCell.
 
@@ -16,15 +12,21 @@ class Ship(FromDictMixin):
     - `pos`: Vector2 of the position of the first cell of the ship on the map
     - `vertical`: *optional* is the ship placed vertically or not on the map
     - `ship_cells`: A list of ShipCell objects
-    - `is_sunk`: whether the ship is sunk or not 
-
+    - `is_sunk`: whether the ship is sunk or not
     """
+
+    _size: int
+    _pos: Vector2
+    _ship_cells: List[ShipCell]
+    _is_sunk: bool
 
     def __init__(self, size: int, pos: Vector2, vertical: bool = False) -> None:
         self._size: int = size
         self._pos: Vector2 = pos
         self._ship_cells: List[ShipCell] = []
         self._is_sunk: bool = False
+
+        # TODO: Move to client-side code
 
         for i in range(self._size):
             if vertical:

@@ -5,12 +5,14 @@ from src.Server.Tools import Vector2, Status, FromDictMixin
 
 
 class Player(FromDictMixin):
-    _ships: List[Ship]
     """
     Class for each player to keep track of the ships a player has
 
     - `ships`: List of all the ships of the player
     """
+
+    _ships: List[Ship]
+
     def __init__(self, ships: List[Ship]) -> None:
         self._ships = ships
 

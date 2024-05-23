@@ -1,14 +1,20 @@
 """Vector2 class for easier manipulation inside of game code of 2D coordinates"""
 from __future__ import annotations
 
+from .from_dict_mixin import FromDictMixin
 
-class Vector2:
+
+class Vector2(FromDictMixin):
     """
     Vector2 class for easier coordinates manipulation
 
     - `x`: x position of the vector
     - `y`: y position
     """
+
+    _x: int
+    _y: int
+
     def __init__(self, x: int, y: int):
         self._x: int = x
         self._y: int = y

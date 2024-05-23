@@ -1,13 +1,15 @@
 import asyncio
-import socket
+
+from asyncio import StreamWriter, StreamReader
+
 
 HOST = 'localhost'
 PORT = 39688
 
 
-class HTTPServer:
+class Server:
 
-    async def handle_client(self, reader, writer):
+    async def handle_client(self, reader: StreamReader, writer: StreamWriter):
         addr = writer.get_extra_info("peername")
         print(f"Connected with: {addr}")
 

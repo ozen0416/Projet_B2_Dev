@@ -1,7 +1,7 @@
 import asyncio
 
-from Network import HTTPClient
+from Network import Client
 
 if __name__ == "__main__":
-    client = HTTPClient()
+    client = Client()
     asyncio.run(client.start())
