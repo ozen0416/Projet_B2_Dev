@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Optional, Callable, List
 
 
-class TreeObject:
+class TreeObject(ABC):
     """Tree Object, being either a Handler or a Worker later"""
     @abstractmethod
     async def handle(self, request_type: Any, request: Any) -> Optional[str]:
@@ -20,7 +20,7 @@ class Handler(TreeObject, ABC):
     _checks: List[Callable] = []
 
     @abstractmethod
-    async def add_tree_object(self, request_type: str, tree_object: TreeObject):
+    async def add_tree_object(self, request_type: str, tree_object: TreeObject) -> None:
         pass
 
 
