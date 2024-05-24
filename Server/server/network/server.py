@@ -1,9 +1,8 @@
+import json
 import asyncio
 from asyncio import StreamWriter, StreamReader
-from typing import Coroutine, Any
 
 from ..handlers import RootHandler
-
 
 
 class Server:
@@ -23,9 +22,14 @@ class Server:
                 if not data:
                     break
                 response = data.decode('utf-8')
-                print(f"Data received {response}")
+                json_response = json.loads(response)
+                print(f"Data received {json_response}")
 
-                writer.write(data)
+                print("Sending to RootHandler...")
+                res = await self._root_handler.handle(None, json_response)
+                print(f"Worker response: {res}")
+
+                writer.write(res.encode('utf-8'))
                 await writer.drain()
         except ConnectionResetError as cre:
             print(f"Error occured with client {addr}: {cre}")

@@ -15,12 +15,11 @@ class Handler(TreeObject, ABC):
     """
     Handler interface for our Tree request handling behavior.
     """
-
     _tree_objects: dict = {}
     _checks: List[Callable] = []
 
     @abstractmethod
-    async def add_tree_object(self, request_type: str, tree_object: TreeObject) -> None:
+    def add_tree_object(self, request_type: str, tree_object: TreeObject) -> None:
         pass
 
 
@@ -29,11 +28,10 @@ class AbstractHandler(Handler):
     The default chaining behavior can be implemented inside a base handler
     class.
     """
+    def add_tree_object(self, request_type: str, tree_object: TreeObject) -> None:
+        self._tree_objects[request_type] = tree_object
 
-    async def add_tree_object(self, request_type: str, handler: Handler) -> None:
-        self._tree_objects[request_type] = handler
-
-    async def add_check(self, check: Callable):
+    def add_check(self, check: Callable):
         self._checks.append(check)
 
     async def check(self, data):
@@ -49,11 +47,16 @@ class AbstractHandler(Handler):
         this function is abstract, so you have to implement it to
         give it check decorators
         """
-
         await self.check(request)
 
+        if isinstance(request_type, str):
+            request["request"].pop(0)
+
+        request_type = request["request"][0]
+
         if request_type in self._tree_objects:
-            return await self._tree_objects[request_type].handle(request_type, request)
+            res = await self._tree_objects[request_type].handle(request_type, request)
+            return res
         return None
 
 
