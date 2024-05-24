@@ -1,3 +1,4 @@
+import json
 import socket
 
 HOST = 'localhost'
@@ -13,9 +14,14 @@ class Client:
 
         try:
             while True:
-                data = '{"HIT": (0, 1)}'
+                data = {
+                    "request": ["GAME", "HIT"],
+                    "data": {"_x": 0, "_y": 1}
+                }
 
-                self._socket.send(data.encode('utf-8'))
+                json_data = json.dumps(data)
+
+                self._socket.send(json_data.encode('utf-8'))
 
                 print(f"CLIENT DATA SENT: {data}")
 
