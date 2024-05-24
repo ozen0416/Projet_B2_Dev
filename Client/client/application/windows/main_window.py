@@ -22,5 +22,5 @@ class MainWindow(FramelessWidget):
         QGridLayout(self)
 
     def init_widget(self):
-        self.layout().addWidget(self.grid_ally, 1, 1)
-        self.layout().addWidget(self.grid_enemy, 1, 2)
+        self.layout().addWidget(self.grid_ally, 2, 1)
+        self.layout().addWidget(self.grid_enemy, 2, 2)
