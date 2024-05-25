@@ -3,7 +3,7 @@ from typing import Optional
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel
 from PySide6.QtCore import QTime, QTimer
 
-from .client.tools import ButtonState # trop chiant
+from ....tools import ButtonState 
 
 class SearchGame(QWidget):
     """
@@ -14,11 +14,10 @@ class SearchGame(QWidget):
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
         self.start_time = None
-
-        self.button_state = "feur"
+        self.button_state = ButtonState.PLAY
 
         self.play = QPushButton("Start", self)
-        self.label = QLabel("Elapsed time: 0", self)
+        self.label = QLabel("PLAY", self)
         self.timer = QTimer(self)
 
         self.play.clicked.connect(self.start_timer)
@@ -36,8 +35,16 @@ class SearchGame(QWidget):
         self.layout().addWidget(self.play)
 
     def start_timer(self):
-        self.start_time = QTime.currentTime()
-        self.timer.start(1000)
+        if self.button_state == ButtonState.PLAY:
+            self.start_time = QTime.currentTime()
+            self.timer.start(1000)
+            self.button_state = ButtonState.CANCEL
+            self.play.setText("CANCEL")
+        else:
+            self.timer.stop()
+            self.label.setText("PLAY")
+            self.play.setText("PLAY")
+            self.button_state = ButtonState.PLAY
 
     def update_time(self):
         elapsed_time = self.start_time.secsTo(QTime.currentTime())

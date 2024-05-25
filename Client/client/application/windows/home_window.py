@@ -4,7 +4,7 @@ from PySide6.QtWidgets import QHBoxLayout, QWidget, QLabel, QVBoxLayout
 
 from ..widgets import FramelessWidget
 from ..widgets import SearchGame
-from ..widgets import UsernameInput
+from ..widgets import Login 
 
 
 class HomeWindow(FramelessWidget):
@@ -19,8 +19,7 @@ class HomeWindow(FramelessWidget):
         
         #self.timer = SearchGame(self)
         self.left_widget = ContainerWidget(self)
-        self.label_test = QLabel(self)
-        self.label_test.setText("feurhahaha")
+        self.label_test = QLabel("feurhahahaha", self)
 
         self.setWindowTitle("Battleships")
 
@@ -44,7 +43,7 @@ class ContainerWidget(FramelessWidget):
         super().__init__(parent)
 
         self.play_button = SearchGame(self)
-        self.username_input = UsernameInput(self)
+        self.login = Login(self)
 
         self.init_layout()
         self.init_widget()
@@ -53,7 +52,7 @@ class ContainerWidget(FramelessWidget):
         QVBoxLayout(self)
 
     def init_widget(self):
-        self.layout().addWidget(self.username_input)
+        self.layout().addWidget(self.login)
         self.layout().addWidget(self.play_button)
 
 
