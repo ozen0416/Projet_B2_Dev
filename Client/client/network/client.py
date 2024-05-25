@@ -7,6 +7,7 @@ PORT = 39688
 
 class Client:
     _socket: socket.socket
+
     async def start(self):
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

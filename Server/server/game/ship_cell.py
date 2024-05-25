@@ -12,7 +12,7 @@ class ShipCell(FromDictMixin):
     """
 
     _pos: Vector2
-    _is_hit: bool
+    _is_hit: bool = False
 
     def __init__(self, pos: Vector2, is_hit: bool = False):
         self._pos: Vector2 = pos
