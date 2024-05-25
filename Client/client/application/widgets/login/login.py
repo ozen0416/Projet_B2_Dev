@@ -25,9 +25,14 @@ class Login(FramelessWidget):
     def init_widgets(self):
         self.password.setEchoMode(QLineEdit.Password)
 
+        self.submit.clicked.connect(self.get_cred)
+
         self.layout().addWidget(self.label_username)
         self.layout().addWidget(self.username)
         self.layout().addWidget(self.label_password)
         self.layout().addWidget(self.password)
         self.layout().addWidget(self.submit)
         
+    def get_cred(self):
+        print(self.username.text())
+        print(self.password.text())

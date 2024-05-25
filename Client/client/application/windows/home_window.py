@@ -1,6 +1,6 @@
 from typing import Optional
 
-from PySide6.QtWidgets import QHBoxLayout, QWidget, QLabel, QVBoxLayout
+from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QWidget, QLabel, QVBoxLayout
 
 from ..widgets import FramelessWidget
 from ..widgets import SearchGame
@@ -55,4 +55,9 @@ class ContainerWidget(FramelessWidget):
         self.layout().addWidget(self.login)
         self.layout().addWidget(self.play_button)
 
+        self.login.setMaximumSize(300, 200)  # width, height
+        self.play_button.setMaximumSize(500, 200)  # width, height
+        #self.login.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)  # width, height
+        #self.login.move(50, 50)  # width, height
+        #self.login.resize(300, 200)  # width, height
 
