@@ -1,4 +1,5 @@
 import json
+import uuid
 import socket
 
 HOST = 'localhost'
@@ -13,21 +14,28 @@ class Client:
 
         self._socket.connect((HOST, PORT))
 
+        data = {
+            "request": ["MATCHMAKING", "IN"],
+            "client_id": uuid.uuid4(),
+            "ip": "172.33.10.21",
+            "port": 22
+        }
+
         try:
-            while True:
-                data = {
-                    "request": ["GAME", "HIT"],
-                    "data": {"_x": 0, "_y": 1}
-                }
+            json_data = json.dumps(data)
 
-                json_data = json.dumps(data)
+            self._socket.send(json_data.encode('utf-8'))
 
-                self._socket.send(json_data.encode('utf-8'))
+            print(f"CLIENT DATA SENT: {data}")
 
-                print(f"CLIENT DATA SENT: {data}")
+            response = self._socket.recv(1024).decode('utf-8')
+            print(f"CLIENT RESPONSE RECEIVED: {response}")
 
+            if response == "OK":
                 response = self._socket.recv(1024).decode('utf-8')
-                print(f"CLIENT RESPONSE RECEIVED: {response}")
+                data["request"] = ["GAME", "HIT"]
+                data["game_id"] = ""
+                data["data"] = {"_x": 0, "_y": 1}
         finally:
             self._socket.close()
             print("CLIENT CONNECTION CLOSED")
