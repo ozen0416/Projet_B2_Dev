@@ -7,11 +7,11 @@ from ..tools import Vector2
 
 class Pair:
     """
-    A `Pair` is a set of few things:
+   A `Pair` is a set of few things:
         - The current `Game` instance to process the game and keep a track of its different states.
-        - An `ID` that will link our client requests to the game also serving as a game ID
-        - A `FirstClient`
-        - A `SecondClient`
+        - An `id` that will be the game id
+        - A First `Client`
+        - A Second `Client`
     """
     game: Game
     game_id: str
@@ -19,9 +19,11 @@ class Pair:
     second_client: Client
 
     def __init__(self, first_client: Client, second_client: Client):
-        self.id = str(uuid.uuid4())
+        self.game_id.id = str(uuid.uuid4())
         self.first_client = first_client
         self.second_client = second_client
+
+        print(f"PAIR INIT: {self.first_client.id}, {self.second_client.id}")
 
     async def client_placement(self, request: dict):
         """
@@ -32,7 +34,7 @@ class Pair:
         if client is None:
             raise Exception("client not in pair")
         client.ships_data = request["data"]
-        if self.first_client.ships_data is not None and self.second_client.ships_data is not None:
+        if self.first_client.ships_data and self.second_client.ships_data:
             await self.start_game()
             return "GAME START"
         return "WAIT FOR OTHER CLIENT"

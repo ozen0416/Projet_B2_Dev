@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+from asyncio import StreamWriter, StreamReader
 
 @dataclass
 class Client:
@@ -15,10 +15,14 @@ class Client:
     ip: str
     port: int
     id: str
+    reader: StreamReader
+    writer: StreamWriter
     ships_data: dict
 
-    def __init__(self, ip, port, _id, ships_data=None):
+    def __init__(self, ip="", port=0, _id="", reader=None, writer=None, ships_data=None):
         self.ip = ip
         self.port = port
         self.id = _id
+        self.reader = reader
+        self.writer = writer
         self.ships_data = ships_data

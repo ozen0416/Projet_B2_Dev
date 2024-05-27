@@ -1,26 +1,39 @@
 import json
 import asyncio
 from asyncio import StreamWriter, StreamReader
-from typing import List, Callable
+from typing import List, Optional
 
-from ..handlers import RootHandler
 from .pair import Pair
 from .client import Client
 
 
 class Server:
+    _instance = None
+
+    @staticmethod
+    def get_instance():
+        if Server._instance is None:
+            Server._instance = Server()
+        return Server._instance
+
     def __init__(self) -> None:
+        from ..handlers import RootHandler
         self._root_handler: RootHandler = RootHandler()
 
         self.__HOST: str = 'localhost'
         self.__PORT: int = 39688
 
         self._pairs: List[Pair] = []
-        self._connections: List[Client] = []
+        self._clients: List[Client] = []
+        self.mm_list = []
 
     async def handle_client(self, reader: StreamReader, writer: StreamWriter) -> None:
         addr = writer.get_extra_info("peername")
         print(f"Connected with: {addr}")
+        print(type(addr))
+
+        client = Client(ip=addr[0], port=addr[1],reader=reader, writer=writer)
+        self._clients.append(client)
 
         try:
             while True:
@@ -49,3 +62,24 @@ class Server:
 
         async with server:
             await server.serve_forever()
+
+    async def get_pair_from_client_id(self, _id: str) -> Optional[Pair]:
+        for pair in self._pairs:
+            if pair.is_id_in_pair(_id):
+                return pair
+        return None
+
+    async def get_pair_from_game_id(self, _id: str) -> Optional[Pair]:
+        for pair in self._pairs:
+            if pair.game_id == _id:
+                return pair
+        return None
+
+    async def get_client_from_id(self, _id: str) -> Optional[Client]:
+        for client in self._clients:
+            if client.id == _id:
+                return client
+        return None
+
+    async def add_pair(self, pair: Pair):
+        self._pairs.append(pair)
