@@ -18,7 +18,7 @@ class Ship(FromDictMixin):
     _size: int
     _pos: Vector2
     _ship_cells: List[ShipCell]
-    _is_sunk: bool
+    _is_sunk: bool = False
 
     def __init__(self, size: int, pos: Vector2, vertical: bool = False) -> None:
         self._size: int = size

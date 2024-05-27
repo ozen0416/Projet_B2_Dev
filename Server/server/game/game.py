@@ -16,7 +16,7 @@ class Game(FromDictMixin):
 
     first_player: Player
     second_player: Player
-    turn: int
+    turn: int = 0
     finished: bool = False
 
     def process_turn(self, target_cell: Vector2):

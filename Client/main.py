@@ -1,6 +1,6 @@
 import sys
 
-from client import App
+from Client.client.application.app import App
 
 if __name__ == "__main__":
     #client = HTTPClient()
