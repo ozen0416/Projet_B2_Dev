@@ -3,15 +3,19 @@ from typing import Optional
 from PySide6.QtWidgets import QApplication, QGridLayout, QWidget
 
 from ..widgets import FramelessWidget
-from ..widgets import Grid
+from ..widgets import GridContainer
 
 
-class MainWindow(FramelessWidget):
+class GameWindow(FramelessWidget):
+    """
+    Window of the game.
+    Displays players' grids, a chat and the history of past moves
+    """
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
 
-        self.grid_enemy = Grid(self)
-        self.grid_ally = Grid(self)
+        self.grid_enemy = GridContainer("Enemy", self)
+        self.grid_ally = GridContainer("Ally", self)
         
         self.setWindowTitle("Battleships")
 
@@ -22,5 +26,5 @@ class MainWindow(FramelessWidget):
         QGridLayout(self)
 
     def init_widget(self):
-        self.layout().addWidget(self.grid_ally, 2, 1)
+        self.layout().addWidget(self.grid_ally, 1, 2)
         self.layout().addWidget(self.grid_enemy, 2, 2)
