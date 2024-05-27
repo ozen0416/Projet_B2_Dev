@@ -6,7 +6,7 @@ from ..widgets import FramelessWidget
 from ..widgets import GridContainer
 
 
-class GameWindow(FramelessWidget):
+class GameWindow(QWidget):
     """
     Window of the game.
     Displays players' grids, a chat and the history of past moves
