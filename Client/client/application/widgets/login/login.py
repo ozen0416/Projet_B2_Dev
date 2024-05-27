@@ -1,8 +1,8 @@
-from PySide6.QtWidgets import QLineEdit, QLabel, QVBoxLayout, QPushButton
+from PySide6.QtWidgets import QLineEdit, QLabel, QVBoxLayout, QPushButton, QWidget
 
 from ..customs import FramelessWidget
 
-class Login(FramelessWidget):
+class Login(QWidget):
     """
     Login widget with two inputs, the username and the password
     """

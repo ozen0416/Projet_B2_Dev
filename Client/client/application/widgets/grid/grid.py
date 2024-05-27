@@ -5,7 +5,7 @@ from typing import Optional
 from ..customs import FramelessWidget
 
 
-class Grid(FramelessWidget):
+class Grid(QWidget):
     """
     Widget that instantiate a grid of widgets
     """
@@ -30,7 +30,7 @@ class Grid(FramelessWidget):
                 self.buttons.append(button)
 
 
-class GridContainer(FramelessWidget):
+class GridContainer(QWidget):
     """
     Container of the two grids that serve as maps
     """
@@ -52,7 +52,7 @@ class GridContainer(FramelessWidget):
         self.layout().addWidget(self.grid)
 
 
-class DummyWidget(FramelessWidget):
+class DummyWidget(QWidget):
     """
     Dummy class as a placeholder for the game grid.
     This is just a widget with a label in its center
