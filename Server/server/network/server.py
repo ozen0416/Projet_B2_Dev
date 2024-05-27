@@ -42,6 +42,7 @@ class Server:
                     break
                 response = data.decode('utf-8')
                 json_response = json.loads(response)
+                client.id = json_response["client_id"]
                 print(f"Data received {json_response}")
                 request_base = json_response["request"][0]
                 print("Sending to RootHandler...")
@@ -65,7 +66,7 @@ class Server:
 
     async def get_pair_from_client_id(self, _id: str) -> Optional[Pair]:
         for pair in self._pairs:
-            if pair.is_id_in_pair(_id):
+            if await pair.is_id_in_pair(_id):
                 return pair
         return None
 
