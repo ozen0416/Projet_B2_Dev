@@ -1,38 +1,38 @@
-from PySide6.QtWidgets import QLineEdit, QLabel, QVBoxLayout, QPushButton, QWidget
-
+from PySide6.QtWidgets import QLineEdit, QLabel, QPushButton, QWidget, QGridLayout, QFormLayout
+from PySide6.QtCore import Qt
 from ..custom import FramelessWidget
+
 
 class Login(QWidget):
     """
     Login widget with two inputs, the username and the password
     """
+
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.username = QLineEdit(self)
-        self.password = QLineEdit(self)
-        self.submit = QPushButton("Submit", self)
+        self.lineedit_username = QLineEdit(self)
+        self.lineedit_id = QLineEdit(self)
 
         self.label_username = QLabel("Username", self)
-        self.label_password = QLabel("Password", self)
+        self.label_id = QLabel("ID", self)
+        self.submit = QPushButton("Submit", self)
 
         self.init_layout()
         self.init_widgets()
 
     def init_layout(self):
-        QVBoxLayout(self)
+        QFormLayout(self)
 
     def init_widgets(self):
-        self.password.setEchoMode(QLineEdit.Password)
+        self.lineedit_id.setEchoMode(QLineEdit.Password)
 
         self.submit.clicked.connect(self.get_cred)
 
-        self.layout().addWidget(self.label_username)
-        self.layout().addWidget(self.username)
-        self.layout().addWidget(self.label_password)
-        self.layout().addWidget(self.password)
-        self.layout().addWidget(self.submit)
-        
+        self.layout().addRow(self.label_username, self.lineedit_username)
+        self.layout().addRow(self.label_id, self.lineedit_id)
+        self.layout().addRow(self.submit)
+
     def get_cred(self):
-        print(self.username.text())
-        print(self.password.text())
+        print(self.lineedit_username.text())
+        print(self.lineedit_id.text())
