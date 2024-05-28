@@ -4,6 +4,7 @@ from PySide6.QtWidgets import QApplication, QGridLayout, QWidget
 
 from ..widgets import FramelessWidget
 from ..widgets import GridContainer
+from ..widgets import ChatWidget
 
 
 class GameWindow(QWidget):
@@ -16,15 +17,17 @@ class GameWindow(QWidget):
 
         self.grid_enemy = GridContainer("Enemy", self)
         self.grid_ally = GridContainer("Ally", self)
+        self.chat_widget = ChatWidget("test", self)
         
         self.setWindowTitle("Battleships")
 
         self.init_layout()
-        self.init_widget()
+        self.init_widgets()
 
     def init_layout(self):
         QGridLayout(self)
 
-    def init_widget(self):
-        self.layout().addWidget(self.grid_ally, 1, 2)
-        self.layout().addWidget(self.grid_enemy, 2, 2)
+    def init_widgets(self):
+        self.layout().addWidget(self.grid_enemy, 0, 0, 1, 1)
+        self.layout().addWidget(self.grid_ally, 1, 0, 1, 1)
+        self.layout().addWidget(self.chat_widget, 0, 1, 2, 1)

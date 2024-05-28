@@ -3,7 +3,7 @@ from PySide6.QtWidgets import QLabel, QVBoxLayout, QWidget, QGridLayout, QPushBu
 from PySide6.QtCore import Qt
 from typing import Optional
 
-from ..customs import FramelessWidget
+from ..custom import FramelessWidget
 
 
 class Grid(QWidget):

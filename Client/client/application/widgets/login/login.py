@@ -1,6 +1,6 @@
 from PySide6.QtWidgets import QLineEdit, QLabel, QVBoxLayout, QPushButton, QWidget
 
-from ..customs import FramelessWidget
+from ..custom import FramelessWidget
 
 class Login(QWidget):
     """

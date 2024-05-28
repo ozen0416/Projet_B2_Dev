@@ -9,3 +9,7 @@ class App(QApplication):
             self.setStyleSheet(theme.read())
         #self._window = HomeWindow()
         self._window.show()
+
+    @property
+    def user(self):
+        return "ozen"

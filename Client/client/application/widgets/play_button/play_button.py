@@ -3,7 +3,7 @@ from typing import Optional
 from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel
 from PySide6.QtCore import QTime, QTimer
 
-from ....tools import ButtonState 
+from ....tools import ButtonState
 
 
 class SearchGame(QWidget):
@@ -12,6 +12,7 @@ class SearchGame(QWidget):
 
     Shows the time that has past since the beginning of the search.
     """
+
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
         self.start_time = None
@@ -23,7 +24,6 @@ class SearchGame(QWidget):
 
         self.init_layout()
         self.init_widgets()
-
 
     def init_layout(self):
         QVBoxLayout(self)
