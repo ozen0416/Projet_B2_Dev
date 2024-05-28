@@ -5,6 +5,7 @@ from typing import List, Optional
 
 from .pair import Pair
 from .client import Client
+from ..matchmaking import Queue
 
 
 class Server:
@@ -12,6 +13,10 @@ class Server:
 
     @staticmethod
     def get_instance():
+        """
+        As server is meant to be a Singleton, for easier access through the
+        architecture and object instances.
+        """
         if Server._instance is None:
             Server._instance = Server()
         return Server._instance
@@ -25,9 +30,20 @@ class Server:
 
         self._pairs: List[Pair] = []
         self._clients: List[Client] = []
-        self.mm_list = []
+        self.mm_queue = Queue()
+
+    def create_pair(self, client_0, client_1):
+        pair = Pair(client_0, client_1)
+        self._pairs.append(pair)
 
     async def handle_client(self, reader: StreamReader, writer: StreamWriter) -> None:
+        """
+        Called each time a new socket is initialized with a client
+        It will create the client object properly by using connection and socket received
+        data.
+
+        Each request will be sent to the `RootHandler` that will then properly handle what to respond.
+        """
         addr = writer.get_extra_info("peername")
         print(f"Connected with: {addr}")
         print(type(addr))
@@ -58,6 +74,9 @@ class Server:
             print(f"Closed connection with: {addr}")
 
     async def start(self):
+        """
+        start the asyncio server
+        """
         server = await asyncio.start_server(self.handle_client, self.__HOST, self.__PORT)
         print(f"Server listening on {self.__HOST}:{self.__PORT}")
 

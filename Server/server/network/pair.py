@@ -25,6 +25,7 @@ class Pair:
         self.second_client = second_client
 
         print(f"PAIR INIT: {self.first_client.id}, {self.second_client.id}")
+        self.init_pair()
 
     def init_pair(self):
         """
