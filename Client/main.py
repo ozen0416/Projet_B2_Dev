@@ -1,8 +1,10 @@
-import time
+import sys
 
-from client.network import Client
+from client import App
 
 if __name__ == "__main__":
-    client = Client()
-    client.start()
+    #client = HTTPClient()
+    #asyncio.run(client.start())
 
+    app = App([])
+    sys.exit(app.exec())

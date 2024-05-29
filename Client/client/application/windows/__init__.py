@@ -1,2 +1,2 @@
-from .main_window import * 
-from .login_window import * 
+from .game_window import * 
+from .home_window import *
