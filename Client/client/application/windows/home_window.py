@@ -63,15 +63,3 @@ class ContainerWidget(QWidget):
         #self.login.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)  # width, height
         #self.login.move(50, 50)  # width, height
         #self.login.resize(300, 200)  # width, height
-
-
-class RightContainerWidget(QWidget):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.id = QSettings.setValue("id")
-
-    def init_widget(self):
-
-
-    def init_layout(self):
-        QGridLayout(self)

@@ -45,7 +45,6 @@ class Pair:
         json_data = json.dumps(data)
 
         self.first_client.writer.write(json_data.encode('utf-8'))
-
     async def client_placement(self, request: dict):
         """
         Called by `PlacementWorker` when a client requests for his placement
