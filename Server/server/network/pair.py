@@ -41,11 +41,13 @@ class Pair:
         json_data = json.dumps(data)
 
         self.second_client.writer.write(json_data.encode('utf-8'))
+        self.second_client.writer.drain()
 
         data["data"]["client_id"] = self.second_client.id
         json_data = json.dumps(data)
 
         self.first_client.writer.write(json_data.encode('utf-8'))
+        self.second_client.writer.drain()
 
     async def client_placement(self, request: dict):
         """
@@ -103,6 +105,19 @@ class Pair:
         }
 
         self.game = Game.from_dict(data)
+
+    async def send_message(self, request: dict):
+        client_id = request["client_id"]
+        paired_client = self._get_paired_client(client_id)
+
+        data = request["data"]
+        json_data = json.dumps(data)
+
+        paired_client.writer.write(json_data.encode('utf-8'))
+        await paired_client.writer.drain()
+
+    def _get_paired_client(self, client_id: str):
+        return self.first_client if client_id == self.second_client.id else self.second_client
 
     async def get_client_by_id(self, _id: str):
         if not await self.is_id_in_pair(_id):

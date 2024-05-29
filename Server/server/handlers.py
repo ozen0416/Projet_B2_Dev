@@ -2,7 +2,13 @@
 from typing import Any, Optional
 
 from .abc import AbstractHandler
-from .workers import HitWorker, MatchmakingInWorker, MatchmakingOutWorker, PlacementWorker
+from .workers import (
+    HitWorker,
+    MatchmakingInWorker,
+    MatchmakingOutWorker,
+    PlacementWorker,
+    GameMessageWorker
+)
 
 
 class RootHandler(AbstractHandler):
@@ -15,6 +21,7 @@ class GameHandler(AbstractHandler):
     def __init__(self):
         self.add_tree_object("HIT", HitWorker())
         self.add_tree_object("PLACEMENT", PlacementWorker())
+        self.add_tree_object("MESSAGE", GameMessageWorker())
 
 
 class MatchmakingHandler(AbstractHandler):

@@ -23,6 +23,18 @@ data_placement = {
 }
 
 
+data_message = {
+    "request": ["GAME", "MESSAGE"],
+    "client_id": client_id,
+    "data": {"content": "test message"}
+}
+
+
+def dict_to_encoded_utf_8(_dict: dict):
+    json_dict = json.dumps(_dict)
+    return json_dict.encode('utf-8')
+
+
 class Client:
     """
     Client application side that will communicate and listen
@@ -56,14 +68,22 @@ class Client:
             print(json_response)
 
             if json_response["response"] == "GAME FOUND":
-                json_data = json.dumps(data_placement)
+                encoded_data = dict_to_encoded_utf_8(data_placement)
 
-                self._socket.send(json_data.encode('utf-8'))
+                self._socket.send(encoded_data)
                 print(f"CLIENT DATA SENT: {data_placement}")
 
                 response = self._socket.recv(1024).decode('utf-8')
                 json_response = json.loads(response)
-                print(f"CLIENT RESPONSE RECEIVED: {response}")
+                print(f"CLIENT RESPONSE RECEIVED: {json_response}")
+
+                encoded_data = dict_to_encoded_utf_8(data_message)
+                self._socket.send(encoded_data)
+                print(f"CLIENT DATA SENT: {data_message}")
+
+                response = self._socket.recv(1024).decode('utf-8')
+                json_response = json.loads(response)
+                print(f"CLIENT RESPONSE RECEIVED: {json_response}")
 
     def __del__(self):
         """
