@@ -19,7 +19,7 @@ class App(QApplication):
         self._window.show()
 
         self._client_id = str(uuid.uuid4())
-        self.late_init()
+        # self.late_init()
 
     def late_init(self):
         self._socket_client = Client()
