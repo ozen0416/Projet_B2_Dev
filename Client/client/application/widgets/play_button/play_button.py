@@ -1,6 +1,6 @@
 from typing import Optional
 
-from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel
+from PySide6.QtWidgets import QWidget, QPushButton, QVBoxLayout, QLabel, QApplication
 from PySide6.QtCore import QTime, QTimer
 
 from ....tools import ButtonState
@@ -36,7 +36,12 @@ class SearchGame(QWidget):
         self.layout().addWidget(self.play)
 
     def button_handler(self):
+        matchmaking_in_data = {
+            "request": ["MATCHMAKING", "IN"],
+            "client_id": QApplication.instance().client_id
+        }
         if self.button_state == ButtonState.PLAY:
+            QApplication.instance().socket_client.send_request(matchmaking_in_data)
             self.start_timer()
         else:
             self.cancel_play()
