@@ -1,7 +1,7 @@
 import asyncio
 
-from Server.server.network import Server
+from server import Server
 
 if __name__ == "__main__":
-    server = Server()
+    server = Server.get_instance()
     asyncio.run(server.start())

@@ -16,10 +16,13 @@ class Game(FromDictMixin):
 
     first_player: Player
     second_player: Player
-    turn: int
+    turn: int = 0
     finished: bool = False
 
     def process_turn(self, target_cell: Vector2):
+        """
+        Try a hit at a location of a specific player according to the current turn
+        """
         if self.finished:
             return
 
