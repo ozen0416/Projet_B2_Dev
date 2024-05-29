@@ -1,7 +1,7 @@
 from typing import List
 
 from .ship_cell import ShipCell
-from Server.server.tools import Status, Vector2, FromDictMixin
+from ..tools import Status, Vector2, FromDictMixin
 
 
 class Ship(FromDictMixin):

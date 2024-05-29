@@ -3,6 +3,8 @@ import json
 import time
 import uuid
 import socket
+from PySide6.QtCore import QObject, Slot, Signal
+
 
 HOST = '2.9.106.99'
 PORT = 4704
@@ -35,18 +37,23 @@ def dict_to_encoded_utf_8(_dict: dict):
     return json_dict.encode('utf-8')
 
 
-class Client:
+class Client(QObject):
     """
     Client application side that will communicate and listen
     for the server requests.
     """
     _socket: socket.socket
+    data_received = Signal(dict)
 
     def __init__(self):
-        self.__SERVER_IP = '2.9.106.99'
-        self.__SERVER_PORT = 4704
+        super().__init__()
+        # self.__SERVER_IP = '2.9.106.99'
+        # self.__SERVER_PORT = 4704
+        self.__SERVER_IP = 'localhost'
+        self.__SERVER_PORT = 39688
 
         self.start()
+        self.running = True
 
     def start(self):
         """
@@ -60,22 +67,24 @@ class Client:
         formatted_request = dict_to_encoded_utf_8(request)
         self._socket.send(formatted_request)
 
-        response = self._socket.recv(1024).decode('utf-8')
-        json_response = json.loads(response)
-        return json_response
-
+    @Slot()
     def listen(self):
         """
         listen for server requests
         """
-        while True:
+        while self.running:
             response = self._socket.recv(1024).decode('utf-8')
             json_response = json.loads(response)
             print(json_response)
+            if "request" in json_response:
+                self.data_received.emit(json_response)
 
-    def __del__(self):
+    @Slot()
+    def stop(self):
         """
         Try to ensure closing connection when client object is deleted.
         Actually not really safe as we do not practically know where or if this will be called
         """
-        self._socket.close()
+        self.running = False
+        if self._socket:
+            self._socket.close()

@@ -73,18 +73,20 @@ class DummyWidget(QWidget):
         self.init_widgets()
         self.setObjectName("dummy")
 
-    # paintEvent is overriden to make sure we can change background
-    # color of custom widgets
     def paintEvent(self, event):
+        """
+        # paintEvent is overriden to make sure we can change background
+        # color of custom widgets
+        """
         opt = QStyleOption()
         opt.initFrom(self)
         p = QPainter(self)
         self.style().drawPrimitive(QStyle.PrimitiveElement.PE_Widget, opt, p, self)
 
-    """
-    Event that shows coordinates of where the mouse presses
-    """
     def mousePressEvent(self, event):
+        """
+        Event that shows coordinates of where the mouse presses
+        """
         if event.button() == Qt.LeftButton:
             print("je clique sur", self._x, self._y)
         return super().mousePressEvent(event)

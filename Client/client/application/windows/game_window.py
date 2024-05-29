@@ -5,7 +5,7 @@ from PySide6.QtWidgets import QApplication, QGridLayout, QWidget
 from ..widgets import GridContainer, ChatWidget, BattleshipWindow
 
 
-class GameWindow(QWidget):
+class GameWindow(BattleshipWindow):
     """
     Window of the game.
     Displays players' grids, a chat and the history of past moves
