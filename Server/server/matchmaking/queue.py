@@ -18,7 +18,7 @@ class Queue:
         """
         Remove a specific client from the clients list
         """
-        if client in self.waiting_clients:
+        if client in self.waiting_clients:  # To avoid value error even if requests goes through
             self.waiting_clients.remove(client)
 
     async def match_players(self):

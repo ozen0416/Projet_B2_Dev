@@ -9,17 +9,11 @@ from ..matchmaking import Queue
 
 
 class Server:
-    _instance = None
+    """
+    Server class, handling clients sockets and requests.
+    """
 
-    @staticmethod
-    def get_instance():
-        """
-        As server is meant to be a Singleton, for easier access through the
-        architecture and object instances.
-        """
-        if Server._instance is None:
-            Server._instance = Server()
-        return Server._instance
+    _instance = None
 
     def __init__(self) -> None:
         from ..handlers import RootHandler
@@ -31,6 +25,16 @@ class Server:
         self._pairs: List[Pair] = []
         self._clients: List[Client] = []
         self.mm_queue = Queue()
+
+    @staticmethod
+    def get_instance():
+        """
+        As server is meant to be a Singleton, for easier access through the
+        architecture and object instances.
+        """
+        if Server._instance is None:
+            Server._instance = Server()
+        return Server._instance
 
     def create_pair(self, client_0, client_1):
         pair = Pair(client_0, client_1)

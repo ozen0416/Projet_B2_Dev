@@ -24,9 +24,16 @@ data_placement = {
 
 
 class Client:
+    """
+    Client application side that will communicate and listen
+    for the server requests.
+    """
     _socket: socket.socket
 
     def start(self):
+        """
+        start the client socket communication with the server
+        """
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         self._socket.connect((HOST, PORT))
@@ -40,6 +47,9 @@ class Client:
             self.listen()
 
     def listen(self):
+        """
+        listen for server requests
+        """
         while True:
             response = self._socket.recv(1024).decode('utf-8')
             json_response = json.loads(response)
@@ -56,4 +66,8 @@ class Client:
                 print(f"CLIENT RESPONSE RECEIVED: {response}")
 
     def __del__(self):
+        """
+        Try to ensure closing connection when client object is deleted.
+        Actually not really safe as we do not practically know where or if this will be called
+        """
         self._socket.close()

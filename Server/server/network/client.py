@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from asyncio import StreamWriter, StreamReader
 
+
 @dataclass
 class Client:
     """
