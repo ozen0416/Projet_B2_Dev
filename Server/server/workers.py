@@ -37,7 +37,7 @@ class MatchmakingInWorker(AbstractWorker):
 
         pair = await queue.match_players()
         if pair is not None:
-            Server.get_instance().create_pair(*pair)
+            await Server.get_instance().create_pair(*pair)
 
         data = {
             "status": "OK",

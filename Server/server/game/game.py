@@ -1,5 +1,5 @@
 """game manager for our battleships game"""
-from Server.server.tools import FromDictMixin, Vector2, Status
+from ..tools import FromDictMixin, Vector2, Status
 from .player import Player
 
 

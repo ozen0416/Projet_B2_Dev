@@ -36,9 +36,10 @@ class Server:
             Server._instance = Server()
         return Server._instance
 
-    def create_pair(self, client_0, client_1):
+    async def create_pair(self, client_0, client_1):
         pair = Pair(client_0, client_1)
-        self._pairs.append(pair)
+        await pair.init_pair()
+        self.add_pair(pair)
 
     async def handle_client(self, reader: StreamReader, writer: StreamWriter) -> None:
         """
@@ -64,13 +65,14 @@ class Server:
                 json_response = json.loads(response)
                 client.id = json_response["client_id"]
                 print(f"Data received {json_response}")
-                request_base = json_response["request"][0]
-                print("Sending to RootHandler...")
-                res = await self._root_handler.handle(request_base, json_response)
-                print(f"Worker response: {res}")
+                if "request" in json_response:
+                    request_base = json_response["request"][0]
+                    print("Sending to RootHandler...")
+                    res = await self._root_handler.handle(request_base, json_response)
+                    print(f"Worker response: {res}")
 
-                writer.write(res.encode('utf-8'))
-                await writer.drain()
+                    writer.write(res.encode('utf-8'))
+                    await writer.drain()
         except ConnectionResetError as cre:
             print(f"Error occurred with client {addr}: {cre}")
         finally:
@@ -105,5 +107,5 @@ class Server:
                 return client
         return None
 
-    async def add_pair(self, pair: Pair):
+    def add_pair(self, pair: Pair):
         self._pairs.append(pair)

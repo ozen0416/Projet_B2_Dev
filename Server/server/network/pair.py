@@ -1,3 +1,4 @@
+import asyncio
 import json
 import uuid
 
@@ -25,29 +26,27 @@ class Pair:
         self.second_client = second_client
 
         print(f"PAIR INIT: {self.first_client.id}, {self.second_client.id}")
-        self.init_pair()
 
-    def init_pair(self):
+    async def init_pair(self):
         """
         Extension to `__init__` call
         will send to both clients that they
         were matched in a game
         """
         data = {
-            "status": "OK",
-            "response": "GAME FOUND",
+            "request": ["GAME", "FOUND"],
             "data": {"client_id": self.first_client.id, "game_id": self.game_id}
         }
         json_data = json.dumps(data)
 
         self.second_client.writer.write(json_data.encode('utf-8'))
-        self.second_client.writer.drain()
+        await self.second_client.writer.drain()
 
         data["data"]["client_id"] = self.second_client.id
         json_data = json.dumps(data)
 
         self.first_client.writer.write(json_data.encode('utf-8'))
-        self.second_client.writer.drain()
+        await self.first_client.writer.drain()
 
     async def client_placement(self, request: dict):
         """
