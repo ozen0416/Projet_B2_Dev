@@ -3,7 +3,7 @@ from PySide6.QtWidgets import QLabel, QVBoxLayout, QWidget, QGridLayout, QPushBu
 from PySide6.QtCore import Qt
 from typing import Optional
 
-from ..custom import FramelessWidget
+from ....tools import GridCellState
 
 
 class Grid(QWidget):
@@ -28,7 +28,7 @@ class Grid(QWidget):
         for i in range(10):
             for j in range(10):
                 #button = QPushButton(str(i)+str(j))
-                button = DummyWidget(j, i, self)
+                button = DummyWidget(j, i, GridCellState.WATER, self)
                 button.setFixedSize(40, 40)
                 self.layout().addWidget(button, j, i)
                 self.layout().setContentsMargins(0, 0, 0, 0)
@@ -62,10 +62,11 @@ class DummyWidget(QWidget):
     Dummy class as a placeholder for the game grid.
     This is just a widget with a label in its center
     """
-    def __init__(self, x: int, y: int, parent=None):
+    def __init__(self, x: int, y: int, cell_type: GridCellState, parent=None):
         super().__init__(parent)
 
         self.label = QLabel(str(x)+str(y), self)
+        self._cell_type = cell_type
         self._x = x
         self._y = y
         self.init_layout()
@@ -93,3 +94,4 @@ class DummyWidget(QWidget):
 
     def init_widgets(self):
         self.layout().addWidget(self.label, Qt.AlignCenter)
+        self.setStyleSheet("QWidget { background-color: blue }")

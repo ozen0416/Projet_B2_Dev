@@ -2,9 +2,7 @@ from typing import Optional
 
 from PySide6.QtWidgets import QApplication, QGridLayout, QWidget
 
-from ..widgets import FramelessWidget
-from ..widgets import GridContainer
-from ..widgets import ChatWidget
+from ..widgets import GridContainer, ChatWidget, BattleshipWindow
 
 
 class GameWindow(QWidget):
