@@ -18,6 +18,7 @@ class GameWindow(BattleshipWindow):
         self.grid_ally = GridContainer("Ally", self)
         self.chat_widget = ChatWidget(contact, self)
         
+        self.battleship_widget = DisplayShipContainer(self)
         self.setWindowTitle("Battleships")
 
         self.init_layout()
@@ -33,4 +34,6 @@ class GameWindow(BattleshipWindow):
     def init_widgets(self):
         self.layout().addWidget(self.grid_enemy, 0, 0, 1, 1)
         self.layout().addWidget(self.grid_ally, 1, 0, 1, 1)
-        self.layout().addWidget(self.chat_widget, 0, 1, 2, 1)
+        self.layout().addWidget(self.battleship_widget, 0, 1, 2, 1)
+        self.layout().addWidget(self.chat_widget, 0, 2, 2, 1)
+

@@ -4,10 +4,11 @@ from PySide6.QtCore import QSettings
 from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QWidget, QLabel, QVBoxLayout, QGridLayout
 
 from ..widgets import FramelessWidget
-from ..widgets import SearchGame, Login,BattleshipWindow
+from ..widgets import SearchGame
+from ..widgets import Login 
 
 
-class HomeWindow(BattleshipWindow):
+class HomeWindow(QWidget):
     """
     Home window before a game is played.
 
@@ -20,7 +21,6 @@ class HomeWindow(BattleshipWindow):
         #self.timer = SearchGame(self)
         self.left_widget = ContainerWidget(self)
         self.label_test = QLabel("feurhahahaha", self)
-        self.right_widget = RightContainerWidget(self)
 
         self.setWindowTitle("Battleships")
         #self.setWindowIcon()
@@ -62,15 +62,3 @@ class ContainerWidget(QWidget):
         #self.login.setSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)  # width, height
         #self.login.move(50, 50)  # width, height
         #self.login.resize(300, 200)  # width, height
-
-
-class RightContainerWidget(QWidget):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        # self.id = QSettings.setValue("id")
-
-    def init_widgets(self):
-        pass
-
-    def init_layout(self):
-        QGridLayout(self)
