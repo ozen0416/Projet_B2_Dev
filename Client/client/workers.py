@@ -12,23 +12,18 @@ class GameFoundWorker(AbstractWorker):
     the current turn processed by a player.
     """
     def handle(self, request_type: Any, request: Any) -> Optional[dict]:
-        QApplication.instance().current_window.switch_window.emit("game" )
+        print(f"REQUEST GAME FOUND HANDLER{request}")
+        QApplication.instance().current_window.switch_window.emit("game", request["data"]["nickname"])
         response = {"status": "OK", "response": "GAME FOUND OK"}
         return response
 
 
-# class GameMessageWorker(AbstractWorker):
-#     async def handle(self, request_type: Any, request: Any) -> Optional[str]:
-#         """
-#         Handle game message request and send it to other client
-#         """
-#         pair = await Server.get_instance().get_pair_from_client_id(request["client_id"])
-#
-#         await pair.send_message(request)
-#
-#         data = {
-#             "status": "OK",
-#             "response": "MESSAGE SENT"
-#         }
-#
-#         return json.dumps(data)
+class GameMessageWorker(AbstractWorker):
+    def handle(self, request_type: Any, request: Any) -> Optional[dict]:
+        """
+        Handle game message request and send it to other client
+        """
+        QApplication.instance().receive_message(request)
+
+        response = {"status": "OK", "response": "MESSAGE RECEIVED OK"}
+        return response

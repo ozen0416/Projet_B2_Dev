@@ -38,7 +38,8 @@ class SearchGame(QWidget):
     def button_handler(self):
         matchmaking_in_data = {
             "request": ["MATCHMAKING", "IN"],
-            "client_id": QApplication.instance().client_id
+            "client_id": QApplication.instance().client_id,
+            "nickname": QApplication.instance().user
         }
         if self.button_state == ButtonState.PLAY:
             QApplication.instance().socket_client.send_request(matchmaking_in_data)

@@ -74,6 +74,7 @@ class Client(QObject):
         """
         while self.running:
             response = self._socket.recv(1024).decode('utf-8')
+            print("RESPONSE", response)
             json_response = json.loads(response)
             print(json_response)
             if "request" in json_response:

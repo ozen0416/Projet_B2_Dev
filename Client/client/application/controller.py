@@ -11,10 +11,10 @@ class Controller:
         self.current_window = None
         self.home_window = None
         self.game_window = None
-        self.switch_emitted("home")
+        self.switch_emitted("home", "")
 
-    def show_game(self):
-        self.game_window = GameWindow()
+    def show_game(self, data):
+        self.game_window = GameWindow(data)
         self.game_window.switch_window.connect(self.switch_emitted)
         self.current_window = self.game_window
 
@@ -23,7 +23,7 @@ class Controller:
         self.home_window.switch_window.connect(self.switch_emitted)
         self.current_window = self.home_window
 
-    def switch_emitted(self, window_type):
+    def switch_emitted(self, window_type, data):
         print(f"SWITCH EMITTED: {window_type}")
         window_type = window_type.lower()
 
@@ -35,6 +35,6 @@ class Controller:
         if window_type == 'home':
             self.show_home()
         elif window_type == 'game':
-            self.show_game()
+            self.show_game(data)
 
         self.current_window.show()
