@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server" kind="namespace" language="Python">
+    <compoundname>Server::server</compoundname>
+    <innernamespace refid="namespaceServer_1_1server_1_1abc">Server::server::abc</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1checks">Server::server::checks</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1game">Server::server::game</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1handlers">Server::server::handlers</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1matchmaking">Server::server::matchmaking</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1network">Server::server::network</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1tools">Server::server::tools</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1workers">Server::server::workers</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

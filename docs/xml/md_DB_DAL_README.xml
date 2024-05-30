@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md_DB_DAL_README" kind="page">
+    <compoundname>md_DB_DAL_README</compoundname>
+    <title>API PHP</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md_DB_DAL_README_1autotoc_md4">
+<title>Description</title>
+<para>Cette API a été écrite dans le cadre du module PHP lors de ma deuxième année de Bachelor à Ynov Aix-en-Provence. L&apos;API vient interfacer le DAL (Data Access Layer) d&apos;une base de donnée MySQL</para>
+<para>Cette API a été codé avec du <bold>PHP 5.6</bold></para>
+</sect1>
+<sect1 id="md_DB_DAL_README_1autotoc_md5">
+<title>Sommaire</title>
+<para><orderedlist>
+<listitem><para><ulink url="#Description">Description</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Commencer">Commencer</ulink><orderedlist>
+<listitem><para><ulink url="#Installation">Installation</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Utilisation">Utilisation</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Endpoint">Endpoint</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>[Gestion d&apos;erreur](#Gestion%20d&apos;erreur)</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Authentification">Authentification</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Limite%20de%20requ%C3%AAtes">Limite de requêtes</ulink></para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para>[Pistes d&apos;amélioration futur](#Pistes%20d&apos;amC3A9lioration%20futur)</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem><para><ulink url="#Auteur">Auteur</ulink></para>
+</listitem></orderedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md_DB_DAL_README_1autotoc_md6">
+<title>Commencer</title>
+<sect2 id="md_DB_DAL_README_1autotoc_md7">
+<title>Installation</title>
+<para>Extraire le dossier <computeroutput>.zip</computeroutput> dans le dossier <computeroutput>www</computeroutput> de votre server Apache. L&apos;arborescence devrait ressembler à ça: <programlisting><codeline><highlight class="normal">root</highlight></codeline>
+<codeline><highlight class="normal">|</highlight></codeline>
+<codeline><highlight class="normal">└──credentials</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/>└──<sp/>db.json</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/>www</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>├──<sp/>dossier1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>├──<sp/>fichier1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>└──<sp/>...</highlight></codeline>
+</programlisting></para>
+<para>Pour le bon fonctionnement du DAL il faut aussi un dossier <computeroutput>credentials</computeroutput> au même niveau que le dossier <computeroutput>www</computeroutput>. Dans ce dossier <computeroutput>credentials</computeroutput> il faudra y mettre un fichier JSON avec les identifiants à la base de données. Voici le format: <programlisting><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;dbName&quot;:<sp/>&quot;your_db_name&quot;,</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;login&quot;:<sp/>&quot;your_db_user&quot;,</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;password&quot;:<sp/>&quot;y0ur_us€r_Pa$$w0rd&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Le DAL lit par défaut le fichier <computeroutput>db.json</computeroutput> mais il est possible de lire un autre fichier. Il faudra simplement préciser le nom du fichier dans le constructeur de la classe <computeroutput>Database</computeroutput> en donnant un paramètre à la méthode <computeroutput>Connect</computeroutput>. À cette ligne: <programlisting><codeline><highlight class="normal">$this-&gt;dbh<sp/>=<sp/>Connection::Connect(&quot;your_db_file&quot;);</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md8">
+<title>Utilisation</title>
+<para>Les requêtes à l&apos;API se font toutes avec la méthode HTTP POST. Il faudra donc un logiciel (comme Postman) ou du code pour faire les requêtes et passer les arguments dans le body de la requête. La syntax pour les requêtes sera: <programlisting><codeline><highlight class="normal">{serverIP}/API/{endpoint}/</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md9">
+<title>Endpoint</title>
+<para>L&apos;API a 5 endpoints, <bold>Create</bold>, <bold>Read</bold>, <bold>Update</bold>, <bold>Delete</bold> et <bold>TestDB</bold>. Ces endpoints permettent d&apos;interagir avec la base de données. L&apos;endpoint TestDB est un endpoint de test qui pour l&apos;instant ne sert qu&apos;à tester la méthode <computeroutput>read</computeroutput>.</para>
+<sect3 id="md_DB_DAL_README_1autotoc_md10">
+<title>Paramètres</title>
+<para>Chaque endpoint a ses paramètres à prendre en compte, certains ont les mêmes paramètres mais d&apos;autre non, voici un tableau avec les paramètres pour chaque endpoint:</para>
+<para><table rows="5" cols="5"><row>
+<entry thead="yes"><para>CRUD/Args   </para>
+</entry><entry thead="yes"><para>table   </para>
+</entry><entry thead="yes"><para>params   </para>
+</entry><entry thead="yes"><para>columns   </para>
+</entry><entry thead="yes"><para>filter    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Create   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>X   </para>
+</entry><entry thead="no"><para>X    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Read   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>X   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>OPTIONEL    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Update   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>X   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Delete   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry><entry thead="no"><para>X   </para>
+</entry><entry thead="no"><para>X   </para>
+</entry><entry thead="no"><para>OBLIGATOIRE   </para>
+</entry></row>
+</table>
+</para>
+<para><itemizedlist>
+<listitem><para><bold>table</bold>: Le nom de la table</para>
+</listitem><listitem><para><bold>params</bold>: Ensemble clé-valeur avec les colonnes de la table en clé</para>
+</listitem><listitem><para><bold>columns</bold>: Tableau de colonnes de la table (peut aussi valoir <computeroutput>&quot;*&quot;</computeroutput>)</para>
+</listitem><listitem><para><bold>filter</bold>: Ensemble d&apos;object JSON, dont la clé est le nom de la colonne et la valeur est un autre ensemble clé-valeur, avec pour clé <computeroutput>&quot;operateur&quot;</computeroutput> et <computeroutput>&quot;value&quot;</computeroutput> (voir exemple <ulink url="#Update">ci-dessous</ulink>)</para>
+</listitem></itemizedlist>
+</para>
+</sect3>
+<sect3 id="md_DB_DAL_README_1autotoc_md11">
+<title>Create</title>
+<para>Ce endpoint permet d&apos;écrire des entrées dans une table de la base de données. Ici <computeroutput>params</computeroutput> sont les valeurs à attribuer.</para>
+<para>Voici un exemple de requête et d&apos;arguments à passer:</para>
+<para><bold>En bash:</bold> <programlisting filename=".bash"><codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;:<sp/>&quot;value1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;:<sp/>&quot;value2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/CreateDB/</highlight></codeline>
+</programlisting></para>
+<para><bold>En python:</bold> <programlisting filename=".python"><codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/CreateDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;:<sp/>&quot;value1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;:<sp/>&quot;value2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_DB_DAL_README_1autotoc_md12">
+<title>Read</title>
+<para>Ce endpoint permet de lire des entrées dans une table de la base de données. Ici <computeroutput>columns</computeroutput> sont les colonnes à lire dans la table. Il est aussi possible de lire toutes les colonnes d&apos;une table en écrivant <computeroutput>&quot;columns&quot;: &quot;*&quot;</computeroutput></para>
+<para>Possibilité de rajouter <computeroutput>filter</computeroutput> à la requête (voir exemple <ulink url="#Update">ci-dessous</ulink>)</para>
+<para>Voici un exemple de requête et d&apos;arguments à passer:</para>
+<para><bold>En bash:</bold> <programlisting filename=".bash"><codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;columns&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/ReadDB/</highlight></codeline>
+</programlisting></para>
+<para><bold>En python:</bold> <programlisting filename=".python"><codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/ReadDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;columns&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_DB_DAL_README_1autotoc_md13">
+<title>Update</title>
+<para>Ce endpoint permet de modifier des entrées dans une table de la base de données. Ici <computeroutput>params</computeroutput> sont les nouvelles valeurs et les object JSON dans <computeroutput>filter</computeroutput> permettent de créer la clause <computeroutput>WHERE</computeroutput> de la requête SQL.</para>
+<para>Voici un exemple de requête et d&apos;arguments à passer:</para>
+<para><bold>En bash:</bold> <programlisting filename=".bash"><codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>&quot;Paul&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;age&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;23&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/UpdateDB/</highlight></codeline>
+</programlisting></para>
+<para><bold>En python:</bold> <programlisting filename=".python"><codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/UpdateDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>&quot;Paul&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;=&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;Pierre&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_DB_DAL_README_1autotoc_md14">
+<title>Delete</title>
+<para>Ce endpoint permet de supprimer des entrées dans une table de la base de données. Ici <computeroutput>filter</computeroutput> permet de sélectionner les bonnes valeurs à supprimer</para>
+<para>Voici un exemple de requête et d&apos;arguments à passer:</para>
+<para><bold>En bash:</bold> <programlisting filename=".bash"><codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;age&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;23&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/DeleteDB/</highlight></codeline>
+</programlisting></para>
+<para><bold>En python:</bold> <programlisting filename=".python"><codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/DeleteDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;=&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;Pierre&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md15">
+<title>Gestion d&apos;erreur</title>
+<para>En cas d&apos;erreur l&apos;API renverra du JSON avec le format: <programlisting filename=".json"><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;Error&quot;:<sp/>&quot;Error<sp/>message&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md16">
+<title>Authentification</title>
+<para>L&apos;API ne possède pas de système d&apos;authentification.</para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md17">
+<title>Limite de requêtes</title>
+<para>L&apos;API ne possède pas de limite de requêtes.</para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md18">
+<title>Pistes d&apos;améliorations futurs</title>
+<para><itemizedlist>
+<listitem><para>Il faudrait que les valeurs de <computeroutput>ALLOWED_ARGS</computeroutput> et <computeroutput>NEEDED_ARGS</computeroutput> ne soient pas en brut dans le code, peut-être en les ayant dans un autre fichier que le DAL viendrait juste lire</para>
+</listitem><listitem><para>Avoir une classe Credentials</para>
+</listitem><listitem><para>Pouvoir Insert plusieurs lignes à la fois</para>
+</listitem><listitem><para>Avoir un autoloader</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md_DB_DAL_README_1autotoc_md19">
+<title>Auteur</title>
+<para><itemizedlist>
+<listitem><para>Théo COLLIOT-MARTINEZ </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="DB/DAL/README.md"/>
+  </compounddef>
+</doxygen>

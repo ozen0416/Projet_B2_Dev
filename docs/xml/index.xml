@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classClient_1_1client_1_1abc_1_1AbstractHandler" kind="class"><name>Client::client::abc::AbstractHandler</name>
+    <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1ae53b676de421612b711bd4a7a9cceb02" kind="function"><name>add_tree_object</name></member>
+    <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a0c573ec93c7b6c8761c8f0f4e1613595" kind="function"><name>add_check</name></member>
+    <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a666a4d003eb8821eed297be5a346dfd9" kind="function"><name>check</name></member>
+    <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a66cb9cba027a3249a466c4db1181d2c9" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1abc_1_1AbstractHandler" kind="class"><name>Server::server::abc::AbstractHandler</name>
+    <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a3ac3ca43473621da60f531b978c17953" kind="function"><name>add_tree_object</name></member>
+    <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a2a3a665aec7fce4515564e6f0f0eceb8" kind="function"><name>add_check</name></member>
+    <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a89827cdcd3f7e00f0c8426ca06996fcf" kind="function"><name>check</name></member>
+    <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a911325f2bfbeb1a6190c51afaefc12aa" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1abc_1_1AbstractWorker" kind="class"><name>Client::client::abc::AbstractWorker</name>
+    <member refid="classClient_1_1client_1_1abc_1_1AbstractWorker_1a56b7dc25f88c20fa65b083d21dca2b03" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1abc_1_1AbstractWorker" kind="class"><name>Server::server::abc::AbstractWorker</name>
+    <member refid="classServer_1_1server_1_1abc_1_1AbstractWorker_1aeee293002f617d60e1dc13b095f5080f" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1app_1_1App" kind="class"><name>Client::client::application::app::App</name>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a811114d7677051162d98b93d4f9fec55" kind="variable"><name>_settings_file</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ac6e36b32162911b377df4059d17edcfd" kind="variable"><name>_user</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1aaa8b1e1d4bcb98ff9773758a37831dc5" kind="variable"><name>_client_id</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ae90161fe91d1fb3163322c4213830fcc" kind="variable"><name>_controller</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ac64bf93628b7a8aeef85e7a0f94a1aef" kind="variable"><name>_root_handler</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a18b78fdab65016e983e79864f4075533" kind="variable"><name>_socket_client</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ad8e8874fcdabac641f217fb574193d5f" kind="variable"><name>_socket_thread</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1af5129060a61dcb467825ddec70c6cf2e" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ae21c0c9bb5a8f014a8f6bf572b6dc154" kind="function"><name>load_settings</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1afbdf503aabe4989a973681e2dd914eff" kind="function"><name>save_settings</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a73c98145a6acc97dd26c270765cf2ecc" kind="function"><name>current_window</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a53ee74fb02ee03388514adeb1ca69362" kind="function"><name>send_request</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a9fc7ecad2edb38a4f0605262ee3c2a80" kind="function"><name>handle_request</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a3313645effd712a168bcc645e35ab18e" kind="function"><name>late_init</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a1ff38bd58ea18d100fe6e3a15a09682a" kind="function"><name>receive_message</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1afdab6035e7f6fcefabf456747e2fc6fb" kind="function"><name>socket_client</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1a88be499c8f8e8c66afe04ef220454edd" kind="function"><name>user</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ade8629e4e9134c98c07004c6f02faaaf" kind="function"><name>user</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1ad65db9c59e87909dfc563ac363944cdb" kind="function"><name>client_id</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1app_1_1App_1aab153c7dd438e6dd616345627e462a38" kind="function"><name>client_id</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow" kind="class"><name>Client::client::application::widgets::custom::battleships_window::BattleshipWindow</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1a7c933d800721841ab85be93da0db8a9e" kind="variable"><name>switch_window</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1ad957d4470269eff2dd70638dd1cfcdc5" kind="function"><name>receive_message</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState" kind="class"><name>Client::client::tools::enums::ButtonState</name>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState_1af01f716e4f7e23e7f4412e9e133618ff" kind="variable"><name>PLAY</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState_1ac099901cfbcaba32b6a8554da9caa7e1" kind="variable"><name>CANCEL</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1dataclasses_1_1Cell" kind="class"><name>Client::client::dataclasses::Cell</name>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Cell_1a02d24b8ce1cce88ed8123c906d15093e" kind="variable"><name>x</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Cell_1acb53083232ff1bf7b2f80622cc6d959d" kind="variable"><name>y</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Cell_1a3a78c5e260b67624c3c41bf025424161" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" kind="class"><name>Client::client::application::widgets::chat::chat_area::ChatArea</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ac46c02ae3961fb62f2913893f92b66f9" kind="variable"><name>_contact</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1aa022e914c47d96a837cecddcef0aa5e3" kind="variable"><name>_textboxes</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kind="variable"><name>_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a1301ecbb32bb91b02ccf27eca439fa82" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a4502b8481c2621929a43555a8acbeaf9" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a6147e6476962df7b428650bbe4c81b6f" kind="function"><name>add_textbox_from_message</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a829bd7c750fb43e023ed0b67e797ebc2" kind="function"><name>resizeEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a05e59b56401978d23db6226e4219a1a1" kind="function"><name>contact</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a929b6d70dd8106e64ffa89f6a02216c7" kind="function"><name>_add_textbox</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget" kind="class"><name>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a4fa4e0b69a519b4b629e1cdf8daf672a" kind="variable"><name>return_pressed</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1aa325e86384b847c6c3a8edeb00fbb76b" kind="variable"><name>max_height</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1afaac3ef2a96b76a90f878fa18c6ddd12" kind="variable"><name>min_height</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a53a1ecbbdabdc29cd5ac64d085a29ee2" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a5fa4b8fe03b8ca20a8a8022e0dc9289c" kind="function"><name>send_message</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a7042e7b7a624da378359152ab9d24f9e" kind="function"><name>keyPressEvent</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText" kind="class"><name>Client::client::application::widgets::chat::chat_message_text::ChatMessageText</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText_1a408f530c066b019e0aa1a1f4e5e2ab9e" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea" kind="class"><name>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" kind="variable"><name>_chat_area</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a17f6ea70b568eb00063cf3a047c1e231" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1acaf509dc068e31378075a40317709a30" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a51321c41b8ed5b58f7b6408c450fc587" kind="function"><name>add_textbox_from_message</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox" kind="class"><name>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1aea45292175e09f4a3aa776b43e1a238e" kind="variable"><name>_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ae06ea2a76ee4ad066b92c75c2235fac4" kind="variable"><name>sender</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1add036fbd3c809dcb45fff821a7d75288" kind="variable"><name>content</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1abca41dd12e2f8f57d72a4e62dfede504" kind="variable"><name>sender_label</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a67526b89904fb29fcc43b04d6e2092b5" kind="variable"><name>content_text</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a0b3b9054272c7184b6fd057f45aa310b" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a9c9b47d73896a4d9bf42597a514e42fe" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a956135fb11383cf0b52498a7f17371a8" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a1bbd4c2ddacab1b565a6451a0bd83923" kind="function"><name>enterEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ab7755098ee21be64c7eafbccd8bb263c" kind="function"><name>leaveEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a6ce7982336967cbe8eb5ffc06d3f0c79" kind="function"><name>paintEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a87770199d5f13bd1d432c9be5a104100" kind="function"><name>from_message</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget" kind="class"><name>Client::client::application::widgets::chat::chat_widget::ChatWidget</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad002ff2a4fd4bf41fe994100d2a94f2b" kind="variable"><name>_contact</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad063d5eb13b5607bf94bc604dd260c9c" kind="variable"><name>_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1abc36b683a819fc8124e16dc26c3a1310" kind="variable"><name>_chat_scroll</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a593a4c95bcd829ac55904647d5252e64" kind="variable"><name>_chat_input</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a98b0b8c55215d69f6083e1edfc5e878c" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a90c0c5106ac596132056e84e7624c5cd" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a3fb2999ff709b264e05b2080f9fb0c44" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2b7b0a7197792c45c7e95238dfaf156e" kind="function"><name>showEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2dcf429341fd484dc7ef0bd15e00ad5c" kind="function"><name>send_message</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a1d77b1227d0e4d37bc1707b8a8683431" kind="function"><name>chat_input</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1af3ae781c16317ff912cedcc6f0e1d45d" kind="function"><name>chat_scroll</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ae468e3cb0496d3c8205417f8ddbea985" kind="function"><name>contact</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1network_1_1client_1_1Client" kind="class"><name>Client::client::network::client::Client</name>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1aae585bc7e3594fbff7fa7d6f732c5147" kind="variable"><name>data_received</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1ae0777049eaafda3a0ea9ff03e3f92946" kind="variable"><name>__SERVER_IP</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a2f62ccfa11a48f4983913160912ae7bb" kind="variable"><name>__SERVER_PORT</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1ab53a409fb79b63ce376a8e414de03e57" kind="variable"><name>_socket</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a84eddceb0513b45b1df8ef6d7b5d5890" kind="variable"><name>running</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a48d145aa63ac8f676dc4d924d4a0c4ae" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a7d2493be307d444c4014ab46b7c2b7d1" kind="function"><name>start</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a6361b5914a9b3cbe78ea534fd7d5a240" kind="function"><name>send_request</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a2156814494de0f709154dcc1d5e5d299" kind="function"><name>listen</name></member>
+    <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a4fbf7b48424351757a69c431434a4056" kind="function"><name>stop</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1network_1_1client_1_1Client" kind="class"><name>Server::server::network::client::Client</name>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af0f1ff9063550e8c55a87f1e9e637dee" kind="variable"><name>ip</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a1d6213689b9ed58bae8497f7f7eb7f2a" kind="variable"><name>port</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af1e106f60a4bb3fd6bc3cdbaf104dd54" kind="variable"><name>id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1ae085efc64e4c600d06dfa286ea58543a" kind="variable"><name>nickname</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a5b471f7124f570b7773e5c8e9db7db6e" kind="variable"><name>reader</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a482e1f98678533821a59dda2e2372e46" kind="variable"><name>writer</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1aa572605094bc32a4a5a15b53930bb251" kind="variable"><name>ships_data</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a8e9d21c622e91beafe197ab3ce8b47fd" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" kind="class"><name>Client::client::application::windows::home_window::ContainerWidget</name>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" kind="variable"><name>play_button</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" kind="variable"><name>login</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a508bbf4e7ceca72e09ce51d14d9db5e5" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a3910cd9ac551882d33ba97deb4c9043d" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1ad9d549bb65879839b583f04bb851df70" kind="function"><name>init_widget</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1controller_1_1Controller" kind="class"><name>Client::client::application::controller::Controller</name>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a2c87fe2b2c978f09d9d79d82eb48d622" kind="variable"><name>current_window</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a5b98a9ac480f1473ed8419c7e1f7abeb" kind="variable"><name>home_window</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a12cc7684b66707dd1c54f6dcbbb35c2d" kind="variable"><name>game_window</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a770e089127a48cff76bba84dfdedf016" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1aab6c1c320d125cb1b6ecab657dfa57dc" kind="function"><name>show_game</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a8440a9908fc1c2ed417d88cef8d7d84e" kind="function"><name>show_home</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1ac026bf5ff210b550f86dc6009d6d6c73" kind="function"><name>switch_emitted</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip" kind="class"><name>Client::client::application::widgets::grid::display_ship::DisplayShip</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab6ca85a04a856b4b426c60cf3f39af36" kind="variable"><name>_size</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab13cb025442afc9368e56748c6bc87f8" kind="variable"><name>count</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a4074073db56d97c3de4369c8c9e72643" kind="variable"><name>label</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ae2dcac50b139fa0aaddbb4f14702b1b2" kind="variable"><name>ship_widget</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1aae900d2075f9ac2bc996887a4a51899d" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a2885026826b9168e3f8a6af377105758" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1adad345fbbc7b7de2ee3c72b8369a3acf" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a227993efe3a45bf3dd654c17155bf124" kind="function"><name>use_ship</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer" kind="class"><name>Client::client::application::widgets::grid::display_ship::DisplayShipContainer</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer_1a3d7615189559f50aa12c778681cb415e" kind="variable"><name>ships</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer_1ada932c4fdb0c73e1cdd00a5f48a2ffc7" kind="variable"><name>button</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer_1a701219a443aa3c6f39d95aa18bcacef5" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer_1a16b371927a7f304c8f217e6c68759b0f" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShipContainer_1a864f5e926404948a8ef749f900f953f3" kind="function"><name>init_widgets</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget" kind="class"><name>Client::client::application::widgets::custom::frameless_widget::FramelessWidget</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1aa5d96c1df35dd67f150abea0df1ff3ff" kind="variable"><name>__margin</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1af0687edb146392da1af8e1b695ef658e" kind="variable"><name>__cursor</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a939000208c2ac51de0dd9cd3fc705cb8" kind="variable"><name>__rect</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a97ea4c7639fb527d4836d3a92e6f8ff8" kind="variable"><name>__min_width</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1ae59daae7f38db7c6ea76c9339186f2c1" kind="variable"><name>__min_height</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a35a261d38cb1e7b14c05ad71bf7ba44a" kind="variable"><name>__hoveredOnEdge</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1ab3e95af5a3b9e40185d9906ac62cd5e2" kind="variable"><name>__resizeEnabled</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1ae3c4288b8d75c4f02f59e486b87b3b2a" kind="variable"><name>__offset</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a38ca6a75c2f5228b6bd37d2bf11186f7" kind="variable"><name>__moving</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1aa7126b9feb503db29b9d89fdba704ca0" kind="variable"><name>__top</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1aeb6719146284a193268da289b3569f65" kind="variable"><name>__bottom</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a48f9e397fc39154d6df54dc67a8b828c" kind="variable"><name>__left</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1abf59ca046e0bfc2caabc381083d4096c" kind="variable"><name>__right</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a79cea16c3b988a55350e19e5d15faffb" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1ae7f3d9e1cd67f52ff34ad1ca03cbda4c" kind="function"><name>mousePressEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a4a6ea8627d05a08e7e0c726c8ecd8e64" kind="function"><name>mouseMoveEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1af3c161355add745130c7f5a16c5185ce" kind="function"><name>mouseReleaseEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a7559b735accac815bc93253aa7229136" kind="function"><name>__initUi</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a826e96145fca214083d33b835af6a7ab" kind="function"><name>__initPosition</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a9c407ea98d800430656c0cf41771e37b" kind="function"><name>__setCursorShapeForCurrentPoint</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a15ddf3a3d795ff8250fbbb1cd3df8358" kind="function"><name>__isCursorHoveredOnInnerWidget</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget_1_1FramelessWidget_1a995093ea0bc35f7f008d81a04be41d8e" kind="function"><name>__resize</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" kind="class"><name>Server::server::tools::from_dict_mixin::FromDictMixin</name>
+    <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" kind="function"><name>from_dict</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1game_1_1game_1_1Game" kind="class"><name>Server::server::game::game::Game</name>
+    <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1adfbc13a3e3279f680af1c4406f8e5b52" kind="variable"><name>int</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a54a6d9fd564a846d662e36f3554d89a0" kind="variable"><name>bool</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a246bea85e2ddbf9bb5637c8ebb37d943" kind="variable"><name>finished</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a81592769494eea38068dbcb60afaec99" kind="function"><name>process_turn</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a08dc4808b0d483ca152d7e55243f78b1" kind="function"><name>__repr__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1GameFinishedWorker" kind="class"><name>Client::client::workers::GameFinishedWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1GameFinishedWorker_1a4883af6cbbae25be8d08c5c529698d18" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1GameFoundWorker" kind="class"><name>Client::client::workers::GameFoundWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1GameFoundWorker_1ab4bdb41c86f76950fd00f9d37dc91ba2" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1handlers_1_1GameHandler" kind="class"><name>Client::client::handlers::GameHandler</name>
+    <member refid="classClient_1_1client_1_1handlers_1_1GameHandler_1ac77b96adb29036809b60c3c504ec5c47" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1handlers_1_1GameHandler" kind="class"><name>Server::server::handlers::GameHandler</name>
+    <member refid="classServer_1_1server_1_1handlers_1_1GameHandler_1add5063f9d160efb200bb5bf28c430739" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1GameMessageWorker" kind="class"><name>Client::client::workers::GameMessageWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1GameMessageWorker_1a9ae8cd3af70151d8d22c9f2e30565dd6" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1workers_1_1GameMessageWorker" kind="class"><name>Server::server::workers::GameMessageWorker</name>
+    <member refid="classServer_1_1server_1_1workers_1_1GameMessageWorker_1a745288011f1a5ae640556e7e5bcf18a8" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1GameStartWorker" kind="class"><name>Client::client::workers::GameStartWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1GameStartWorker_1abde3643a6433dff4bdd296c130bc9497" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" kind="class"><name>Client::client::tools::enums::GameState</name>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8ce17bc77af37b5fbbd1443f237ab1a7" kind="variable"><name>PLACEMENT</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a49d0dbe8fd4ad8c60efef6fc2ab1e11d" kind="variable"><name>PROGRESS</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8649d7c710c758e3a4b2120c6d3c0c62" kind="variable"><name>FINISHED</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1ab685fd05121a2a0a3c895396f3bdb1cb" kind="variable"><name>WAITING</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow" kind="class"><name>Client::client::application::windows::game_window::GameWindow</name>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a5c608b2d356220fb026da1c1c30acc36" kind="variable"><name>game_state_label</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa6833fb70e337f719d2693d503425668" kind="variable"><name>game_state</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a1186ef5ad3036a485717be191acce7a4" kind="variable"><name>grid_enemy</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aeb79f868dacc6dd0ff066abf2bbedf38" kind="variable"><name>grid_ally</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23702909e5af1a11b6c7b3380b242c68" kind="variable"><name>chat_widget</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a6f6b7fb4f90bc02db4b04b82046daa1a" kind="variable"><name>battleship_widget</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a47a22f9c55ebc0d1ed46931e1f1c3044" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac05ab36af435742d467f21822113e020" kind="function"><name>update_state</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23390fff9c9ebdb201f7671abe227706" kind="function"><name>update_enemy_grid</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ad0fe768fed77b26289dd61113db887d7" kind="function"><name>update_ally_grid</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a31f3f59d4ebd633c435af5dc95179370" kind="function"><name>receive_message</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a3d2dc968e1ed03c9cad1c0215840ecf6" kind="function"><name>start_game</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a0f2cfcbeadaba26419f53e6ccd61b362" kind="function"><name>send_hit</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a4460082ea76963ebdd38ba3221551db8" kind="function"><name>send_placement</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa04d0e2bc88769035cbbc7e41b693cee" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac10eec134bb63f9c730bf973cd661821" kind="function"><name>init_widgets</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid" kind="class"><name>Client::client::application::widgets::grid::grid::Grid</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a918e083bb8710395e602bab64a39f789" kind="variable"><name>ship_dropped</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a83c19720ddd2334798b1015a770963d0" kind="variable"><name>cells</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ac481716a6764c697e7216d17f0014349" kind="variable"><name>waiting_cell</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a2b02fe03cd3f37406797406a1e7ad412" kind="variable"><name>ally_grid</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3a9eaf570f54b836c9270c69ed518f01" kind="variable"><name>placed_ships</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a50319677d50711683130e292a6e855dc" kind="variable"><name>_size</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a8ff52c98daf7a20ad5c706de4a906af7" kind="variable"><name>_parent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a4405ee4d91a0ef1c8f02fe7343052b2b" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a0fe5615abb66dd95bdff14e463cd1923" kind="function"><name>set_cell_waiting</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3025f6d9fe4bffc5a96c67c53ff98878" kind="function"><name>reset_waiting</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a5af2d1ac7234fe1690a6f8a6e9b97442" kind="function"><name>dragEnterEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a9248eb4eb5bfe166df65ba472334b5c9" kind="function"><name>dropEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a51236767df372275f4ad62821f17d300" kind="function"><name>place_ship</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a448f2c4e25747f04a3cf3ea8658d1240" kind="function"><name>update_grid_state</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a7714d6ed3537c0cc955e6dbc66548ab0" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ab9e2ef5c04ccf02bcb3b71c47eb3c2b4" kind="function"><name>init_grid_button</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell" kind="class"><name>Client::client::application::widgets::grid::grid_cell::GridCell</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a86690cd75e99e32b0a047609f131e1a7" kind="variable"><name>cell_clicked</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a24571a33564b246a4f15739f2eaa107c" kind="variable"><name>_cell_state</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1ab311eef55596606c5565dfc7476f8c92" kind="variable"><name>_x</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1aa606e2911aa71de1e3bdccd36585f264" kind="variable"><name>_y</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1ae3c746eb3c77f565c2b4a660e8a66c4e" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a0cf5a2b48969eaefc9a086b789b242eb" kind="function"><name>mousePressEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a8a49ed50f5bff78205647636a8304280" kind="function"><name>paintEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a7f22b02948d03a75e1c65c190110a3fb" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1ab95ddb70acbc3dbe2008e995925b6632" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell_1_1GridCell_1a144fac36fe1e94207781051c70c04815" kind="function"><name>update_style</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" kind="class"><name>Client::client::tools::enums::GridCellState</name>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1ae717e8f2aa0a289ac97ab4ff4b68122b" kind="variable"><name>MISS</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a361c7db804cc8198e8dc32f2a7305e04" kind="variable"><name>HIT</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a3680ee8074bbdc811ae9d5ca6f6d88f7" kind="variable"><name>WATER</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a0a10a684073fb7df5f14a93d52481a4f" kind="variable"><name>SHIP</name></member>
+    <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a6624fc133d7046629ce8432e101ec914" kind="variable"><name>WAITING</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer" kind="class"><name>Client::client::application::widgets::grid::grid::GridContainer</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ae96284a3df45ba6f34afc19b2c61f536" kind="variable"><name>_parent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a17a73fd2411f517d1cd52b557f4c4437" kind="variable"><name>label</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ab69f47cd0463ef4c4e41dca6c2f444d3" kind="variable"><name>grid</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a75adc3fd504959849ae7298cf13bdb90" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a2b7cd0b14e78dfdb4b1b5443952e5d32" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1adfbb96e0d9d4aca9486cf997cc2ba5b8" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a660dfb962d8326ea28a57ec5479c45e6" kind="function"><name>get_placement</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1abc_1_1Handler" kind="class"><name>Client::client::abc::Handler</name>
+    <member refid="classClient_1_1client_1_1abc_1_1Handler_1a5a38de2e17f7c9fa92faba82d0082eec" kind="variable"><name>dict</name></member>
+    <member refid="classClient_1_1client_1_1abc_1_1Handler_1a5c1a251471c22b864426ed31a9b0db96" kind="function"><name>add_tree_object</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1abc_1_1Handler" kind="class"><name>Server::server::abc::Handler</name>
+    <member refid="classServer_1_1server_1_1abc_1_1Handler_1ab96ab49b3dd90850ef9d33dbb3f79a0c" kind="variable"><name>dict</name></member>
+    <member refid="classServer_1_1server_1_1abc_1_1Handler_1a21a4706ac87fe29e58a546ee06bd8f4c" kind="function"><name>add_tree_object</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1HitRequestWorker" kind="class"><name>Client::client::workers::HitRequestWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1HitRequestWorker_1add6343ef30fccc0d17bb1f5033837fad" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1workers_1_1HitResponseWorker" kind="class"><name>Client::client::workers::HitResponseWorker</name>
+    <member refid="classClient_1_1client_1_1workers_1_1HitResponseWorker_1aaeee64f15af8ce391c451022db4c4783" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1workers_1_1HitWorker" kind="class"><name>Server::server::workers::HitWorker</name>
+    <member refid="classServer_1_1server_1_1workers_1_1HitWorker_1aa761fd4cb4375223ccb667cd57c393bb" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" kind="class"><name>Client::client::application::windows::home_window::HomeWindow</name>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a872cbe4da22854e1ce72d5592d69db94" kind="variable"><name>left_widget</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a13ee86ebf1db52627147facdb9b9a64d" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a6ee1e0755a5eae2c6824296d7fd625ad" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a33a0cbc140c57e0aebf5a28569ad229b" kind="function"><name>init_widget</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login" kind="class"><name>Client::client::application::widgets::login::login::Login</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a7b6f00a70efe5c1a37fe0bd842698dc3" kind="variable"><name>lineedit_username</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1aee4ef3ae2b7f939ed7805a3fdc3115b7" kind="variable"><name>lineedit_id</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a3b743f47f47497eced641447e7f09f01" kind="variable"><name>label_username</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a78c00de5f501864ac4bf11942f0e27c2" kind="variable"><name>label_id</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af30f92379c9a219c1de1963b08bab7b8" kind="variable"><name>submit</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a728f56b78e48acaf7a5182929c888545" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af744cdbfaa900f2c25d068f27e061011" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a786e35b4e905902e70620e0e0000a749" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1add939cfd01e45b73ed79d26c2980a44a" kind="function"><name>get_cred</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1game_1_1map_1_1Map" kind="class"><name>Server::server::game::map::Map</name>
+    <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" kind="variable"><name>_size</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a74613684f3995ecd0520494cbb588613" kind="variable"><name>_map_matrix</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a3fff5929e214fe4dc68cf4aa5056cfb6" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a25379d3882a22910af8921d4faf4143e" kind="function"><name>map_matrix</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler" kind="class"><name>Server::server::handlers::MatchmakingHandler</name>
+    <member refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler_1aeeb8e353792e57342768db662f18f310" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker" kind="class"><name>Server::server::workers::MatchmakingInWorker</name>
+    <member refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker_1ac1625b8c0be4c313dad4b7c9dbcb1d12" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker" kind="class"><name>Server::server::workers::MatchmakingOutWorker</name>
+    <member refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker_1ad4d092e7e1fb538c28e4370247e1c38a" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1dataclasses_1_1Message" kind="class"><name>Client::client::dataclasses::Message</name>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Message_1a5b3cc6580ed9dec00cd7b12dcac2adf3" kind="variable"><name>_sender</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Message_1ab721ada83a1f416660ed1053d3e0ad82" kind="variable"><name>_content</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Message_1a877434b0dd1736cf1d80443e69afd7d0" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Message_1a8713219f6ae0eda40028520b776b5305" kind="function"><name>sender</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Message_1a674fd6913dd00e0020d8f30d1acc6e10" kind="function"><name>content</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1network_1_1pair_1_1Pair" kind="class"><name>Server::server::network::pair::Pair</name>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a3b23026209535ccd8924778630f8e01e" kind="variable"><name>game_id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8d42d65a1d7f7885ed399648c4d76b6d" kind="variable"><name>first_client</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aceccd5500dd6abc0286856b07cddd7b5" kind="variable"><name>second_client</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aa1dbcdcc842f40f7795dfb2d4f8d1836" kind="variable"><name>game</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a35e71b0ada560e64b42707f6eb67d5a7" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a91dfb04c4ad4b4b8a81f754aeaa71227" kind="function"><name>init_pair</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a10a59887265a4c7d08ed487e05ec7666" kind="function"><name>client_placement</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a9bf99c6aba8c6b8e890c14bde1785298" kind="function"><name>client_hit</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a68a4db0f0ecfc03c7c3ace4080a68b1f" kind="function"><name>game_finish</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f4189318057475391621f90ecb33efd" kind="function"><name>start_game</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f57b33213f5d654fc488f703eb2fb71" kind="function"><name>send_message</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a19ca4c075a8c4b33ba6e1dbc47cbdacf" kind="function"><name>get_client_by_id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1ad4f02f7c0643ce2eebc0a16099b5e200" kind="function"><name>is_id_in_pair</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a677acd2287b53860b1704cbc2e37b86e" kind="function"><name>_get_paired_client</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1workers_1_1PlacementWorker" kind="class"><name>Server::server::workers::PlacementWorker</name>
+    <member refid="classServer_1_1server_1_1workers_1_1PlacementWorker_1a951f3ddc2a2931aecd88af6d97406758" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1game_1_1player_1_1Player" kind="class"><name>Server::server::game::player::Player</name>
+    <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" kind="variable"><name>_ships</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a01412a9a287e514d1a460db05e0c0f39" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a812fda28ce3ef99a6d7ed257e927bc1a" kind="function"><name>check_ship_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1ac396588f0fff000ccaea4884533b0948" kind="function"><name>check_all_sunk</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a17dddcc8d6214029c35319841360db3f" kind="function"><name>__repr__</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue" kind="class"><name>Server::server::matchmaking::queue::Queue</name>
+    <member refid="classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue_1aeeb156970fbd02f219d782f76d5463c8" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue_1a5f4dc7d4505148af8578cc9e2eecacdb" kind="function"><name>add_client</name></member>
+    <member refid="classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue_1adea3abbf0c910936518aa8d27297df7c" kind="function"><name>remove_client</name></member>
+    <member refid="classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue_1a50391f4c0cc1795f41c515938b3aab5e" kind="function"><name>match_players</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1handlers_1_1RootHandler" kind="class"><name>Client::client::handlers::RootHandler</name>
+    <member refid="classClient_1_1client_1_1handlers_1_1RootHandler_1ae44fe84153f5cfd985a8c8f3d6aaab32" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1handlers_1_1RootHandler" kind="class"><name>Server::server::handlers::RootHandler</name>
+    <member refid="classServer_1_1server_1_1handlers_1_1RootHandler_1a43b6f6ee304368bd0bf63497496bd1c8" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit" kind="class"><name>Client::client::application::widgets::custom::scaling_textedit::ScalingTextEdit</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit_1af97a0ab3548493b292a99b2943068ac1" kind="variable"><name>min_height</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit_1aed0324db09365c3ef8af1a696783a163" kind="variable"><name>max_height</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit_1ae08b562c00d89900ade4bdc3d4ae1a8e" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit_1a9ed5c274d2a350506988599d5c168300" kind="function"><name>line_count</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit_1a8035066bef4737322c30d92eec91beb3" kind="function"><name>resizeEvent</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame" kind="class"><name>Client::client::application::widgets::play_button::play_button::SearchGame</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a41452f81975c3e8f5bc29dae8ec5e44b" kind="variable"><name>start_time</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a0acf8060495bf64699c4af2ce32e4d6f" kind="variable"><name>button_state</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a9b0836b0719b19e1131234e53125cb1a" kind="variable"><name>play</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a414180f1144ba165317f2ff46f67cb4d" kind="variable"><name>label</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a6ac46bdf89619de83841f3f2bf125870" kind="variable"><name>timer</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1adfe415d8d119c49086888a14ba34a27d" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a12dccf79e8ebef0a0f1e90f2eaed6010" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1affba741923a171c71eb8039ca5aa984f" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a498fb98aa1961480fbc28c78ab9b4cf2" kind="function"><name>button_handler</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a43c13132978ac4fb531e040b48ed6023" kind="function"><name>start_timer</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1aee06c7b498de626d1f320b1eb55f51f9" kind="function"><name>cancel_play</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a1e338b842ee6b93bac71f2adb53bf95f" kind="function"><name>update_time</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1network_1_1server_1_1Server" kind="class"><name>Server::server::network::server::Server</name>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a92d5afa4ceb2e4f6e0c2d2ca505633f8" kind="variable"><name>_instance</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a0012b5aa8a09b1ea097010036dd654ae" kind="variable"><name>mm_queue</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1ace0c1dac36103ffce618ee347824535c" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a7c80548b9215f1b6976b34431b4003c0" kind="function"><name>create_pair</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1aa0e339138ab1eacdff4f1a2e7f180b1b" kind="function"><name>handle_client</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1af081f1dede38481d7ff2d93086631659" kind="function"><name>start</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1ab85bb248b74469810b47c8ec331d49a1" kind="function"><name>get_pair_from_client_id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a8bdeeaa21feedc65a72558896b70a265" kind="function"><name>get_pair_from_game_id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a84d910bc4acd7a3bb3f0f02bbe587753" kind="function"><name>get_client_from_id</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1aaf04d76688eef653ca14f44560277fbe" kind="function"><name>add_pair</name></member>
+    <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a08dd5888b4ebe82b18f85605b6bec500" kind="function"><name>get_instance</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1dataclasses_1_1Ship" kind="class"><name>Client::client::dataclasses::Ship</name>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a22a8e4dc7920f8485d7ce4d897ea5585" kind="variable"><name>size</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a02fcaba0d42eda5874cd12f71ac06151" kind="variable"><name>start_cell</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1ae2932ab20b65e6fba05bbc69053f679a" kind="variable"><name>cells</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a61d40e27a4dc8833d2e39f536d6e7855" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a149e0b1f0b603409ebf5672ad9013094" kind="function"><name>to_dict</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1game_1_1ship_1_1Ship" kind="class"><name>Server::server::game::ship::Ship</name>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" kind="variable"><name>bool</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a5bdd67a47ddeac085edae5133ee95cc5" kind="variable"><name>_is_sunk</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a320bc1cec94d5ed8365e2223e79e763b" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae468479ec8f62734d5cd5b51cd263f45" kind="function"><name>__repr__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a459c295f1e8e111d3834e3aed3abfda1" kind="function"><name>pos</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1adb3b625b81e186b154d4dd25c35532de" kind="function"><name>size</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a752c0733d57cca1cfeeb709bbc5a81b5" kind="function"><name>is_sunk</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ac954e1e4fc62afc2bfeb4b9f7f5caa6a" kind="function"><name>check_for_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae4a297602c59b82743c68e91e21115d8" kind="function"><name>check_for_sunk</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell" kind="class"><name>Server::server::game::ship_cell::ShipCell</name>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" kind="variable"><name>bool</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ac54cb54cb771b5c509e25f183cfb8969" kind="variable"><name>_is_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a9aa245d8e85d2510c3bb6d0c603e4384" kind="variable"><name>is_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a646e9c6dd13a5b1d37b178db925fcc26" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ae0abfe6e9cb9734add83363a6408967c" kind="function"><name>__repr__</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a52390a9a53a203ba66b7aa6db51f629c" kind="function"><name>pos</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af415a14f9104efddaca291a87f8f2bfc" kind="function"><name>is_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a6d448c32edd7b67e0497bc5557e5cd79" kind="function"><name>is_hit</name></member>
+    <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af7762415361d1aa1a34d8ce63845c02d" kind="function"><name>check_for_hit</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget" kind="class"><name>Client::client::application::widgets::grid::display_ship::ShipWidget</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1abd069c35b14d82ebf11ad5ed6e5219b7" kind="variable"><name>_parent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1aa2a055b672e4e4cd66da896209f210ed" kind="variable"><name>_size</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1ae11805ba49734d80c780b02968d8d648" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1a33e0fc67f061531e84bac693d24b20d7" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1a93869bef9ac2d2a68a4c055903d1b5b2" kind="function"><name>init_widgets</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1a10f36e11c2fe3b989aaac1406d6bb9b7" kind="function"><name>mousePressEvent</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1ShipWidget_1a73ac58a3c9d40af064f4b8e8aea627c6" kind="function"><name>start_drag</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" kind="class"><name>Server::server::tools::enums::Status</name>
+    <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1aae1cdf5563e4ecf026bbd4483fed91da" kind="variable"><name>MISS</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a52cf41547c8580689bb3c09f4f06c993" kind="variable"><name>HIT</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a31ca50a0c8387c0132105591f0c175fc" kind="variable"><name>SUNK</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a87e5a12089260cec40a0e66cd611d85b" kind="variable"><name>ALL_SUNK</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer" kind="class"><name>Client::client::application::widgets::custom::timer::Timer</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" kind="variable"><name>timer</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a3fbaa03ec49cf64c66d163e90f0d0458" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" kind="function"><name>update_time</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1abc_1_1TreeObject" kind="class"><name>Client::client::abc::TreeObject</name>
+    <member refid="classClient_1_1client_1_1abc_1_1TreeObject_1a5bcf652f35072071a65e551453f772b2" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1abc_1_1TreeObject" kind="class"><name>Server::server::abc::TreeObject</name>
+    <member refid="classServer_1_1server_1_1abc_1_1TreeObject_1a005c60fb2ec7e373cbf8979d0867f6d4" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input_1_1UsernameInput" kind="class"><name>Client::client::application::widgets::custom::username_input::UsernameInput</name>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input_1_1UsernameInput_1aaa5d68f50deb76be7250b9954a3dd787" kind="function"><name>__init__</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input_1_1UsernameInput_1a08dce95ea75378abaec178b080c52a79" kind="function"><name>init_layout</name></member>
+    <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input_1_1UsernameInput_1aca3b37f582548c6bc095b5cb9d77f514" kind="function"><name>display_text</name></member>
+  </compound>
+  <compound refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kind="class"><name>Server::server::tools::vector2::Vector2</name>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a35754aea22eb00ddd1438a68c9a93654" kind="variable"><name>_x</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a4fc2fa78ed2fe0011cb81c6998cd35c0" kind="variable"><name>_y</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac125a147f092604e56200da257d9d256" kind="function"><name>__init__</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a3c3869e380409f9de95fa8019f8aed23" kind="function"><name>x</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a236567ad5ffd460c73688b4efce09d97" kind="function"><name>y</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ae700213274df8889f44ca7b300925654" kind="function"><name>x</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a719b642e16825cbab343fe772e2dfd8a" kind="function"><name>y</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8d69715293488b039a3d7295e863e6a0" kind="function"><name>equals</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8b761a8cb5c76670b3a2d42df38b0f35" kind="function"><name>__mul__</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a88a8ac9ecf3ca91339f9395d52e9d465" kind="function"><name>__eq__</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac1086661e03adeed8f61a600b20a0c4d" kind="function"><name>__add__</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac4dfd784b24345c5d3fca2394d2e49ca" kind="function"><name>__repr__</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a22c0850e30fd187ddaaa8c870f61d35e" kind="function"><name>one</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a58a160a7fb5f56342b453ff0cc35ad38" kind="function"><name>zero</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1aac0082143a85076f51d408084a0b4d35" kind="function"><name>up</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a2bf0549430202adb8fbfd8ab8428a608" kind="function"><name>down</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a83f46928d496bfb8cf41a730d5a96773" kind="function"><name>left</name></member>
+    <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a09399cd12b960f3417d3df93627d0c5f" kind="function"><name>right</name></member>
+  </compound>
+  <compound refid="classClient_1_1client_1_1abc_1_1Worker" kind="class"><name>Client::client::abc::Worker</name>
+  </compound>
+  <compound refid="classServer_1_1server_1_1abc_1_1Worker" kind="class"><name>Server::server::abc::Worker</name>
+  </compound>
+  <compound refid="namespaceClient" kind="namespace"><name>Client</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client" kind="namespace"><name>Client::client</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1abc" kind="namespace"><name>Client::client::abc</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application" kind="namespace"><name>Client::client::application</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1app" kind="namespace"><name>Client::client::application::app</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1controller" kind="namespace"><name>Client::client::application::controller</name>
+    <member refid="namespaceClient_1_1client_1_1application_1_1controller_1a7ae504d4212d3f73006ec97921453413" kind="variable"><name>WINDOW_TYPES</name></member>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets" kind="namespace"><name>Client::client::application::widgets</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat" kind="namespace"><name>Client::client::application::widgets::chat</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area" kind="namespace"><name>Client::client::application::widgets::chat::chat_area</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget" kind="namespace"><name>Client::client::application::widgets::chat::chat_input_widget</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text" kind="namespace"><name>Client::client::application::widgets::chat::chat_message_text</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area" kind="namespace"><name>Client::client::application::widgets::chat::chat_scroll_area</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget" kind="namespace"><name>Client::client::application::widgets::chat::chat_textbox_widget</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget" kind="namespace"><name>Client::client::application::widgets::chat::chat_widget</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom" kind="namespace"><name>Client::client::application::widgets::custom</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window" kind="namespace"><name>Client::client::application::widgets::custom::battleships_window</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget" kind="namespace"><name>Client::client::application::widgets::custom::frameless_widget</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit" kind="namespace"><name>Client::client::application::widgets::custom::scaling_textedit</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer" kind="namespace"><name>Client::client::application::widgets::custom::timer</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input" kind="namespace"><name>Client::client::application::widgets::custom::username_input</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid" kind="namespace"><name>Client::client::application::widgets::grid</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship" kind="namespace"><name>Client::client::application::widgets::grid::display_ship</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid" kind="namespace"><name>Client::client::application::widgets::grid::grid</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell" kind="namespace"><name>Client::client::application::widgets::grid::grid_cell</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1login" kind="namespace"><name>Client::client::application::widgets::login</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1login_1_1login" kind="namespace"><name>Client::client::application::widgets::login::login</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1play__button" kind="namespace"><name>Client::client::application::widgets::play_button</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button" kind="namespace"><name>Client::client::application::widgets::play_button::play_button</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1windows" kind="namespace"><name>Client::client::application::windows</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1windows_1_1game__window" kind="namespace"><name>Client::client::application::windows::game_window</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1application_1_1windows_1_1home__window" kind="namespace"><name>Client::client::application::windows::home_window</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1dataclasses" kind="namespace"><name>Client::client::dataclasses</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1handlers" kind="namespace"><name>Client::client::handlers</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1network" kind="namespace"><name>Client::client::network</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1network_1_1client" kind="namespace"><name>Client::client::network::client</name>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1aa519dec3f1f7f00663b79f1833bf119e" kind="variable"><name>HOST</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1a95ab5cc30f2b13e2336aafc92d13d346" kind="variable"><name>PORT</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1a03cc782d77c2c3b9165c878c0e8e5f41" kind="variable"><name>client_id</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1a1ee4863f40b8d223689bfb02e85d655d" kind="variable"><name>data</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1a2a754cbdee185272564d1696e39b61f7" kind="variable"><name>ship_cells</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1ac00091be954ec50633f38a65f3b2358c" kind="variable"><name>data_placement</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1ae57a3010354ea0d676042c040098722b" kind="variable"><name>data_message</name></member>
+    <member refid="namespaceClient_1_1client_1_1network_1_1client_1a7a4f32579b0f269dfbfd90a33f15d705" kind="function"><name>dict_to_encoded_utf_8</name></member>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1tools" kind="namespace"><name>Client::client::tools</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1tools_1_1enums" kind="namespace"><name>Client::client::tools::enums</name>
+  </compound>
+  <compound refid="namespaceClient_1_1client_1_1workers" kind="namespace"><name>Client::client::workers</name>
+  </compound>
+  <compound refid="namespaceClient_1_1main" kind="namespace"><name>Client::main</name>
+    <member refid="namespaceClient_1_1main_1a4fa19b9e9f404c6cf8f08e415474790d" kind="variable"><name>app</name></member>
+  </compound>
+  <compound refid="namespaceServer" kind="namespace"><name>Server</name>
+  </compound>
+  <compound refid="namespaceServer_1_1main" kind="namespace"><name>Server::main</name>
+    <member refid="namespaceServer_1_1main_1ad03a9844964ae6b839cade36208822f8" kind="variable"><name>server</name></member>
+  </compound>
+  <compound refid="namespaceServer_1_1server" kind="namespace"><name>Server::server</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1abc" kind="namespace"><name>Server::server::abc</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1checks" kind="namespace"><name>Server::server::checks</name>
+    <member refid="namespaceServer_1_1server_1_1checks_1ae743df375408c6f4fc2151b9e1c41072" kind="function"><name>check_data_integrity</name></member>
+    <member refid="namespaceServer_1_1server_1_1checks_1af724c6e8fe6a665579264cb5c3f7e4bd" kind="function"><name>check_client_in_game</name></member>
+    <member refid="namespaceServer_1_1server_1_1checks_1aaa05506a380c93ff19e0576e6324dd55" kind="function"><name>check_client_paired</name></member>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game" kind="namespace"><name>Server::server::game</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game_1_1game" kind="namespace"><name>Server::server::game::game</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game_1_1map" kind="namespace"><name>Server::server::game::map</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game_1_1player" kind="namespace"><name>Server::server::game::player</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game_1_1ship" kind="namespace"><name>Server::server::game::ship</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1game_1_1ship__cell" kind="namespace"><name>Server::server::game::ship_cell</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1handlers" kind="namespace"><name>Server::server::handlers</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1matchmaking" kind="namespace"><name>Server::server::matchmaking</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1matchmaking_1_1queue" kind="namespace"><name>Server::server::matchmaking::queue</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1network" kind="namespace"><name>Server::server::network</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1network_1_1client" kind="namespace"><name>Server::server::network::client</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1network_1_1pair" kind="namespace"><name>Server::server::network::pair</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1network_1_1server" kind="namespace"><name>Server::server::network::server</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1tools" kind="namespace"><name>Server::server::tools</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1tools_1_1enums" kind="namespace"><name>Server::server::tools::enums</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin" kind="namespace"><name>Server::server::tools::from_dict_mixin</name>
+    <member refid="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin_1a31b3c40f7ba6d2fd1d70539d037c4108" kind="variable"><name>T</name></member>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1tools_1_1vector2" kind="namespace"><name>Server::server::tools::vector2</name>
+  </compound>
+  <compound refid="namespaceServer_1_1server_1_1workers" kind="namespace"><name>Server::server::workers</name>
+  </compound>
+  <compound refid="Client_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2chat_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2custom_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2grid_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2login_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2widgets_2play__button_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2application_2windows_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2network_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2tools_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2server_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2server_2game_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2server_2matchmaking_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2server_2network_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Server_2server_2tools_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="Client_2client_2abc_8py" kind="file"><name>abc.py</name>
+  </compound>
+  <compound refid="Server_2server_2abc_8py" kind="file"><name>abc.py</name>
+  </compound>
+  <compound refid="app_8py" kind="file"><name>app.py</name>
+  </compound>
+  <compound refid="controller_8py" kind="file"><name>controller.py</name>
+  </compound>
+  <compound refid="chat__area_8py" kind="file"><name>chat_area.py</name>
+  </compound>
+  <compound refid="chat__input__widget_8py" kind="file"><name>chat_input_widget.py</name>
+  </compound>
+  <compound refid="chat__message__text_8py" kind="file"><name>chat_message_text.py</name>
+  </compound>
+  <compound refid="chat__scroll__area_8py" kind="file"><name>chat_scroll_area.py</name>
+  </compound>
+  <compound refid="chat__textbox__widget_8py" kind="file"><name>chat_textbox_widget.py</name>
+  </compound>
+  <compound refid="chat__widget_8py" kind="file"><name>chat_widget.py</name>
+  </compound>
+  <compound refid="battleships__window_8py" kind="file"><name>battleships_window.py</name>
+  </compound>
+  <compound refid="frameless__widget_8py" kind="file"><name>frameless_widget.py</name>
+  </compound>
+  <compound refid="scaling__textedit_8py" kind="file"><name>scaling_textedit.py</name>
+  </compound>
+  <compound refid="timer_8py" kind="file"><name>timer.py</name>
+  </compound>
+  <compound refid="username__input_8py" kind="file"><name>username_input.py</name>
+  </compound>
+  <compound refid="display__ship_8py" kind="file"><name>display_ship.py</name>
+  </compound>
+  <compound refid="grid_8py" kind="file"><name>grid.py</name>
+  </compound>
+  <compound refid="grid__cell_8py" kind="file"><name>grid_cell.py</name>
+  </compound>
+  <compound refid="login_8py" kind="file"><name>login.py</name>
+  </compound>
+  <compound refid="play__button_8py" kind="file"><name>play_button.py</name>
+  </compound>
+  <compound refid="game__window_8py" kind="file"><name>game_window.py</name>
+  </compound>
+  <compound refid="home__window_8py" kind="file"><name>home_window.py</name>
+  </compound>
+  <compound refid="dataclasses_8py" kind="file"><name>dataclasses.py</name>
+  </compound>
+  <compound refid="Client_2client_2handlers_8py" kind="file"><name>handlers.py</name>
+  </compound>
+  <compound refid="Server_2server_2handlers_8py" kind="file"><name>handlers.py</name>
+  </compound>
+  <compound refid="Client_2client_2network_2client_8py" kind="file"><name>client.py</name>
+  </compound>
+  <compound refid="Server_2server_2network_2client_8py" kind="file"><name>client.py</name>
+  </compound>
+  <compound refid="Client_2client_2tools_2enums_8py" kind="file"><name>enums.py</name>
+  </compound>
+  <compound refid="Server_2server_2tools_2enums_8py" kind="file"><name>enums.py</name>
+  </compound>
+  <compound refid="Client_2client_2workers_8py" kind="file"><name>workers.py</name>
+  </compound>
+  <compound refid="Server_2server_2workers_8py" kind="file"><name>workers.py</name>
+  </compound>
+  <compound refid="Client_2main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="Server_2main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="Conventions_8md" kind="file"><name>Conventions.md</name>
+  </compound>
+  <compound refid="DB_2DAL_2README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="documentation_8md" kind="file"><name>documentation.md</name>
+  </compound>
+  <compound refid="checks_8py" kind="file"><name>checks.py</name>
+  </compound>
+  <compound refid="game_8py" kind="file"><name>game.py</name>
+  </compound>
+  <compound refid="map_8py" kind="file"><name>map.py</name>
+  </compound>
+  <compound refid="player_8py" kind="file"><name>player.py</name>
+  </compound>
+  <compound refid="ship_8py" kind="file"><name>ship.py</name>
+  </compound>
+  <compound refid="ship__cell_8py" kind="file"><name>ship_cell.py</name>
+  </compound>
+  <compound refid="queue_8py" kind="file"><name>queue.py</name>
+  </compound>
+  <compound refid="pair_8py" kind="file"><name>pair.py</name>
+  </compound>
+  <compound refid="server_8py" kind="file"><name>server.py</name>
+  </compound>
+  <compound refid="from__dict__mixin_8py" kind="file"><name>from_dict_mixin.py</name>
+  </compound>
+  <compound refid="vector2_8py" kind="file"><name>vector2.py</name>
+  </compound>
+  <compound refid="md_Conventions" kind="page"><name>md_Conventions</name>
+  </compound>
+  <compound refid="md_DB_DAL_README" kind="page"><name>md_DB_DAL_README</name>
+  </compound>
+  <compound refid="md_documentation" kind="page"><name>md_documentation</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_a9045e8d75fbce2e5f877a231d192484" kind="dir"><name>Client/client/application</name>
+  </compound>
+  <compound refid="dir_77ef8da73ba4630f229251630a178884" kind="dir"><name>Client/client/application/widgets/chat</name>
+  </compound>
+  <compound refid="dir_b67603b242438b630c4ef63a78ee83ca" kind="dir"><name>Client/client</name>
+  </compound>
+  <compound refid="dir_922c588100a187620fdc1533bc178f73" kind="dir"><name>Client</name>
+  </compound>
+  <compound refid="dir_32c6512934ef6465ec36643f19b9ad80" kind="dir"><name>Client/client/application/widgets/custom</name>
+  </compound>
+  <compound refid="dir_f83dbdeac47e03b6589aa367be65cc75" kind="dir"><name>DB/DAL</name>
+  </compound>
+  <compound refid="dir_39ce8d35579d5eb10e41a1450265d156" kind="dir"><name>DB</name>
+  </compound>
+  <compound refid="dir_1f1ee67e48da01bdd0c747a8be200c3d" kind="dir"><name>Server/server/game</name>
+  </compound>
+  <compound refid="dir_eb4dd81cf444509379d66bab4e8bf058" kind="dir"><name>Client/client/application/widgets/grid</name>
+  </compound>
+  <compound refid="dir_2f5c9cf67e3f618e4a2c4f2e586608bd" kind="dir"><name>Client/client/application/widgets/login</name>
+  </compound>
+  <compound refid="dir_eeb0afeb66706e6e44782122b98c8967" kind="dir"><name>Server/server/matchmaking</name>
+  </compound>
+  <compound refid="dir_3653f965aa2763307183040ad41c109b" kind="dir"><name>Client/client/network</name>
+  </compound>
+  <compound refid="dir_ce0c16d09f564c170297b731f533aca5" kind="dir"><name>Server/server/network</name>
+  </compound>
+  <compound refid="dir_97461845f2c044b0171e9d120c8db310" kind="dir"><name>Client/client/application/widgets/play_button</name>
+  </compound>
+  <compound refid="dir_1a445cb237d74f7a5f8d11ec3b0585cc" kind="dir"><name>Server</name>
+  </compound>
+  <compound refid="dir_27b3b4e067b962c700f9124ec9dd03de" kind="dir"><name>Server/server</name>
+  </compound>
+  <compound refid="dir_7354cd245f4cfb94517c4359c72d6720" kind="dir"><name>Client/client/tools</name>
+  </compound>
+  <compound refid="dir_66e98add17bed1f888fce635a88a2716" kind="dir"><name>Server/server/tools</name>
+  </compound>
+  <compound refid="dir_71f09b1d021338fe339ece5ce40bf83b" kind="dir"><name>Client/client/application/widgets</name>
+  </compound>
+  <compound refid="dir_e108ef9fd95c12060b4cce13cde4bbf1" kind="dir"><name>Client/client/application/windows</name>
+  </compound>
+</doxygenindex>

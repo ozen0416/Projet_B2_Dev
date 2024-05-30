@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_97461845f2c044b0171e9d120c8db310" kind="dir">
+    <compoundname>Client/client/application/widgets/play_button</compoundname>
+    <innerfile refid="Client_2client_2application_2widgets_2play__button_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="play__button_8py">play_button.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/play_button/"/>
+  </compounddef>
+</doxygen>

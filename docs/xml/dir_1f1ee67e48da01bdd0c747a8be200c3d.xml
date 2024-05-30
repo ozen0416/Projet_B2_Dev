@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_1f1ee67e48da01bdd0c747a8be200c3d" kind="dir">
+    <compoundname>Server/server/game</compoundname>
+    <innerfile refid="Server_2server_2game_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="game_8py">game.py</innerfile>
+    <innerfile refid="map_8py">map.py</innerfile>
+    <innerfile refid="player_8py">player.py</innerfile>
+    <innerfile refid="ship_8py">ship.py</innerfile>
+    <innerfile refid="ship__cell_8py">ship_cell.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/game/"/>
+  </compounddef>
+</doxygen>

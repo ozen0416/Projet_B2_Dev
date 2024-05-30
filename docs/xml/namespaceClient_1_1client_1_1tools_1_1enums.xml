@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1tools_1_1enums" kind="namespace" language="Python">
+    <compoundname>Client::client::tools::enums</compoundname>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState" prot="public">Client::client::tools::enums::ButtonState</innerclass>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" prot="public">Client::client::tools::enums::GridCellState</innerclass>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" prot="public">Client::client::tools::enums::GameState</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/tools/enums.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

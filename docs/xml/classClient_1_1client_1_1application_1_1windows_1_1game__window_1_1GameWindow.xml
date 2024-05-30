@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::windows::game_window::GameWindow</compoundname>
+    <basecompoundref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow" prot="public" virt="non-virtual">Client.client.application.widgets.custom.battleships_window.BattleshipWindow</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a5c608b2d356220fb026da1c1c30acc36" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::game_state_label</definition>
+        <argsstring></argsstring>
+        <name>game_state_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="20" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa6833fb70e337f719d2693d503425668" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::game_state</definition>
+        <argsstring></argsstring>
+        <name>game_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="21" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a1186ef5ad3036a485717be191acce7a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::grid_enemy</definition>
+        <argsstring></argsstring>
+        <name>grid_enemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="24" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aeb79f868dacc6dd0ff066abf2bbedf38" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::grid_ally</definition>
+        <argsstring></argsstring>
+        <name>grid_ally</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="25" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23702909e5af1a11b6c7b3380b242c68" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::chat_widget</definition>
+        <argsstring></argsstring>
+        <name>chat_widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="26" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a6f6b7fb4f90bc02db4b04b82046daa1a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.game_window.GameWindow::battleship_widget</definition>
+        <argsstring></argsstring>
+        <name>battleship_widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="29" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a47a22f9c55ebc0d1ed46931e1f1c3044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.application.windows.game_window.GameWindow.__init__</definition>
+        <argsstring>(self, str contact, Optional[QWidget] parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[QWidget]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="18" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="18" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac05ab36af435742d467f21822113e020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.update_state</definition>
+        <argsstring>(self, GameState game_state)</argsstring>
+        <name>update_state</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" kindref="compound">GameState</ref></type>
+          <declname>game_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="36" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23390fff9c9ebdb201f7671abe227706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.update_enemy_grid</definition>
+        <argsstring>(self, dict data)</argsstring>
+        <name>update_enemy_grid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="47" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ad0fe768fed77b26289dd61113db887d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.update_ally_grid</definition>
+        <argsstring>(self, dict data)</argsstring>
+        <name>update_ally_grid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="52" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a31f3f59d4ebd633c435af5dc95179370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.receive_message</definition>
+        <argsstring>(self, dict data)</argsstring>
+        <name>receive_message</name>
+        <reimplements refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1ad957d4470269eff2dd70638dd1cfcdc5">receive_message</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="57" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a3d2dc968e1ed03c9cad1c0215840ecf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.start_game</definition>
+        <argsstring>(self, dict request)</argsstring>
+        <name>start_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="61" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a0f2cfcbeadaba26419f53e6ccd61b362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.send_hit</definition>
+        <argsstring>(self)</argsstring>
+        <name>send_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="67" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a4460082ea76963ebdd38ba3221551db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.send_placement</definition>
+        <argsstring>(self)</argsstring>
+        <name>send_placement</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="81" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="81" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa04d0e2bc88769035cbbc7e41b693cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="97" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac10eec134bb63f9c730bf973cd661821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.game_window.GameWindow.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/game_window.py" line="100" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="100" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Window of the game.
+Displays players&apos; grids, a chat and the history of past moves
+
+Whenever a ship is placed, all the ships check if it was them
+that was placed, if so, decrement the count of ships
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.windows.game_window.GameWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.windows.game_window.GameWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/windows/game_window.py" line="10" column="1" bodyfile="Client/client/application/windows/game_window.py" bodystart="10" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a47a22f9c55ebc0d1ed46931e1f1c3044" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a6f6b7fb4f90bc02db4b04b82046daa1a" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>battleship_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23702909e5af1a11b6c7b3380b242c68" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>chat_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa6833fb70e337f719d2693d503425668" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>game_state</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a5c608b2d356220fb026da1c1c30acc36" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>game_state_label</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aeb79f868dacc6dd0ff066abf2bbedf38" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>grid_ally</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a1186ef5ad3036a485717be191acce7a4" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>grid_enemy</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1aa04d0e2bc88769035cbbc7e41b693cee" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac10eec134bb63f9c730bf973cd661821" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a31f3f59d4ebd633c435af5dc95179370" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>receive_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a0f2cfcbeadaba26419f53e6ccd61b362" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>send_hit</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a4460082ea76963ebdd38ba3221551db8" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>send_placement</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a3d2dc968e1ed03c9cad1c0215840ecf6" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>start_game</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1a7c933d800721841ab85be93da0db8a9e" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>switch_window</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ad0fe768fed77b26289dd61113db887d7" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>update_ally_grid</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a23390fff9c9ebdb201f7671abe227706" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>update_enemy_grid</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1ac05ab36af435742d467f21822113e020" prot="public" virt="non-virtual"><scope>Client::client::application::windows::game_window::GameWindow</scope><name>update_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

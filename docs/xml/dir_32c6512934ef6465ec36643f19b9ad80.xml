@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_32c6512934ef6465ec36643f19b9ad80" kind="dir">
+    <compoundname>Client/client/application/widgets/custom</compoundname>
+    <innerfile refid="Client_2client_2application_2widgets_2custom_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="battleships__window_8py">battleships_window.py</innerfile>
+    <innerfile refid="frameless__widget_8py">frameless_widget.py</innerfile>
+    <innerfile refid="scaling__textedit_8py">scaling_textedit.py</innerfile>
+    <innerfile refid="timer_8py">timer.py</innerfile>
+    <innerfile refid="username__input_8py">username_input.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/custom/"/>
+  </compounddef>
+</doxygen>

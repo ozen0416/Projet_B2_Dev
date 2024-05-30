@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1aea45292175e09f4a3aa776b43e1a238e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="13" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ae06ea2a76ee4ad066b92c75c2235fac4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox::sender</definition>
+        <argsstring></argsstring>
+        <name>sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="15" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1add036fbd3c809dcb45fff821a7d75288" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="16" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1abca41dd12e2f8f57d72a4e62dfede504" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox::sender_label</definition>
+        <argsstring></argsstring>
+        <name>sender_label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="18" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a67526b89904fb29fcc43b04d6e2092b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox::content_text</definition>
+        <argsstring></argsstring>
+        <name>content_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="20" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a0b3b9054272c7184b6fd057f45aa310b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.__init__</definition>
+        <argsstring>(self, str sender, str content, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="8" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="8" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a9c9b47d73896a4d9bf42597a514e42fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="26" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a956135fb11383cf0b52498a7f17371a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="30" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a1bbd4c2ddacab1b565a6451a0bd83923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.enterEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>enterEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="38" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="38" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ab7755098ee21be64c7eafbccd8bb263c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.leaveEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>leaveEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="48" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a6ce7982336967cbe8eb5ffc06d3f0c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.paintEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>paintEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="52" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a87770199d5f13bd1d432c9be5a104100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox.from_message</definition>
+        <argsstring>(cls, message, parent=None)</argsstring>
+        <name>from_message</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="61" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="61" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_textbox_widget.ChatTextbox</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/chat/chat_textbox_widget.py" line="7" column="1" bodyfile="Client/client/application/widgets/chat/chat_textbox_widget.py" bodystart="7" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a0b3b9054272c7184b6fd057f45aa310b" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1aea45292175e09f4a3aa776b43e1a238e" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1add036fbd3c809dcb45fff821a7d75288" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>content</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a67526b89904fb29fcc43b04d6e2092b5" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>content_text</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a1bbd4c2ddacab1b565a6451a0bd83923" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>enterEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a87770199d5f13bd1d432c9be5a104100" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>from_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a9c9b47d73896a4d9bf42597a514e42fe" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a956135fb11383cf0b52498a7f17371a8" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ab7755098ee21be64c7eafbccd8bb263c" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>leaveEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1a6ce7982336967cbe8eb5ffc06d3f0c79" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>paintEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1ae06ea2a76ee4ad066b92c75c2235fac4" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>sender</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget_1_1ChatTextbox_1abca41dd12e2f8f57d72a4e62dfede504" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_textbox_widget::ChatTextbox</scope><name>sender_label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

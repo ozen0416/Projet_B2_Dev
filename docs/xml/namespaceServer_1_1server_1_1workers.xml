@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1workers" kind="namespace" language="Python">
+    <compoundname>Server::server::workers</compoundname>
+    <innerclass refid="classServer_1_1server_1_1workers_1_1HitWorker" prot="public">Server::server::workers::HitWorker</innerclass>
+    <innerclass refid="classServer_1_1server_1_1workers_1_1PlacementWorker" prot="public">Server::server::workers::PlacementWorker</innerclass>
+    <innerclass refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker" prot="public">Server::server::workers::MatchmakingInWorker</innerclass>
+    <innerclass refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker" prot="public">Server::server::workers::MatchmakingOutWorker</innerclass>
+    <innerclass refid="classServer_1_1server_1_1workers_1_1GameMessageWorker" prot="public">Server::server::workers::GameMessageWorker</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/workers.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

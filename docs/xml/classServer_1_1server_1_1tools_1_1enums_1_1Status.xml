@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1tools_1_1enums_1_1Status" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::tools::enums::Status</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1enums_1_1Status_1aae1cdf5563e4ecf026bbd4483fed91da" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Server.server.tools.enums.Status::MISS</definition>
+        <argsstring></argsstring>
+        <name>MISS</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/enums.py" line="5" column="1" bodyfile="Server/server/tools/enums.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a52cf41547c8580689bb3c09f4f06c993" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Server.server.tools.enums.Status::HIT</definition>
+        <argsstring></argsstring>
+        <name>HIT</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/enums.py" line="6" column="1" bodyfile="Server/server/tools/enums.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a31ca50a0c8387c0132105591f0c175fc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Server.server.tools.enums.Status::SUNK</definition>
+        <argsstring></argsstring>
+        <name>SUNK</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/enums.py" line="7" column="1" bodyfile="Server/server/tools/enums.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a87e5a12089260cec40a0e66cd611d85b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Server.server.tools.enums.Status::ALL_SUNK</definition>
+        <argsstring></argsstring>
+        <name>ALL_SUNK</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/enums.py" line="8" column="1" bodyfile="Server/server/tools/enums.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.tools.enums.Status</label>
+        <link refid="classServer_1_1server_1_1tools_1_1enums_1_1Status"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.tools.enums.Status</label>
+        <link refid="classServer_1_1server_1_1tools_1_1enums_1_1Status"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/tools/enums.py" line="4" column="1" bodyfile="Server/server/tools/enums.py" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a87e5a12089260cec40a0e66cd611d85b" prot="public" virt="non-virtual"><scope>Server::server::tools::enums::Status</scope><name>ALL_SUNK</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a52cf41547c8580689bb3c09f4f06c993" prot="public" virt="non-virtual"><scope>Server::server::tools::enums::Status</scope><name>HIT</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1aae1cdf5563e4ecf026bbd4483fed91da" prot="public" virt="non-virtual"><scope>Server::server::tools::enums::Status</scope><name>MISS</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1enums_1_1Status_1a31ca50a0c8387c0132105591f0c175fc" prot="public" virt="non-virtual"><scope>Server::server::tools::enums::Status</scope><name>SUNK</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="timer_8py" kind="file" language="Python">
+    <compoundname>timer.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer" prot="public">Client::client::application::widgets::custom::timer::Timer</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer">Client::client::application::widgets::custom::timer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QLabel<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtCore<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QTimer,<sp/>QTime</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer" kindref="compound">Timer</ref>(QLabel):</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a3fbaa03ec49cf64c66d163e90f0d0458" kindref="member">__init__</ref>(self,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a3fbaa03ec49cf64c66d163e90f0d0458" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" kindref="member">timer</ref>timer<sp/>=<sp/>QTimer(self)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" kindref="member">timer</ref>timer.timeout.connect(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" kindref="member">update_time</ref>update_time)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" kindref="member">timer</ref>timer.start(1000)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" kindref="member">update_time</ref>update_time()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" kindref="member">update_time</ref>(self):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_time<sp/>=<sp/>QTime.currentTime()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time_str<sp/>=<sp/>current_time.toString(</highlight><highlight class="stringliteral">&apos;hh:mm:ss&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setText(time_str)</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/custom/timer.py"/>
+  </compounddef>
+</doxygen>

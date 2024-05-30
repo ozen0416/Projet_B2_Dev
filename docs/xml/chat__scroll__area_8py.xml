@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="chat__scroll__area_8py" kind="file" language="Python">
+    <compoundname>chat_scroll_area.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea" prot="public">Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area">Client::client::application::widgets::chat::chat_scroll_area</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QScrollArea</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtCore<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Qt</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.chat_area<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ChatArea</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea" kindref="compound">ChatScrollArea</ref>(QScrollArea):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a17f6ea70b568eb00063cf3a047c1e231" kindref="member">__init__</ref>(self,<sp/>contact,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a17f6ea70b568eb00063cf3a047c1e231" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setObjectName(</highlight><highlight class="stringliteral">&apos;ChatScrollArea&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" kindref="member">_chat_area</ref>_chat_area<sp/>=<sp/><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" kindref="compound">ChatArea</ref>(contact,<sp/>parent=self)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1acaf509dc068e31378075a40317709a30" kindref="member">init_widgets</ref>init_widgets()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1acaf509dc068e31378075a40317709a30" kindref="member">init_widgets</ref>(self):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setWidget(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" kindref="member">_chat_area</ref>_chat_area)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setWidgetResizable(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a51321c41b8ed5b58f7b6408c450fc587" kindref="member">add_textbox_from_message</ref>(self,<sp/>message):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" kindref="member">_chat_area</ref>_chat_area.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a51321c41b8ed5b58f7b6408c450fc587" kindref="member">add_textbox_from_message</ref>(message)</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/chat/chat_scroll_area.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Client_2client_2tools_2enums_8py" kind="file" language="Python">
+    <compoundname>enums.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState" prot="public">Client::client::tools::enums::ButtonState</innerclass>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" prot="public">Client::client::tools::enums::GridCellState</innerclass>
+    <innerclass refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" prot="public">Client::client::tools::enums::GameState</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1tools_1_1enums">Client::client::tools::enums</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1tools_1_1enums" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enum<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Enum</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1tools_1_1enums_1_1ButtonState" kindref="compound">ButtonState</ref>(Enum):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAY<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>CANCEL<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" kindref="compound">GridCellState</ref>(Enum):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>MISS<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>HIT<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>WATER<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>SHIP<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>WAITING<sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState" kindref="compound">GameState</ref>(Enum):</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>PLACEMENT<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>PROGRESS<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>FINISHED<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>WAITING<sp/>=<sp/>3</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/tools/enums.py"/>
+  </compounddef>
+</doxygen>

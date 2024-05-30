@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1controller_1_1Controller" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::controller::Controller</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a2c87fe2b2c978f09d9d79d82eb48d622" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.controller.Controller::current_window</definition>
+        <argsstring></argsstring>
+        <name>current_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="11" column="1" bodyfile="Client/client/application/controller.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a5b98a9ac480f1473ed8419c7e1f7abeb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.controller.Controller::home_window</definition>
+        <argsstring></argsstring>
+        <name>home_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="12" column="1" bodyfile="Client/client/application/controller.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a12cc7684b66707dd1c54f6dcbbb35c2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.controller.Controller::game_window</definition>
+        <argsstring></argsstring>
+        <name>game_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="13" column="1" bodyfile="Client/client/application/controller.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a770e089127a48cff76bba84dfdedf016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.controller.Controller.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="10" column="1" bodyfile="Client/client/application/controller.py" bodystart="10" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1aab6c1c320d125cb1b6ecab657dfa57dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.controller.Controller.show_game</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>show_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="16" column="1" bodyfile="Client/client/application/controller.py" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a8440a9908fc1c2ed417d88cef8d7d84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.controller.Controller.show_home</definition>
+        <argsstring>(self)</argsstring>
+        <name>show_home</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="21" column="1" bodyfile="Client/client/application/controller.py" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1controller_1_1Controller_1ac026bf5ff210b550f86dc6009d6d6c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.controller.Controller.switch_emitted</definition>
+        <argsstring>(self, window_type, data)</argsstring>
+        <name>switch_emitted</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window_type</type>
+          <defname>window_type</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="26" column="1" bodyfile="Client/client/application/controller.py" bodystart="26" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/controller.py" line="9" column="1" bodyfile="Client/client/application/controller.py" bodystart="9" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a770e089127a48cff76bba84dfdedf016" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a2c87fe2b2c978f09d9d79d82eb48d622" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>current_window</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a12cc7684b66707dd1c54f6dcbbb35c2d" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>game_window</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a5b98a9ac480f1473ed8419c7e1f7abeb" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>home_window</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1aab6c1c320d125cb1b6ecab657dfa57dc" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>show_game</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1a8440a9908fc1c2ed417d88cef8d7d84e" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>show_home</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1controller_1_1Controller_1ac026bf5ff210b550f86dc6009d6d6c73" prot="public" virt="non-virtual"><scope>Client::client::application::controller::Controller</scope><name>switch_emitted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

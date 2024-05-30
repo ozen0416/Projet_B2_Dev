@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Server_2server_2network_2client_8py" kind="file" language="Python">
+    <compoundname>client.py</compoundname>
+    <innerclass refid="classServer_1_1server_1_1network_1_1client_1_1Client" prot="public">Server::server::network::client::Client</innerclass>
+    <innernamespace refid="namespaceServer_1_1server_1_1network_1_1client">Server::server::network::client</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceServer_1_1server_1_1network_1_1client" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dataclasses<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>dataclass</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>asyncio<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>StreamWriter,<sp/>StreamReader</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">@dataclass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classServer_1_1server_1_1network_1_1client_1_1Client" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client" kindref="compound">Client</ref>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>A<sp/>Client<sp/>server-side<sp/>is<sp/>a<sp/>connected<sp/>socket</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>We<sp/>represent<sp/>it<sp/>as<sp/>a<sp/>dataclass<sp/>here<sp/>as<sp/>it<sp/>will<sp/>just</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>be<sp/>kept<sp/>alive<sp/>by<sp/>the<sp/>server<sp/>for<sp/>correct<sp/>request<sp/>handling.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>It<sp/>has<sp/>more<sp/>data<sp/>than<sp/>just<sp/>IP<sp/>and<sp/>PORT,<sp/>it<sp/>also</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>stores<sp/>the<sp/>ID<sp/>of<sp/>the<sp/>client,<sp/>so<sp/>we<sp/>can<sp/>be<sp/>sure</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>about<sp/>if<sp/>the<sp/>request<sp/>by<sp/>that<sp/>ID<sp/>is<sp/>legit.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>ip:<sp/>str</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>port:<sp/>int</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>id:<sp/>str</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>nickname:<sp/>str</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>reader:<sp/>StreamReader</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>writer:<sp/>StreamWriter</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ships_data:<sp/>dict</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a8e9d21c622e91beafe197ab3ce8b47fd" kindref="member">__init__</ref>(self,<sp/>ip=&quot;&quot;,<sp/>port=0,<sp/>_id=&quot;&quot;,<sp/>nickname=&quot;&quot;,<sp/>reader=None,<sp/>writer=None,<sp/>ships_data=None):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af0f1ff9063550e8c55a87f1e9e637dee" kindref="member">ip</ref>ip<sp/>=<sp/>ip</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a1d6213689b9ed58bae8497f7f7eb7f2a" kindref="member">port</ref>port<sp/>=<sp/>port</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af1e106f60a4bb3fd6bc3cdbaf104dd54" kindref="member">id</ref>id<sp/>=<sp/>_id</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1ae085efc64e4c600d06dfa286ea58543a" kindref="member">nickname</ref>nickname<sp/>=<sp/>nickname</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a5b471f7124f570b7773e5c8e9db7db6e" kindref="member">reader</ref>reader<sp/>=<sp/>reader</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a482e1f98678533821a59dda2e2372e46" kindref="member">writer</ref>writer<sp/>=<sp/>writer</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1aa572605094bc32a4a5a15b53930bb251" kindref="member">ships_data</ref>ships_data<sp/>=<sp/>ships_data</highlight></codeline>
+    </programlisting>
+    <location file="Server/server/network/client.py"/>
+  </compounddef>
+</doxygen>

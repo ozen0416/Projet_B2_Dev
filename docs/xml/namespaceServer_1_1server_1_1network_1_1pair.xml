@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1network_1_1pair" kind="namespace" language="Python">
+    <compoundname>Server::server::network::pair</compoundname>
+    <innerclass refid="classServer_1_1server_1_1network_1_1pair_1_1Pair" prot="public">Server::server::network::pair::Pair</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/network/pair.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

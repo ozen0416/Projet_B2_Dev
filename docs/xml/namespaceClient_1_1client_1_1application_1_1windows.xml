@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1windows" kind="namespace" language="Python">
+    <compoundname>Client::client::application::windows</compoundname>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1windows_1_1game__window">Client::client::application::windows::game_window</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1windows_1_1home__window">Client::client::application::windows::home_window</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/windows/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

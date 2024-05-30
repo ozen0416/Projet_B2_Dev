@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1game_1_1ship" kind="namespace" language="Python">
+    <compoundname>Server::server::game::ship</compoundname>
+    <innerclass refid="classServer_1_1server_1_1game_1_1ship_1_1Ship" prot="public">Server::server::game::ship::Ship</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/game/ship.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

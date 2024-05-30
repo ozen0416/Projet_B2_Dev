@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_77ef8da73ba4630f229251630a178884" kind="dir">
+    <compoundname>Client/client/application/widgets/chat</compoundname>
+    <innerfile refid="Client_2client_2application_2widgets_2chat_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="chat__area_8py">chat_area.py</innerfile>
+    <innerfile refid="chat__input__widget_8py">chat_input_widget.py</innerfile>
+    <innerfile refid="chat__message__text_8py">chat_message_text.py</innerfile>
+    <innerfile refid="chat__scroll__area_8py">chat_scroll_area.py</innerfile>
+    <innerfile refid="chat__textbox__widget_8py">chat_textbox_widget.py</innerfile>
+    <innerfile refid="chat__widget_8py">chat_widget.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/chat/"/>
+  </compounddef>
+</doxygen>

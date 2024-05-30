@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1handlers_1_1GameHandler" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::handlers::GameHandler</compoundname>
+    <basecompoundref refid="classClient_1_1client_1_1abc_1_1AbstractHandler" prot="public" virt="non-virtual">Client.client.abc.AbstractHandler</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1handlers_1_1GameHandler_1ac77b96adb29036809b60c3c504ec5c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.handlers.GameHandler.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/handlers.py" line="21" column="1" bodyfile="Client/client/handlers.py" bodystart="21" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Client.client.abc.Handler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Handler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.AbstractHandler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>Client.client.handlers.GameHandler</label>
+        <link refid="classClient_1_1client_1_1handlers_1_1GameHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Client.client.abc.Handler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Handler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.AbstractHandler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>Client.client.handlers.GameHandler</label>
+        <link refid="classClient_1_1client_1_1handlers_1_1GameHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/handlers.py" line="20" column="1" bodyfile="Client/client/handlers.py" bodystart="20" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1handlers_1_1GameHandler_1ac77b96adb29036809b60c3c504ec5c47" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a0c573ec93c7b6c8761c8f0f4e1613595" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>add_check</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1ae53b676de421612b711bd4a7a9cceb02" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>add_tree_object</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a666a4d003eb8821eed297be5a346dfd9" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>check</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1Handler_1a5a38de2e17f7c9fa92faba82d0082eec" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>dict</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a66cb9cba027a3249a466c4db1181d2c9" prot="public" virt="non-virtual"><scope>Client::client::handlers::GameHandler</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

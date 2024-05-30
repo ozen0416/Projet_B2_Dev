@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1network_1_1server_1_1Server" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::network::server::Server</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a92d5afa4ceb2e4f6e0c2d2ca505633f8" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>Server.server.network.server.Server::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="16" column="1" bodyfile="Server/server/network/server.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a0012b5aa8a09b1ea097010036dd654ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.server.Server::mm_queue</definition>
+        <argsstring></argsstring>
+        <name>mm_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="27" column="1" bodyfile="Server/server/network/server.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1ace0c1dac36103ffce618ee347824535c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.network.server.Server.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="18" column="1" bodyfile="Server/server/network/server.py" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a7c80548b9215f1b6976b34431b4003c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.server.Server.create_pair</definition>
+        <argsstring>(self, client_0, client_1)</argsstring>
+        <name>create_pair</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>client_0</type>
+          <defname>client_0</defname>
+        </param>
+        <param>
+          <type>client_1</type>
+          <defname>client_1</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="39" column="1" bodyfile="Server/server/network/server.py" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1aa0e339138ab1eacdff4f1a2e7f180b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.network.server.Server.handle_client</definition>
+        <argsstring>(self, StreamReader reader, StreamWriter writer)</argsstring>
+        <name>handle_client</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>StreamReader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>StreamWriter</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Called each time a new socket is initialized with a client
+It will create the client object properly by using connection and socket received
+data.
+
+Each request will be sent to the `RootHandler` that will then properly handle what to respond.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="44" column="1" bodyfile="Server/server/network/server.py" bodystart="44" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1af081f1dede38481d7ff2d93086631659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.server.Server.start</definition>
+        <argsstring>(self)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>start the asyncio server
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="85" column="1" bodyfile="Server/server/network/server.py" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1ab85bb248b74469810b47c8ec331d49a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classServer_1_1server_1_1network_1_1pair_1_1Pair" kindref="compound">Pair</ref>]</type>
+        <definition> Optional[Pair] Server.server.network.server.Server.get_pair_from_client_id</definition>
+        <argsstring>(self, str _id)</argsstring>
+        <name>get_pair_from_client_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="95" column="1" bodyfile="Server/server/network/server.py" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a8bdeeaa21feedc65a72558896b70a265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classServer_1_1server_1_1network_1_1pair_1_1Pair" kindref="compound">Pair</ref>]</type>
+        <definition> Optional[Pair] Server.server.network.server.Server.get_pair_from_game_id</definition>
+        <argsstring>(self, str _id)</argsstring>
+        <name>get_pair_from_game_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="101" column="1" bodyfile="Server/server/network/server.py" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a84d910bc4acd7a3bb3f0f02bbe587753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classServer_1_1server_1_1network_1_1client_1_1Client" kindref="compound">Client</ref>]</type>
+        <definition> Optional[Client] Server.server.network.server.Server.get_client_from_id</definition>
+        <argsstring>(self, str _id)</argsstring>
+        <name>get_client_from_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="107" column="1" bodyfile="Server/server/network/server.py" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1aaf04d76688eef653ca14f44560277fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.server.Server.add_pair</definition>
+        <argsstring>(self, Pair pair)</argsstring>
+        <name>add_pair</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1pair_1_1Pair" kindref="compound">Pair</ref></type>
+          <declname>pair</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="113" column="1" bodyfile="Server/server/network/server.py" bodystart="113" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1server_1_1Server_1a08dd5888b4ebe82b18f85605b6bec500" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.server.Server.get_instance</definition>
+        <argsstring>()</argsstring>
+        <name>get_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>As server is meant to be a Singleton, for easier access through the
+architecture and object instances.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/server.py" line="30" column="1" bodyfile="Server/server/network/server.py" bodystart="30" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Server class, handling clients sockets and requests.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Server/server/network/server.py" line="11" column="1" bodyfile="Server/server/network/server.py" bodystart="11" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1ace0c1dac36103ffce618ee347824535c" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a92d5afa4ceb2e4f6e0c2d2ca505633f8" prot="private" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>_instance</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1aaf04d76688eef653ca14f44560277fbe" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>add_pair</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a7c80548b9215f1b6976b34431b4003c0" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>create_pair</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a84d910bc4acd7a3bb3f0f02bbe587753" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>get_client_from_id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a08dd5888b4ebe82b18f85605b6bec500" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>get_instance</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1ab85bb248b74469810b47c8ec331d49a1" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>get_pair_from_client_id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a8bdeeaa21feedc65a72558896b70a265" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>get_pair_from_game_id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1aa0e339138ab1eacdff4f1a2e7f180b1b" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>handle_client</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1a0012b5aa8a09b1ea097010036dd654ae" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>mm_queue</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1server_1_1Server_1af081f1dede38481d7ff2d93086631659" prot="public" virt="non-virtual"><scope>Server::server::network::server::Server</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

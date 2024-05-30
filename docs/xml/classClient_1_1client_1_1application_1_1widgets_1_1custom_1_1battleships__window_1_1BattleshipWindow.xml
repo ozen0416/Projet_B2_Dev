@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::custom::battleships_window::BattleshipWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <derivedcompoundref refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow" prot="public" virt="non-virtual">Client.client.application.windows.game_window.GameWindow</derivedcompoundref>
+    <derivedcompoundref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" prot="public" virt="non-virtual">Client.client.application.windows.home_window.HomeWindow</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1a7c933d800721841ab85be93da0db8a9e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.custom.battleships_window.BattleshipWindow::switch_window</definition>
+        <argsstring></argsstring>
+        <name>switch_window</name>
+        <initializer>=  Signal(str, str)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/custom/battleships_window.py" line="6" column="1" bodyfile="Client/client/application/widgets/custom/battleships_window.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1ad957d4470269eff2dd70638dd1cfcdc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.custom.battleships_window.BattleshipWindow.receive_message</definition>
+        <argsstring>(self, dict data)</argsstring>
+        <name>receive_message</name>
+        <reimplementedby refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow_1a31f3f59d4ebd633c435af5dc95179370">receive_message</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/custom/battleships_window.py" line="8" column="1" bodyfile="Client/client/application/widgets/custom/battleships_window.py" bodystart="8" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Client.client.application.windows.game_window.GameWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Client.client.application.windows.home_window.HomeWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/custom/battleships_window.py" line="5" column="1" bodyfile="Client/client/application/widgets/custom/battleships_window.py" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1ad957d4470269eff2dd70638dd1cfcdc5" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::custom::battleships_window::BattleshipWindow</scope><name>receive_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1a7c933d800721841ab85be93da0db8a9e" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::custom::battleships_window::BattleshipWindow</scope><name>switch_window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

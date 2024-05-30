@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="player_8py" kind="file" language="Python">
+    <compoundname>player.py</compoundname>
+    <innerclass refid="classServer_1_1server_1_1game_1_1player_1_1Player" prot="public">Server::server::game::player::Player</innerclass>
+    <innernamespace refid="namespaceServer_1_1server_1_1game_1_1player">Server::server::game::player</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceServer_1_1server_1_1game_1_1player" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.ship<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Ship</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..tools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Vector2,<sp/>Status,<sp/>FromDictMixin</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classServer_1_1server_1_1game_1_1player_1_1Player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1player_1_1Player" kindref="compound">Player</ref>(<ref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" kindref="compound">FromDictMixin</ref>):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>for<sp/>each<sp/>player<sp/>to<sp/>keep<sp/>track<sp/>of<sp/>the<sp/>ships<sp/>a<sp/>player<sp/>has</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>-<sp/>`ships`:<sp/>List<sp/>of<sp/>all<sp/>the<sp/>ships<sp/>of<sp/>the<sp/>player</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>_ships:<sp/>List[Ship]</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a01412a9a287e514d1a460db05e0c0f39" kindref="member">__init__</ref>(self,<sp/>ships:<sp/>List[Ship])<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" kindref="member">_ships</ref>_ships<sp/>=<sp/>ships</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a812fda28ce3ef99a6d7ed257e927bc1a" kindref="member">check_ship_hit</ref>(self,<sp/>pos:<sp/>Vector2)<sp/>-&gt;<sp/>Status:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>Status.MISS</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ship<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" kindref="member">_ships</ref>_ships:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>ship.check_for_hit(pos)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>status<sp/>!=<sp/>Status.MISS:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>status<sp/>==<sp/>Status.SUNK:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>self.<ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1ac396588f0fff000ccaea4884533b0948" kindref="member">check_all_sunk</ref>check_all_sunk(status)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1ac396588f0fff000ccaea4884533b0948" kindref="member">check_all_sunk</ref>(self,<sp/>status)<sp/>-&gt;<sp/>Status:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ship<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" kindref="member">_ships</ref>_ships:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>ship.is_sunk:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;ALL<sp/>SUNK<sp/>CHECK&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Status.ALL_SUNK</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a17dddcc8d6214029c35319841360db3f" kindref="member">__repr__</ref>(self):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ships_str<sp/>=<sp/>[str(ship)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ship<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" kindref="member">_ships</ref>_ships]</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;Player({&apos;,<sp/>&apos;.join(ships_str)})&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Server/server/game/player.py"/>
+  </compounddef>
+</doxygen>

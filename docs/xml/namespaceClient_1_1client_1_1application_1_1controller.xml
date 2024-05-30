@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1controller" kind="namespace" language="Python">
+    <compoundname>Client::client::application::controller</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1controller_1_1Controller" prot="public">Client::client::application::controller::Controller</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1application_1_1controller_1a7ae504d4212d3f73006ec97921453413" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Client::client::application::controller.WINDOW_TYPES</definition>
+        <argsstring></argsstring>
+        <name>WINDOW_TYPES</name>
+        <initializer>=  [
+    &apos;home&apos;,
+    &apos;game&apos;,
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/controller.py" line="3" column="1" bodyfile="Client/client/application/controller.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/controller.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

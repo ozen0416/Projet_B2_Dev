@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::game::ship_cell::ShipCell</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public" virt="non-virtual">Server.server.tools.from_dict_mixin.FromDictMixin</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Server.server.game.ship_cell.ShipCell::bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="15" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ac54cb54cb771b5c509e25f183cfb8969" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.ship_cell.ShipCell::_is_hit</definition>
+        <argsstring></argsstring>
+        <name>_is_hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="36" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a9aa245d8e85d2510c3bb6d0c603e4384" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.ship_cell.ShipCell::is_hit</definition>
+        <argsstring></argsstring>
+        <name>is_hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="41" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a646e9c6dd13a5b1d37b178db925fcc26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship_cell.ShipCell.__init__</definition>
+        <argsstring>(self, Vector2 pos, bool is_hit=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" kindref="member">bool</ref></type>
+          <declname>is_hit</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="17" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ae0abfe6e9cb9734add83363a6408967c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship_cell.ShipCell.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="21" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a52390a9a53a203ba66b7aa6db51f629c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship_cell.ShipCell.pos</definition>
+        <argsstring>(self)</argsstring>
+        <name>pos</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>x position on the map</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="25" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af415a14f9104efddaca291a87f8f2bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship_cell.ShipCell.is_hit</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>whether the cell has been hit</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="30" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a6d448c32edd7b67e0497bc5557e5cd79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship_cell.ShipCell.is_hit</definition>
+        <argsstring>(self, bool value)</argsstring>
+        <name>is_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" kindref="member">bool</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="35" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af7762415361d1aa1a34d8ce63845c02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" kindref="member">bool</ref></type>
+        <definition> bool Server.server.game.ship_cell.ShipCell.check_for_hit</definition>
+        <argsstring>(self, Vector2 pos)</argsstring>
+        <name>check_for_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>check if cell is hit. if so change `is_hit` and return True</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship_cell.py" line="38" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="38" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>ShipCell class, intended to store
+information about a cell of a ship
+
+- `pos`: x, y position on the map
+- `is_hit`: whether the cell has been hit
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.game.ship_cell.ShipCell</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.game.ship_cell.ShipCell</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/game/ship_cell.py" line="5" column="1" bodyfile="Server/server/game/ship_cell.py" bodystart="5" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a646e9c6dd13a5b1d37b178db925fcc26" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ae0abfe6e9cb9734add83363a6408967c" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>__repr__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1ac54cb54cb771b5c509e25f183cfb8969" prot="private" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>_is_hit</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af04acc4b7d6a66360a88779dc73e15ec" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>bool</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af7762415361d1aa1a34d8ce63845c02d" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>check_for_hit</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>from_dict</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a9aa245d8e85d2510c3bb6d0c603e4384" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>is_hit</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1af415a14f9104efddaca291a87f8f2bfc" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>is_hit</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a6d448c32edd7b67e0497bc5557e5cd79" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>is_hit</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell_1a52390a9a53a203ba66b7aa6db51f629c" prot="public" virt="non-virtual"><scope>Server::server::game::ship_cell::ShipCell</scope><name>pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

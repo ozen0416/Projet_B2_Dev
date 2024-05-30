@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QScrollArea</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea::_chat_area</definition>
+        <argsstring></argsstring>
+        <name>_chat_area</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_scroll_area.py" line="12" column="1" bodyfile="Client/client/application/widgets/chat/chat_scroll_area.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a17f6ea70b568eb00063cf3a047c1e231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea.__init__</definition>
+        <argsstring>(self, contact, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>contact</type>
+          <defname>contact</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_scroll_area.py" line="8" column="1" bodyfile="Client/client/application/widgets/chat/chat_scroll_area.py" bodystart="8" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1acaf509dc068e31378075a40317709a30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_scroll_area.py" line="19" column="1" bodyfile="Client/client/application/widgets/chat/chat_scroll_area.py" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a51321c41b8ed5b58f7b6408c450fc587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea.add_textbox_from_message</definition>
+        <argsstring>(self, message)</argsstring>
+        <name>add_textbox_from_message</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_scroll_area.py" line="23" column="1" bodyfile="Client/client/application/widgets/chat/chat_scroll_area.py" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QScrollArea</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QScrollArea</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/chat/chat_scroll_area.py" line="7" column="1" bodyfile="Client/client/application/widgets/chat/chat_scroll_area.py" bodystart="7" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a17f6ea70b568eb00063cf3a047c1e231" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a63ab0ebe8fa7b59134399601f224ae74" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</scope><name>_chat_area</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1a51321c41b8ed5b58f7b6408c450fc587" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</scope><name>add_textbox_from_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea_1acaf509dc068e31378075a40317709a30" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_scroll_area::ChatScrollArea</scope><name>init_widgets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

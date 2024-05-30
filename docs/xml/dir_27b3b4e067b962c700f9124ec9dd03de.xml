@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_27b3b4e067b962c700f9124ec9dd03de" kind="dir">
+    <compoundname>Server/server</compoundname>
+    <innerdir refid="dir_1f1ee67e48da01bdd0c747a8be200c3d">Server/server/game</innerdir>
+    <innerdir refid="dir_eeb0afeb66706e6e44782122b98c8967">Server/server/matchmaking</innerdir>
+    <innerdir refid="dir_ce0c16d09f564c170297b731f533aca5">Server/server/network</innerdir>
+    <innerdir refid="dir_66e98add17bed1f888fce635a88a2716">Server/server/tools</innerdir>
+    <innerfile refid="Server_2server_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="Server_2server_2abc_8py">abc.py</innerfile>
+    <innerfile refid="checks_8py">checks.py</innerfile>
+    <innerfile refid="Server_2server_2handlers_8py">handlers.py</innerfile>
+    <innerfile refid="Server_2server_2workers_8py">workers.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/"/>
+  </compounddef>
+</doxygen>

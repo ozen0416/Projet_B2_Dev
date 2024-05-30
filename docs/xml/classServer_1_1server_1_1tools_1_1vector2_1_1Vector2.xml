@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::tools::vector2::Vector2</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public" virt="non-virtual">Server.server.tools.from_dict_mixin.FromDictMixin</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a35754aea22eb00ddd1438a68c9a93654" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.tools.vector2.Vector2::_x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="34" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a4fc2fa78ed2fe0011cb81c6998cd35c0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.tools.vector2.Vector2::_y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="38" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac125a147f092604e56200da257d9d256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.__init__</definition>
+        <argsstring>(self, int x, int y)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="18" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a3c3869e380409f9de95fa8019f8aed23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.x</definition>
+        <argsstring>(self)</argsstring>
+        <name>x</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>x position on the map</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="23" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a236567ad5ffd460c73688b4efce09d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.y</definition>
+        <argsstring>(self)</argsstring>
+        <name>y</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>y position on the map</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="28" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ae700213274df8889f44ca7b300925654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.x</definition>
+        <argsstring>(self, int value)</argsstring>
+        <name>x</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="33" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a719b642e16825cbab343fe772e2dfd8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.y</definition>
+        <argsstring>(self, int value)</argsstring>
+        <name>y</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="37" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8d69715293488b039a3d7295e863e6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.equals</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="64" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8b761a8cb5c76670b3a2d42df38b0f35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.__mul__</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>__mul__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="67" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a88a8ac9ecf3ca91339f9395d52e9d465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.__eq__</definition>
+        <argsstring>(self, Vector2 other)</argsstring>
+        <name>__eq__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="75" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac1086661e03adeed8f61a600b20a0c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.__add__</definition>
+        <argsstring>(self, Vector2 other)</argsstring>
+        <name>__add__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="78" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac4dfd784b24345c5d3fca2394d2e49ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="81" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="81" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a22c0850e30fd187ddaaa8c870f61d35e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.one</definition>
+        <argsstring>()</argsstring>
+        <name>one</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="41" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a58a160a7fb5f56342b453ff0cc35ad38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="45" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1aac0082143a85076f51d408084a0b4d35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.up</definition>
+        <argsstring>()</argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="49" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a2bf0549430202adb8fbfd8ab8428a608" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.down</definition>
+        <argsstring>()</argsstring>
+        <name>down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="53" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a83f46928d496bfb8cf41a730d5a96773" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.left</definition>
+        <argsstring>()</argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="57" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a09399cd12b960f3417d3df93627d0c5f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.tools.vector2.Vector2.right</definition>
+        <argsstring>()</argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/vector2.py" line="61" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="61" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Vector2 class for easier coordinates manipulation
+
+- `x`: x position of the vector
+- `y`: y position
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.tools.vector2.Vector2</label>
+        <link refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.tools.vector2.Vector2</label>
+        <link refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/tools/vector2.py" line="7" column="1" bodyfile="Server/server/tools/vector2.py" bodystart="7" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac1086661e03adeed8f61a600b20a0c4d" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>__add__</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a88a8ac9ecf3ca91339f9395d52e9d465" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>__eq__</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac125a147f092604e56200da257d9d256" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8b761a8cb5c76670b3a2d42df38b0f35" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>__mul__</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ac4dfd784b24345c5d3fca2394d2e49ca" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>__repr__</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a35754aea22eb00ddd1438a68c9a93654" prot="private" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>_x</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a4fc2fa78ed2fe0011cb81c6998cd35c0" prot="private" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>_y</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a2bf0549430202adb8fbfd8ab8428a608" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>down</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a8d69715293488b039a3d7295e863e6a0" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>equals</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>from_dict</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a83f46928d496bfb8cf41a730d5a96773" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>left</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a22c0850e30fd187ddaaa8c870f61d35e" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>one</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a09399cd12b960f3417d3df93627d0c5f" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>right</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1aac0082143a85076f51d408084a0b4d35" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>up</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a3c3869e380409f9de95fa8019f8aed23" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>x</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1ae700213274df8889f44ca7b300925654" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>x</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a236567ad5ffd460c73688b4efce09d97" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>y</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a719b642e16825cbab343fe772e2dfd8a" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>y</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2_1a58a160a7fb5f56342b453ff0cc35ad38" prot="public" virt="non-virtual"><scope>Server::server::tools::vector2::Vector2</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

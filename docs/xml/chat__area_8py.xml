@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="chat__area_8py" kind="file" language="Python">
+    <compoundname>chat_area.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" prot="public">Client::client::application::widgets::chat::chat_area::ChatArea</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area">Client::client::application::widgets::chat::chat_area</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QWidget,<sp/>QVBoxLayout,<sp/>QAbstractSlider,<sp/>QApplication,<sp/>QGridLayout</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.chat_textbox_widget<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ChatTextbox</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" kindref="compound">ChatArea</ref>(QWidget):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a1301ecbb32bb91b02ccf27eca439fa82" kindref="member">__init__</ref>(self,<sp/>contact,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a1301ecbb32bb91b02ccf27eca439fa82" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ac46c02ae3961fb62f2913893f92b66f9" kindref="member">_contact</ref>_contact<sp/>=<sp/>contact</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1aa022e914c47d96a837cecddcef0aa5e3" kindref="member">_textboxes</ref>_textboxes<sp/>=<sp/>set()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout<sp/>=<sp/>QVBoxLayout()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a4502b8481c2621929a43555a8acbeaf9" kindref="member">init_layout</ref>init_layout()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a4502b8481c2621929a43555a8acbeaf9" kindref="member">init_layout</ref>(self):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout.setSpacing(5)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout.addStretch(1)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout.setContentsMargins(5,<sp/>5,<sp/>5,<sp/>5)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setLayout(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a6147e6476962df7b428650bbe4c81b6f" kindref="member">add_textbox_from_message</ref>(self,<sp/>message):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textbox<sp/>=<sp/>ChatTextbox.from_message(message,<sp/>self)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a929b6d70dd8106e64ffa89f6a02216c7" kindref="member">_add_textbox</ref>_add_textbox(textbox)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_add_textbox(self,<sp/>textbox):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>textbox.parent()<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textbox.setParent(self)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1aa022e914c47d96a837cecddcef0aa5e3" kindref="member">_textboxes</ref>_textboxes.add(textbox)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" kindref="member">_layout</ref>_layout.addWidget(textbox)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a829bd7c750fb43e023ed0b67e797ebc2" kindref="member">resizeEvent</ref>(self,<sp/>event):</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scroll_bar<sp/>=<sp/>self.parent().parent().verticalScrollBar()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maximum<sp/>=<sp/>scroll_bar.maximum()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window<sp/>=<sp/>QApplication.instance().activeWindow()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>window<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta<sp/>=<sp/>QApplication.instance().activeWindow().height()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>maximum<sp/>-<sp/>delta<sp/>&lt;=<sp/>scroll_bar.sliderPosition()<sp/>&lt;=<sp/>maximum<sp/>+<sp/>delta:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scroll_bar.triggerAction(QAbstractSlider.SliderToMaximum)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a829bd7c750fb43e023ed0b67e797ebc2" kindref="member">resizeEvent</ref>(event)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@property</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a05e59b56401978d23db6226e4219a1a1" kindref="member">contact</ref>(self):</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ac46c02ae3961fb62f2913893f92b66f9" kindref="member">_contact</ref>_contact</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/chat/chat_area.py"/>
+  </compounddef>
+</doxygen>

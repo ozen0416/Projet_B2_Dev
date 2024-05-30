@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::windows::home_window::HomeWindow</compoundname>
+    <basecompoundref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow" prot="public" virt="non-virtual">Client.client.application.widgets.custom.battleships_window.BattleshipWindow</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a872cbe4da22854e1ce72d5592d69db94" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.home_window.HomeWindow::left_widget</definition>
+        <argsstring></argsstring>
+        <name>left_widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="19" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a13ee86ebf1db52627147facdb9b9a64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.application.windows.home_window.HomeWindow.__init__</definition>
+        <argsstring>(self, Optional[QWidget] parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[QWidget]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="16" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="16" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a6ee1e0755a5eae2c6824296d7fd625ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.home_window.HomeWindow.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="26" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a33a0cbc140c57e0aebf5a28569ad229b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.home_window.HomeWindow.init_widget</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widget</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="29" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Home window before a game is played.
+
+It is here you can change username, search for a game
+and see your history of matches.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.windows.home_window.HomeWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.windows.home_window.HomeWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.application.widgets.custom.battleships_window.BattleshipWindow</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/windows/home_window.py" line="9" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a13ee86ebf1db52627147facdb9b9a64d" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a6ee1e0755a5eae2c6824296d7fd625ad" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a33a0cbc140c57e0aebf5a28569ad229b" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>init_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a872cbe4da22854e1ce72d5592d69db94" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>left_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1ad957d4470269eff2dd70638dd1cfcdc5" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>receive_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow_1a7c933d800721841ab85be93da0db8a9e" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::HomeWindow</scope><name>switch_window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

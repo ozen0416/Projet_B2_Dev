@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Conventions_8md" kind="file" language="Markdown">
+    <compoundname>Conventions.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Conventions<sp/>page</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Git</highlight></codeline>
+<codeline><highlight class="normal">Commit<sp/>message<sp/>example:</highlight></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>commit<sp/>-m<sp/>&quot;[STATUS/STATUS1/...]<sp/>detailed<sp/>description&quot;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">STATUSES:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ADD`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`UPDATE`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`REMOVE`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MERGE`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Python</highlight></codeline>
+<codeline><highlight class="normal">Usage<sp/>of<sp/>static<sp/>typing<sp/>and<sp/>docstrings.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Casing**:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`CONSTANTS_DECLARATION`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`ClassDeclaration`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`method_declaration`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`property_declaration`</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Conventions.md"/>
+  </compounddef>
+</doxygen>

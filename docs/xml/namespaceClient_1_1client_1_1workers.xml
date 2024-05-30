@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1workers" kind="namespace" language="Python">
+    <compoundname>Client::client::workers</compoundname>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1GameFoundWorker" prot="public">Client::client::workers::GameFoundWorker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1GameMessageWorker" prot="public">Client::client::workers::GameMessageWorker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1GameStartWorker" prot="public">Client::client::workers::GameStartWorker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1GameFinishedWorker" prot="public">Client::client::workers::GameFinishedWorker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1HitResponseWorker" prot="public">Client::client::workers::HitResponseWorker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1workers_1_1HitRequestWorker" prot="public">Client::client::workers::HitRequestWorker</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/workers.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

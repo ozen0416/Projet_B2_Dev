@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::chat::chat_area</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" prot="public">Client::client::application::widgets::chat::chat_area::ChatArea</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/chat/chat_area.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

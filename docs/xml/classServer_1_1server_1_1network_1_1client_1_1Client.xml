@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1network_1_1client_1_1Client" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::network::client::Client</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1af0f1ff9063550e8c55a87f1e9e637dee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="25" column="1" bodyfile="Server/server/network/client.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1a1d6213689b9ed58bae8497f7f7eb7f2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="26" column="1" bodyfile="Server/server/network/client.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1af1e106f60a4bb3fd6bc3cdbaf104dd54" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="27" column="1" bodyfile="Server/server/network/client.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1ae085efc64e4c600d06dfa286ea58543a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::nickname</definition>
+        <argsstring></argsstring>
+        <name>nickname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="28" column="1" bodyfile="Server/server/network/client.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1a5b471f7124f570b7773e5c8e9db7db6e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::reader</definition>
+        <argsstring></argsstring>
+        <name>reader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="29" column="1" bodyfile="Server/server/network/client.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1a482e1f98678533821a59dda2e2372e46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="30" column="1" bodyfile="Server/server/network/client.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1client_1_1Client_1aa572605094bc32a4a5a15b53930bb251" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.client.Client::ships_data</definition>
+        <argsstring></argsstring>
+        <name>ships_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="31" column="1" bodyfile="Server/server/network/client.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1client_1_1Client_1a8e9d21c622e91beafe197ab3ce8b47fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.client.Client.__init__</definition>
+        <argsstring>(self, ip=&quot;&quot;, port=0, _id=&quot;&quot;, nickname=&quot;&quot;, reader=None, writer=None, ships_data=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af0f1ff9063550e8c55a87f1e9e637dee" kindref="member">ip</ref></type>
+          <defname>ip</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a1d6213689b9ed58bae8497f7f7eb7f2a" kindref="member">port</ref></type>
+          <defname>port</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>_id</type>
+          <defname>_id</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1ae085efc64e4c600d06dfa286ea58543a" kindref="member">nickname</ref></type>
+          <defname>nickname</defname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a5b471f7124f570b7773e5c8e9db7db6e" kindref="member">reader</ref></type>
+          <defname>reader</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a482e1f98678533821a59dda2e2372e46" kindref="member">writer</ref></type>
+          <defname>writer</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client_1aa572605094bc32a4a5a15b53930bb251" kindref="member">ships_data</ref></type>
+          <defname>ships_data</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/client.py" line="24" column="1" bodyfile="Server/server/network/client.py" bodystart="24" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Client server-side is a connected socket
+We represent it as a dataclass here as it will just
+be kept alive by the server for correct request handling.
+
+It has more data than just IP and PORT, it also
+stores the ID of the client, so we can be sure
+about if the request by that ID is legit.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Server/server/network/client.py" line="6" column="1" bodyfile="Server/server/network/client.py" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a8e9d21c622e91beafe197ab3ce8b47fd" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af1e106f60a4bb3fd6bc3cdbaf104dd54" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1af0f1ff9063550e8c55a87f1e9e637dee" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>ip</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1ae085efc64e4c600d06dfa286ea58543a" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>nickname</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a1d6213689b9ed58bae8497f7f7eb7f2a" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>port</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a5b471f7124f570b7773e5c8e9db7db6e" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>reader</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1aa572605094bc32a4a5a15b53930bb251" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>ships_data</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1client_1_1Client_1a482e1f98678533821a59dda2e2372e46" prot="public" virt="non-virtual"><scope>Server::server::network::client::Client</scope><name>writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

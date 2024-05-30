@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Server_2server_2tools_2enums_8py" kind="file" language="Python">
+    <compoundname>enums.py</compoundname>
+    <innerclass refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" prot="public">Server::server::tools::enums::Status</innerclass>
+    <innernamespace refid="namespaceServer_1_1server_1_1tools_1_1enums">Server::server::tools::enums</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceServer_1_1server_1_1tools_1_1enums" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>enum<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IntEnum</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" kindref="compound">Status</ref>(IntEnum):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>MISS<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>HIT<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>SUNK<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>ALL_SUNK<sp/>=<sp/>3</highlight></codeline>
+    </programlisting>
+    <location file="Server/server/tools/enums.py"/>
+  </compounddef>
+</doxygen>

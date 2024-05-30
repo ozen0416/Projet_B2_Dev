@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::custom::timer::Timer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QLabel</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.custom.timer.Timer::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/custom/timer.py" line="9" column="1" bodyfile="Client/client/application/widgets/custom/timer.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a3fbaa03ec49cf64c66d163e90f0d0458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.custom.timer.Timer.__init__</definition>
+        <argsstring>(self, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/custom/timer.py" line="6" column="1" bodyfile="Client/client/application/widgets/custom/timer.py" bodystart="6" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.custom.timer.Timer.update_time</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_time</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/custom/timer.py" line="15" column="1" bodyfile="Client/client/application/widgets/custom/timer.py" bodystart="15" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.widgets.custom.timer.Timer</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLabel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.custom.timer.Timer</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QLabel</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/custom/timer.py" line="5" column="1" bodyfile="Client/client/application/widgets/custom/timer.py" bodystart="5" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a3fbaa03ec49cf64c66d163e90f0d0458" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::custom::timer::Timer</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1a90c2f20e12302e54671581f2d9e04bad" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::custom::timer::Timer</scope><name>timer</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer_1_1Timer_1ab4c853e1405ef12ca3649ed6eb3e8b8d" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::custom::timer::Timer</scope><name>update_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="home__window_8py" kind="file" language="Python">
+    <compoundname>home_window.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" prot="public">Client::client::application::windows::home_window::HomeWindow</innerclass>
+    <innerclass refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" prot="public">Client::client::application::windows::home_window::ContainerWidget</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1windows_1_1home__window">Client::client::application::windows::home_window</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1windows_1_1home__window" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtCore<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QSettings</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QHBoxLayout,<sp/>QSizePolicy,<sp/>QWidget,<sp/>QLabel,<sp/>QVBoxLayout,<sp/>QGridLayout</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..widgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SearchGame,<sp/>Login,<sp/>BattleshipWindow</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow" kindref="compound">HomeWindow</ref>(<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow" kindref="compound">BattleshipWindow</ref>):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Home<sp/>window<sp/>before<sp/>a<sp/>game<sp/>is<sp/>played.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>It<sp/>is<sp/>here<sp/>you<sp/>can<sp/>change<sp/>username,<sp/>search<sp/>for<sp/>a<sp/>game</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>and<sp/>see<sp/>your<sp/>history<sp/>of<sp/>matches.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a13ee86ebf1db52627147facdb9b9a64d" kindref="member">__init__</ref>(self,<sp/>parent:<sp/>Optional[QWidget]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a13ee86ebf1db52627147facdb9b9a64d" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a872cbe4da22854e1ce72d5592d69db94" kindref="member">left_widget</ref>left_widget<sp/>=<sp/><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" kindref="compound">ContainerWidget</ref>(self)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setWindowTitle(</highlight><highlight class="stringliteral">&quot;Battleships&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a6ee1e0755a5eae2c6824296d7fd625ad" kindref="member">init_layout</ref>init_layout()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a33a0cbc140c57e0aebf5a28569ad229b" kindref="member">init_widget</ref>init_widget()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a6ee1e0755a5eae2c6824296d7fd625ad" kindref="member">init_layout</ref>(self):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QGridLayout(self)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a33a0cbc140c57e0aebf5a28569ad229b" kindref="member">init_widget</ref>(self):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addWidget(self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow_1a872cbe4da22854e1ce72d5592d69db94" kindref="member">left_widget</ref>left_widget)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" kindref="compound">ContainerWidget</ref>(QWidget):</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>to<sp/>group<sp/>the<sp/>SearchGame<sp/>and<sp/>the<sp/>UserInput</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>in<sp/>a<sp/>single<sp/>widget</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a508bbf4e7ceca72e09ce51d14d9db5e5" kindref="member">__init__</ref>(self,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a508bbf4e7ceca72e09ce51d14d9db5e5" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" kindref="member">play_button</ref>play_button<sp/>=<sp/><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame" kindref="compound">SearchGame</ref>(self)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" kindref="member">login</ref>login<sp/>=<sp/><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login" kindref="compound">Login</ref>(self)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a3910cd9ac551882d33ba97deb4c9043d" kindref="member">init_layout</ref>init_layout()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1ad9d549bb65879839b583f04bb851df70" kindref="member">init_widget</ref>init_widget()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a3910cd9ac551882d33ba97deb4c9043d" kindref="member">init_layout</ref>(self):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVBoxLayout(self)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1ad9d549bb65879839b583f04bb851df70" kindref="member">init_widget</ref>(self):</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addWidget(self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" kindref="member">login</ref>login)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addWidget(self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" kindref="member">play_button</ref>play_button)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" kindref="member">login</ref>login.setMaximumSize(300,<sp/>200)<sp/><sp/></highlight><highlight class="comment">#<sp/>width,<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" kindref="member">play_button</ref>play_button.setMaximumSize(500,<sp/>200)<sp/><sp/></highlight><highlight class="comment">#<sp/>width,<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#self.login.setSizePolicy(QSizePolicy.Minimum,<sp/>QSizePolicy.Minimum)<sp/><sp/>#<sp/>width,<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#self.login.move(50,<sp/>50)<sp/><sp/>#<sp/>width,<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#self.login.resize(300,<sp/>200)<sp/><sp/>#<sp/>width,<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/windows/home_window.py"/>
+  </compounddef>
+</doxygen>

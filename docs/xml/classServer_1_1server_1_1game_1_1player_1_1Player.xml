@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1game_1_1player_1_1Player" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::game::player::Player</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public" virt="non-virtual">Server.server.tools.from_dict_mixin.FromDictMixin</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.player.Player::_ships</definition>
+        <argsstring></argsstring>
+        <name>_ships</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/player.py" line="17" column="1" bodyfile="Server/server/game/player.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1player_1_1Player_1a01412a9a287e514d1a460db05e0c0f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.game.player.Player.__init__</definition>
+        <argsstring>(self, List[Ship] ships)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>ships</declname>
+          <array>[Ship]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/player.py" line="16" column="1" bodyfile="Server/server/game/player.py" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1player_1_1Player_1a812fda28ce3ef99a6d7ed257e927bc1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" kindref="compound">Status</ref></type>
+        <definition> Status Server.server.game.player.Player.check_ship_hit</definition>
+        <argsstring>(self, Vector2 pos)</argsstring>
+        <name>check_ship_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/player.py" line="19" column="1" bodyfile="Server/server/game/player.py" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1player_1_1Player_1ac396588f0fff000ccaea4884533b0948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" kindref="compound">Status</ref></type>
+        <definition> Status Server.server.game.player.Player.check_all_sunk</definition>
+        <argsstring>(self, status)</argsstring>
+        <name>check_all_sunk</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>status</type>
+          <defname>status</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/player.py" line="30" column="1" bodyfile="Server/server/game/player.py" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1player_1_1Player_1a17dddcc8d6214029c35319841360db3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.player.Player.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/player.py" line="38" column="1" bodyfile="Server/server/game/player.py" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class for each player to keep track of the ships a player has
+
+- `ships`: List of all the ships of the player
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.game.player.Player</label>
+        <link refid="classServer_1_1server_1_1game_1_1player_1_1Player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.game.player.Player</label>
+        <link refid="classServer_1_1server_1_1game_1_1player_1_1Player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/game/player.py" line="7" column="1" bodyfile="Server/server/game/player.py" bodystart="7" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a01412a9a287e514d1a460db05e0c0f39" prot="public" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a17dddcc8d6214029c35319841360db3f" prot="public" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>__repr__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a60d86f4b848d1ff0796baa2a00e735ac" prot="private" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>_ships</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1ac396588f0fff000ccaea4884533b0948" prot="public" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>check_all_sunk</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1player_1_1Player_1a812fda28ce3ef99a6d7ed257e927bc1a" prot="public" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>check_ship_hit</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::game::player::Player</scope><name>from_dict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

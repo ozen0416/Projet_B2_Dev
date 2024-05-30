@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_922c588100a187620fdc1533bc178f73" kind="dir">
+    <compoundname>Client</compoundname>
+    <innerdir refid="dir_b67603b242438b630c4ef63a78ee83ca">Client/client</innerdir>
+    <innerfile refid="Client_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="Client_2main_8py">main.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/"/>
+  </compounddef>
+</doxygen>

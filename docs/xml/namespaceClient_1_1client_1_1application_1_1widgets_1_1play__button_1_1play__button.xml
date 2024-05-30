@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::play_button::play_button</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame" prot="public">Client::client::application::widgets::play_button::play_button::SearchGame</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/play_button/play_button.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

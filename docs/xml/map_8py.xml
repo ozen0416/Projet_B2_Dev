@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="map_8py" kind="file" language="Python">
+    <compoundname>map.py</compoundname>
+    <innerclass refid="classServer_1_1server_1_1game_1_1map_1_1Map" prot="public">Server::server::game::map::Map</innerclass>
+    <innernamespace refid="namespaceServer_1_1server_1_1game_1_1map">Server::server::game::map</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="classServer_1_1server_1_1game_1_1map_1_1Map" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1map_1_1Map" kindref="compound">Map</ref>:</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Class<sp/>Map<sp/>is<sp/>intended<sp/>to<sp/>keep<sp/>track<sp/>of<sp/>position<sp/>of<sp/>ships</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>-<sp/>`size`:<sp/>is<sp/>the<sp/>size<sp/>of<sp/>the<sp/>matrix</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>-<sp/>`map_matrix`<sp/>is<sp/>a<sp/>2D<sp/>list<sp/>used<sp/>to<sp/>have<sp/>coordinates</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a3fff5929e214fe4dc68cf4aa5056cfb6" kindref="member">__init__</ref>(self,<sp/>size)<sp/>-&gt;<sp/>None:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" kindref="member">_size</ref>_size<sp/>=<sp/>size</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a74613684f3995ecd0520494cbb588613" kindref="member">_map_matrix</ref>_map_matrix<sp/>=<sp/>[<sp/>[</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">]<sp/>*<sp/>self.<ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" kindref="member">_size</ref>_size<sp/>]<sp/>*<sp/>self.<ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" kindref="member">_size</ref>_size</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@property</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a25379d3882a22910af8921d4faf4143e" kindref="member">map_matrix</ref>(self):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a74613684f3995ecd0520494cbb588613" kindref="member">_map_matrix</ref>_map_matrix</highlight></codeline>
+    </programlisting>
+    <location file="Server/server/game/map.py"/>
+  </compounddef>
+</doxygen>

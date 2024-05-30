@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::chat</compoundname>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area">Client::client::application::widgets::chat::chat_area</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget">Client::client::application::widgets::chat::chat_input_widget</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text">Client::client::application::widgets::chat::chat_message_text</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area">Client::client::application::widgets::chat::chat_scroll_area</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__textbox__widget">Client::client::application::widgets::chat::chat_textbox_widget</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget">Client::client::application::widgets::chat::chat_widget</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/chat/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

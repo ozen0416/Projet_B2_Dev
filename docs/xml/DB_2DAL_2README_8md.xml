@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="DB_2DAL_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>API<sp/>PHP</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Description</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cette<sp/>API<sp/>a<sp/>été<sp/>écrite<sp/>dans<sp/>le<sp/>cadre<sp/>du<sp/>module<sp/>PHP<sp/>lors<sp/>de<sp/>ma<sp/>deuxième<sp/>année<sp/>de<sp/>Bachelor<sp/>à<sp/>Ynov<sp/>Aix-en-Provence.</highlight></codeline>
+<codeline><highlight class="normal">L&apos;API<sp/>vient<sp/>interfacer<sp/>le<sp/>DAL<sp/>(Data<sp/>Access<sp/>Layer)<sp/>d&apos;une<sp/>base<sp/>de<sp/>donnée<sp/>MySQL</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cette<sp/>API<sp/>a<sp/>été<sp/>codé<sp/>avec<sp/>du<sp/>**PHP<sp/>5.6**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Sommaire</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>[Description](#Description)</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>[Commencer](#Commencer)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Installation](#Installation)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Utilisation](#Utilisation)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Endpoint](#Endpoint)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Gestion<sp/>d&apos;erreur](#Gestion%20d&apos;erreur)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Authentification](#Authentification)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Limite<sp/>de<sp/>requêtes](#Limite%20de%20requ%C3%AAtes)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Pistes<sp/>d&apos;amélioration<sp/>futur](#Pistes%20d&apos;am%C3%A9lioration%20futur)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1.<sp/>[Auteur](#Auteur)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Commencer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Installation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Extraire<sp/>le<sp/>dossier<sp/>`.zip`<sp/>dans<sp/>le<sp/>dossier<sp/>`www`<sp/>de<sp/>votre<sp/>server<sp/>Apache.</highlight></codeline>
+<codeline><highlight class="normal">L&apos;arborescence<sp/>devrait<sp/>ressembler<sp/>à<sp/>ça:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">root</highlight></codeline>
+<codeline><highlight class="normal">|</highlight></codeline>
+<codeline><highlight class="normal">└──credentials</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/>└──<sp/>db.json</highlight></codeline>
+<codeline><highlight class="normal">└──<sp/><sp/>www</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>│</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>└──<sp/>API</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>├──<sp/>dossier1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>├──<sp/>fichier1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>└──<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pour<sp/>le<sp/>bon<sp/>fonctionnement<sp/>du<sp/>DAL<sp/>il<sp/>faut<sp/>aussi<sp/>un<sp/>dossier<sp/>`credentials`<sp/>au<sp/>même<sp/>niveau<sp/>que<sp/>le<sp/>dossier<sp/>`www`.<sp/>Dans<sp/>ce<sp/>dossier<sp/>`credentials`<sp/>il<sp/>faudra<sp/>y<sp/>mettre<sp/>un<sp/>fichier<sp/>JSON<sp/>avec<sp/>les<sp/>identifiants<sp/>à<sp/>la<sp/>base<sp/>de<sp/>données.</highlight></codeline>
+<codeline><highlight class="normal">Voici<sp/>le<sp/>format:<sp/></highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;dbName&quot;:<sp/>&quot;your_db_name&quot;,</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;login&quot;:<sp/>&quot;your_db_user&quot;,</highlight></codeline>
+<codeline><highlight class="normal"> <sp/> <sp/>&quot;password&quot;:<sp/>&quot;y0ur_us€r_Pa$$w0rd&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Le<sp/>DAL<sp/>lit<sp/>par<sp/>défaut<sp/>le<sp/>fichier<sp/>`db.json`<sp/>mais<sp/>il<sp/>est<sp/>possible<sp/>de<sp/>lire<sp/>un<sp/>autre<sp/>fichier.<sp/>Il<sp/>faudra<sp/>simplement<sp/>préciser<sp/>le<sp/>nom<sp/>du<sp/>fichier<sp/>dans<sp/>le<sp/>constructeur<sp/>de<sp/>la<sp/>classe<sp/>`Database`<sp/>en<sp/>donnant<sp/>un<sp/>paramètre<sp/>à<sp/>la<sp/>méthode<sp/>`Connect`.</highlight></codeline>
+<codeline><highlight class="normal">À<sp/>cette<sp/>ligne:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">$this-&gt;dbh<sp/>=<sp/>Connection::Connect(&quot;your_db_file&quot;);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Utilisation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Les<sp/>requêtes<sp/>à<sp/>l&apos;API<sp/>se<sp/>font<sp/>toutes<sp/>avec<sp/>la<sp/>méthode<sp/>HTTP<sp/>POST.<sp/>Il<sp/>faudra<sp/>donc<sp/>un<sp/>logiciel<sp/>(comme<sp/>Postman)<sp/>ou<sp/>du<sp/>code<sp/>pour<sp/>faire<sp/>les<sp/>requêtes<sp/>et<sp/>passer<sp/>les<sp/>arguments<sp/>dans<sp/>le<sp/>body<sp/>de<sp/>la<sp/>requête.</highlight></codeline>
+<codeline><highlight class="normal">La<sp/>syntax<sp/>pour<sp/>les<sp/>requêtes<sp/>sera:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">{serverIP}/API/{endpoint}/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">L&apos;API<sp/>a<sp/>5<sp/>endpoints,<sp/>**Create**,<sp/>**Read**,<sp/>**Update**,<sp/>**Delete**<sp/>et<sp/>**TestDB**.<sp/>Ces<sp/>endpoints<sp/>permettent<sp/>d&apos;interagir<sp/>avec<sp/>la<sp/>base<sp/>de<sp/>données.<sp/>L&apos;endpoint<sp/>TestDB<sp/>est<sp/>un<sp/>endpoint<sp/>de<sp/>test<sp/>qui<sp/>pour<sp/>l&apos;instant<sp/>ne<sp/>sert<sp/>qu&apos;à<sp/>tester<sp/>la<sp/>méthode<sp/>`read`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Paramètres</highlight></codeline>
+<codeline><highlight class="normal">Chaque<sp/>endpoint<sp/>a<sp/>ses<sp/>paramètres<sp/>à<sp/>prendre<sp/>en<sp/>compte,<sp/>certains<sp/>ont<sp/>les<sp/>mêmes<sp/>paramètres<sp/>mais<sp/>d&apos;autre<sp/>non,<sp/>voici<sp/>un<sp/>tableau<sp/>avec<sp/>les<sp/>paramètres<sp/>pour<sp/>chaque<sp/>endpoint:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>CRUD/Args<sp/>|<sp/>table<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>params<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>columns<sp/><sp/><sp/><sp/><sp/>|<sp/>filter<sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>---------<sp/>|<sp/>-----------<sp/>|<sp/>-----------<sp/>|<sp/>-----------<sp/>|<sp/>-----------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Create<sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Read<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>OPTIONEL<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Update<sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Delete<sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>OBLIGATOIRE<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**table**:<sp/>Le<sp/>nom<sp/>de<sp/>la<sp/>table</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**params**:<sp/>Ensemble<sp/>clé-valeur<sp/>avec<sp/>les<sp/>colonnes<sp/>de<sp/>la<sp/>table<sp/>en<sp/>clé</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**columns**:<sp/>Tableau<sp/>de<sp/>colonnes<sp/>de<sp/>la<sp/>table<sp/>(peut<sp/>aussi<sp/>valoir<sp/>`&quot;*&quot;`)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**filter**:<sp/>Ensemble<sp/>d&apos;object<sp/>JSON,<sp/>dont<sp/>la<sp/>clé<sp/>est<sp/>le<sp/>nom<sp/>de<sp/>la<sp/>colonne<sp/>et<sp/>la<sp/>valeur<sp/>est<sp/>un<sp/>autre<sp/>ensemble<sp/>clé-valeur,<sp/>avec<sp/>pour<sp/>clé<sp/>`&quot;operateur&quot;`<sp/>et<sp/>`&quot;value&quot;`<sp/>(voir<sp/>exemple<sp/>[ci-dessous](#Update))</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Create</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ce<sp/>endpoint<sp/>permet<sp/>d&apos;écrire<sp/>des<sp/>entrées<sp/>dans<sp/>une<sp/>table<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données.</highlight></codeline>
+<codeline><highlight class="normal">Ici<sp/>`params`<sp/>sont<sp/>les<sp/>valeurs<sp/>à<sp/>attribuer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Voici<sp/>un<sp/>exemple<sp/>de<sp/>requête<sp/>et<sp/>d&apos;arguments<sp/>à<sp/>passer:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>bash:**</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;:<sp/>&quot;value1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;:<sp/>&quot;value2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/CreateDB/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>python:**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/CreateDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;:<sp/>&quot;value1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;:<sp/>&quot;value2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Read</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ce<sp/>endpoint<sp/>permet<sp/>de<sp/>lire<sp/>des<sp/>entrées<sp/>dans<sp/>une<sp/>table<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données.</highlight></codeline>
+<codeline><highlight class="normal">Ici<sp/>`columns`<sp/>sont<sp/>les<sp/>colonnes<sp/>à<sp/>lire<sp/>dans<sp/>la<sp/>table.</highlight></codeline>
+<codeline><highlight class="normal">Il<sp/>est<sp/>aussi<sp/>possible<sp/>de<sp/>lire<sp/>toutes<sp/>les<sp/>colonnes<sp/>d&apos;une<sp/>table<sp/>en<sp/>écrivant<sp/>`&quot;columns&quot;:<sp/>&quot;*&quot;`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Possibilité<sp/>de<sp/>rajouter<sp/>`filter`<sp/>à<sp/>la<sp/>requête<sp/>(voir<sp/>exemple<sp/>[ci-dessous](#Update))</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Voici<sp/>un<sp/>exemple<sp/>de<sp/>requête<sp/>et<sp/>d&apos;arguments<sp/>à<sp/>passer:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>bash:**</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;columns&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/ReadDB/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>python:**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/ReadDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;columns&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col1&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;col2&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Update</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ce<sp/>endpoint<sp/>permet<sp/>de<sp/>modifier<sp/>des<sp/>entrées<sp/>dans<sp/>une<sp/>table<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données.</highlight></codeline>
+<codeline><highlight class="normal">Ici<sp/>`params`<sp/>sont<sp/>les<sp/>nouvelles<sp/>valeurs<sp/>et<sp/>les<sp/>object<sp/>JSON<sp/>dans<sp/>`filter`<sp/>permettent<sp/>de<sp/>créer<sp/>la<sp/>clause<sp/>`WHERE`<sp/>de<sp/>la<sp/>requête<sp/>SQL.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Voici<sp/>un<sp/>exemple<sp/>de<sp/>requête<sp/>et<sp/>d&apos;arguments<sp/>à<sp/>passer:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>bash:**</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>&quot;Paul&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;age&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;23&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/UpdateDB/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>python:**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/UpdateDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;params&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>&quot;Paul&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;=&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;Pierre&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Delete</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ce<sp/>endpoint<sp/>permet<sp/>de<sp/>supprimer<sp/>des<sp/>entrées<sp/>dans<sp/>une<sp/>table<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données.</highlight></codeline>
+<codeline><highlight class="normal">Ici<sp/>`filter`<sp/>permet<sp/>de<sp/>sélectionner<sp/>les<sp/>bonnes<sp/>valeurs<sp/>à<sp/>supprimer</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Voici<sp/>un<sp/>exemple<sp/>de<sp/>requête<sp/>et<sp/>d&apos;arguments<sp/>à<sp/>passer:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>bash:**</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-X<sp/>POST<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-H<sp/>&apos;Content-Type:<sp/>application/json&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-d<sp/>&apos;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&quot;age&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;&gt;&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;23&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}&apos;<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>http://localhost/DeleteDB/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**En<sp/>python:**</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>requests</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">url<sp/>=<sp/>&quot;http://localhost/DeleteDB/&quot;</highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;table&quot;:<sp/>&quot;your_table&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;filter&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;prenom&quot;:<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;operator&quot;:<sp/>&quot;=&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;value&quot;:<sp/>&quot;Pierre&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">response<sp/>=<sp/>requests.post(url,<sp/>json=data)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">print(response.json())<sp/><sp/>#<sp/>If<sp/>the<sp/>response<sp/>contains<sp/>JSON<sp/>data</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Gestion<sp/>d&apos;erreur</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">En<sp/>cas<sp/>d&apos;erreur<sp/>l&apos;API<sp/>renverra<sp/>du<sp/>JSON<sp/>avec<sp/>le<sp/>format:</highlight></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;Error&quot;:<sp/>&quot;Error<sp/>message&quot;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authentification</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">L&apos;API<sp/>ne<sp/>possède<sp/>pas<sp/>de<sp/>système<sp/>d&apos;authentification.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Limite<sp/>de<sp/>requêtes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">L&apos;API<sp/>ne<sp/>possède<sp/>pas<sp/>de<sp/>limite<sp/>de<sp/>requêtes.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Pistes<sp/>d&apos;améliorations<sp/>futurs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Il<sp/>faudrait<sp/>que<sp/>les<sp/>valeurs<sp/>de<sp/>`ALLOWED_ARGS`<sp/>et<sp/>`NEEDED_ARGS`<sp/>ne<sp/>soient<sp/>pas<sp/>en<sp/>brut<sp/>dans<sp/>le<sp/>code,<sp/>peut-être<sp/>en<sp/>les<sp/>ayant<sp/>dans<sp/>un<sp/>autre<sp/>fichier<sp/>que<sp/>le<sp/>DAL<sp/>viendrait<sp/>juste<sp/>lire</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Avoir<sp/>une<sp/>classe<sp/>Credentials</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Pouvoir<sp/>Insert<sp/>plusieurs<sp/>lignes<sp/>à<sp/>la<sp/>fois</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Avoir<sp/>un<sp/>autoloader</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Auteur</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Théo<sp/>COLLIOT-MARTINEZ</highlight></codeline>
+    </programlisting>
+    <location file="DB/DAL/README.md"/>
+  </compounddef>
+</doxygen>

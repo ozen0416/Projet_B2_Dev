@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_ce0c16d09f564c170297b731f533aca5" kind="dir">
+    <compoundname>Server/server/network</compoundname>
+    <innerfile refid="Server_2server_2network_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="Server_2server_2network_2client_8py">client.py</innerfile>
+    <innerfile refid="pair_8py">pair.py</innerfile>
+    <innerfile refid="server_8py">server.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/network/"/>
+  </compounddef>
+</doxygen>

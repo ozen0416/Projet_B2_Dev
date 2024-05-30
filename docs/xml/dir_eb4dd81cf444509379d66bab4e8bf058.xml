@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_eb4dd81cf444509379d66bab4e8bf058" kind="dir">
+    <compoundname>Client/client/application/widgets/grid</compoundname>
+    <innerfile refid="Client_2client_2application_2widgets_2grid_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="display__ship_8py">display_ship.py</innerfile>
+    <innerfile refid="grid_8py">grid.py</innerfile>
+    <innerfile refid="grid__cell_8py">grid_cell.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/grid/"/>
+  </compounddef>
+</doxygen>

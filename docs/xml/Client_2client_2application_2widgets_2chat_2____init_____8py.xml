@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Client_2client_2application_2widgets_2chat_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat">Client::client::application::widgets::chat</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.chat_widget<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ChatWidget</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/chat/__init__.py"/>
+  </compounddef>
+</doxygen>

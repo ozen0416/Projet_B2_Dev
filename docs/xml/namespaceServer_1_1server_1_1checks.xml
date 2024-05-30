@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1checks" kind="namespace" language="Python">
+    <compoundname>Server::server::checks</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceServer_1_1server_1_1checks_1ae743df375408c6f4fc2151b9e1c41072" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.checks.check_data_integrity</definition>
+        <argsstring>(Any data)</argsstring>
+        <name>check_data_integrity</name>
+        <param>
+          <type>Any</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check for data integrity
+e.g. our data has `request` as a field,
+if its value is instance of a list
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/checks.py" line="4" column="1" bodyfile="Server/server/checks.py" bodystart="4" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceServer_1_1server_1_1checks_1af724c6e8fe6a665579264cb5c3f7e4bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.checks.check_client_in_game</definition>
+        <argsstring>(Any data)</argsstring>
+        <name>check_client_in_game</name>
+        <param>
+          <type>Any</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check that will ask database or server
+whether the client is in a game.
+So we are able to avoid passing through the whole branch
+the handling of `GAME` requests
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/checks.py" line="13" column="1" bodyfile="Server/server/checks.py" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceServer_1_1server_1_1checks_1aaa05506a380c93ff19e0576e6324dd55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.checks.check_client_paired</definition>
+        <argsstring>(Any data)</argsstring>
+        <name>check_client_paired</name>
+        <param>
+          <type>Any</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check intended to ask the server is the client
+is actually paired with another client.
+It will be used to avoid trying to send messages to a disconnected
+pair.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/checks.py" line="23" column="1" bodyfile="Server/server/checks.py" bodystart="23" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/checks.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1game_1_1map_1_1Map" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::game::map::Map</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.map.Map::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/map.py" line="10" column="1" bodyfile="Server/server/game/map.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1map_1_1Map_1a74613684f3995ecd0520494cbb588613" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.map.Map::_map_matrix</definition>
+        <argsstring></argsstring>
+        <name>_map_matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/map.py" line="11" column="1" bodyfile="Server/server/game/map.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1map_1_1Map_1a3fff5929e214fe4dc68cf4aa5056cfb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.game.map.Map.__init__</definition>
+        <argsstring>(self, size)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/map.py" line="9" column="1" bodyfile="Server/server/game/map.py" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1map_1_1Map_1a25379d3882a22910af8921d4faf4143e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.map.Map.map_matrix</definition>
+        <argsstring>(self)</argsstring>
+        <name>map_matrix</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/map.py" line="14" column="1" bodyfile="Server/server/game/map.py" bodystart="14" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class Map is intended to keep track of position of ships
+
+- `size`: is the size of the matrix
+- `map_matrix` is a 2D list used to have coordinates</verbatim> </para>
+    </detaileddescription>
+    <location file="Server/server/game/map.py" line="1" column="1" bodyfile="Server/server/game/map.py" bodystart="1" bodyend="16"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a3fff5929e214fe4dc68cf4aa5056cfb6" prot="public" virt="non-virtual"><scope>Server::server::game::map::Map</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a74613684f3995ecd0520494cbb588613" prot="private" virt="non-virtual"><scope>Server::server::game::map::Map</scope><name>_map_matrix</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1acd54f73f04ed9ebc9c543dd4204ef902" prot="private" virt="non-virtual"><scope>Server::server::game::map::Map</scope><name>_size</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1map_1_1Map_1a25379d3882a22910af8921d4faf4143e" prot="public" virt="non-virtual"><scope>Server::server::game::map::Map</scope><name>map_matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

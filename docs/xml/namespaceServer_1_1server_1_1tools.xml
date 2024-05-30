@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1tools" kind="namespace" language="Python">
+    <compoundname>Server::server::tools</compoundname>
+    <innernamespace refid="namespaceServer_1_1server_1_1tools_1_1enums">Server::server::tools::enums</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin">Server::server::tools::from_dict_mixin</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1tools_1_1vector2">Server::server::tools::vector2</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/tools/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

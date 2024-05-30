@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1network_1_1client" kind="namespace" language="Python">
+    <compoundname>Client::client::network::client</compoundname>
+    <innerclass refid="classClient_1_1client_1_1network_1_1client_1_1Client" prot="public">Client::client::network::client::Client</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1aa519dec3f1f7f00663b79f1833bf119e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Client::client::network::client.HOST</definition>
+        <argsstring></argsstring>
+        <name>HOST</name>
+        <initializer>=  &apos;2.9.106.99&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="9" column="1" bodyfile="Client/client/network/client.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1a95ab5cc30f2b13e2336aafc92d13d346" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Client::client::network::client.PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <initializer>=  4704</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="10" column="1" bodyfile="Client/client/network/client.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1a03cc782d77c2c3b9165c878c0e8e5f41" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client::client::network::client.client_id</definition>
+        <argsstring></argsstring>
+        <name>client_id</name>
+        <initializer>=  str(uuid.uuid4())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="12" column="1" bodyfile="Client/client/network/client.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1a1ee4863f40b8d223689bfb02e85d655d" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Client::client::network::client.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=  {
+    &quot;request&quot;: [&quot;MATCHMAKING&quot;, &quot;IN&quot;],
+    &quot;<ref refid="namespaceClient_1_1client_1_1network_1_1client_1a03cc782d77c2c3b9165c878c0e8e5f41" kindref="member">client_id</ref>&quot;: client_id
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="14" column="1" bodyfile="Client/client/network/client.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1a2a754cbdee185272564d1696e39b61f7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list Client::client::network::client.ship_cells</definition>
+        <argsstring></argsstring>
+        <name>ship_cells</name>
+        <initializer>=  [{&quot;_pos&quot;: {&quot;_x&quot;: 0, &quot;_y&quot;: 1}}, {&quot;_pos&quot;: {&quot;_x&quot;: 0, &quot;_y&quot;: 2}}, {&quot;_pos&quot;: {&quot;_x&quot;: 0, &quot;_y&quot;: 3}}]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="19" column="1" bodyfile="Client/client/network/client.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1ac00091be954ec50633f38a65f3b2358c" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Client::client::network::client.data_placement</definition>
+        <argsstring></argsstring>
+        <name>data_placement</name>
+        <initializer>=  {
+    &quot;request&quot;: [&quot;GAME&quot;, &quot;PLACEMENT&quot;],
+    &quot;<ref refid="namespaceClient_1_1client_1_1network_1_1client_1a03cc782d77c2c3b9165c878c0e8e5f41" kindref="member">client_id</ref>&quot;: client_id,
+    &quot;data&quot;: {&quot;_ships&quot;: [{&quot;_size&quot;: 3, &quot;_pos&quot;: {&quot;_x&quot;: 0, &quot;_y&quot;: 1}, &quot;_ship_cells&quot;: ship_cells}]}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="20" column="1" bodyfile="Client/client/network/client.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceClient_1_1client_1_1network_1_1client_1ae57a3010354ea0d676042c040098722b" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary Client::client::network::client.data_message</definition>
+        <argsstring></argsstring>
+        <name>data_message</name>
+        <initializer>=  {
+    &quot;request&quot;: [&quot;GAME&quot;, &quot;MESSAGE&quot;],
+    &quot;<ref refid="namespaceClient_1_1client_1_1network_1_1client_1a03cc782d77c2c3b9165c878c0e8e5f41" kindref="member">client_id</ref>&quot;: client_id,
+    &quot;data&quot;: {&quot;content&quot;: &quot;test message&quot;}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="26" column="1" bodyfile="Client/client/network/client.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceClient_1_1client_1_1network_1_1client_1a7a4f32579b0f269dfbfd90a33f15d705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.dict_to_encoded_utf_8</definition>
+        <argsstring>(dict _dict)</argsstring>
+        <name>dict_to_encoded_utf_8</name>
+        <param>
+          <type>dict</type>
+          <declname>_dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="33" column="1" bodyfile="Client/client/network/client.py" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/network/client.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

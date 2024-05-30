@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1dataclasses_1_1Ship" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::dataclasses::Ship</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1dataclasses_1_1Ship_1a22a8e4dc7920f8485d7ce4d897ea5585" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.dataclasses.Ship::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/dataclasses.py" line="23" column="1" bodyfile="Client/client/dataclasses.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1dataclasses_1_1Ship_1a02fcaba0d42eda5874cd12f71ac06151" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.dataclasses.Ship::start_cell</definition>
+        <argsstring></argsstring>
+        <name>start_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/dataclasses.py" line="24" column="1" bodyfile="Client/client/dataclasses.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1dataclasses_1_1Ship_1ae2932ab20b65e6fba05bbc69053f679a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.dataclasses.Ship::cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/dataclasses.py" line="25" column="1" bodyfile="Client/client/dataclasses.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1dataclasses_1_1Ship_1a61d40e27a4dc8833d2e39f536d6e7855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.dataclasses.Ship.__init__</definition>
+        <argsstring>(self, int size, Cell start_cell, list cells)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="classClient_1_1client_1_1dataclasses_1_1Cell" kindref="compound">Cell</ref></type>
+          <declname>start_cell</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>cells</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/dataclasses.py" line="22" column="1" bodyfile="Client/client/dataclasses.py" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1dataclasses_1_1Ship_1a149e0b1f0b603409ebf5672ad9013094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict Client.client.dataclasses.Ship.to_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_dict</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/dataclasses.py" line="27" column="1" bodyfile="Client/client/dataclasses.py" bodystart="27" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/dataclasses.py" line="21" column="1" bodyfile="Client/client/dataclasses.py" bodystart="21" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a61d40e27a4dc8833d2e39f536d6e7855" prot="public" virt="non-virtual"><scope>Client::client::dataclasses::Ship</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1ae2932ab20b65e6fba05bbc69053f679a" prot="public" virt="non-virtual"><scope>Client::client::dataclasses::Ship</scope><name>cells</name></member>
+      <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a22a8e4dc7920f8485d7ce4d897ea5585" prot="public" virt="non-virtual"><scope>Client::client::dataclasses::Ship</scope><name>size</name></member>
+      <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a02fcaba0d42eda5874cd12f71ac06151" prot="public" virt="non-virtual"><scope>Client::client::dataclasses::Ship</scope><name>start_cell</name></member>
+      <member refid="classClient_1_1client_1_1dataclasses_1_1Ship_1a149e0b1f0b603409ebf5672ad9013094" prot="public" virt="non-virtual"><scope>Client::client::dataclasses::Ship</scope><name>to_dict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

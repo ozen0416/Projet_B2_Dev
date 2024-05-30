@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacedocumentation" kind="namespace" language="Python">
+    <compoundname>documentation</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>\page arduino Separation of concerns
+
+
+1. **Game**
+2. **Matchmaking**
+3. **Client**
+4. **Server**
+5. **UI/UX**
+6. **BDD**</verbatim> </para>
+    </detaileddescription>
+    <location file="documentation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

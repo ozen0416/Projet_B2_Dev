@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1main" kind="namespace" language="Python">
+    <compoundname>Server::main</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceServer_1_1main_1ad03a9844964ae6b839cade36208822f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server::main.server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <initializer>=  Server.get_instance()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/main.py" line="6" column="1" bodyfile="Server/main.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

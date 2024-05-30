@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="chat__message__text_8py" kind="file" language="Python">
+    <compoundname>chat_message_text.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText" prot="public">Client::client::application::widgets::chat::chat_message_text::ChatMessageText</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text">Client::client::application::widgets::chat::chat_message_text</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..custom<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ScalingTextEdit</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText" kindref="compound">ChatMessageText</ref>(ScalingTextEdit):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText_1a408f530c066b019e0aa1a1f4e5e2ab9e" kindref="member">__init__</ref>(self,<sp/>content,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__message__text_1_1ChatMessageText_1a408f530c066b019e0aa1a1f4e5e2ab9e" kindref="member">__init__</ref>(parent=parent)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setObjectName(</highlight><highlight class="stringliteral">&apos;ChatMessageText&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setReadOnly(</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setPlainText(content)</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/chat/chat_message_text.py"/>
+  </compounddef>
+</doxygen>

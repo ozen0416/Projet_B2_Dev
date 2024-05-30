@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1tools_1_1enums_1_1GameState" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::tools::enums::GameState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8ce17bc77af37b5fbbd1443f237ab1a7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GameState::PLACEMENT</definition>
+        <argsstring></argsstring>
+        <name>PLACEMENT</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="18" column="1" bodyfile="Client/client/tools/enums.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a49d0dbe8fd4ad8c60efef6fc2ab1e11d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GameState::PROGRESS</definition>
+        <argsstring></argsstring>
+        <name>PROGRESS</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="19" column="1" bodyfile="Client/client/tools/enums.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8649d7c710c758e3a4b2120c6d3c0c62" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GameState::FINISHED</definition>
+        <argsstring></argsstring>
+        <name>FINISHED</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="20" column="1" bodyfile="Client/client/tools/enums.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1ab685fd05121a2a0a3c895396f3bdb1cb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GameState::WAITING</definition>
+        <argsstring></argsstring>
+        <name>WAITING</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="21" column="1" bodyfile="Client/client/tools/enums.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.tools.enums.GameState</label>
+        <link refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.tools.enums.GameState</label>
+        <link refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/tools/enums.py" line="17" column="1" bodyfile="Client/client/tools/enums.py" bodystart="17" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8649d7c710c758e3a4b2120c6d3c0c62" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GameState</scope><name>FINISHED</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a8ce17bc77af37b5fbbd1443f237ab1a7" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GameState</scope><name>PLACEMENT</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1a49d0dbe8fd4ad8c60efef6fc2ab1e11d" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GameState</scope><name>PROGRESS</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GameState_1ab685fd05121a2a0a3c895396f3bdb1cb" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GameState</scope><name>WAITING</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

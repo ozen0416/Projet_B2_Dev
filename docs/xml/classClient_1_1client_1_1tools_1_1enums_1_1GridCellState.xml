@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::tools::enums::GridCellState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1ae717e8f2aa0a289ac97ab4ff4b68122b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GridCellState::MISS</definition>
+        <argsstring></argsstring>
+        <name>MISS</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="10" column="1" bodyfile="Client/client/tools/enums.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a361c7db804cc8198e8dc32f2a7305e04" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GridCellState::HIT</definition>
+        <argsstring></argsstring>
+        <name>HIT</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="11" column="1" bodyfile="Client/client/tools/enums.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a3680ee8074bbdc811ae9d5ca6f6d88f7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GridCellState::WATER</definition>
+        <argsstring></argsstring>
+        <name>WATER</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="12" column="1" bodyfile="Client/client/tools/enums.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a0a10a684073fb7df5f14a93d52481a4f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GridCellState::SHIP</definition>
+        <argsstring></argsstring>
+        <name>SHIP</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="13" column="1" bodyfile="Client/client/tools/enums.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a6624fc133d7046629ce8432e101ec914" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Client.client.tools.enums.GridCellState::WAITING</definition>
+        <argsstring></argsstring>
+        <name>WAITING</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/tools/enums.py" line="14" column="1" bodyfile="Client/client/tools/enums.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.tools.enums.GridCellState</label>
+        <link refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.tools.enums.GridCellState</label>
+        <link refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/tools/enums.py" line="9" column="1" bodyfile="Client/client/tools/enums.py" bodystart="9" bodyend="17"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a361c7db804cc8198e8dc32f2a7305e04" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GridCellState</scope><name>HIT</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1ae717e8f2aa0a289ac97ab4ff4b68122b" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GridCellState</scope><name>MISS</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a0a10a684073fb7df5f14a93d52481a4f" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GridCellState</scope><name>SHIP</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a6624fc133d7046629ce8432e101ec914" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GridCellState</scope><name>WAITING</name></member>
+      <member refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState_1a3680ee8074bbdc811ae9d5ca6f6d88f7" prot="public" virt="non-virtual"><scope>Client::client::tools::enums::GridCellState</scope><name>WATER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

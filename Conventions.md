@@ -1,4 +1,6 @@
-### Git
+# Conventions page
+
+## Git
 Commit message example:
 ```sh
 git commit -m "[STATUS/STATUS1/...] detailed description"
@@ -10,7 +12,7 @@ STATUSES:
 - `REMOVE`
 - `MERGE`
 
-### Python
+## Python
 Usage of static typing and docstrings.
 
 **Casing**:

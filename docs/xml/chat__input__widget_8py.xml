@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="chat__input__widget_8py" kind="file" language="Python">
+    <compoundname>chat_input_widget.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget" prot="public">Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget">Client::client::application::widgets::chat::chat_input_widget</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QApplication</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtCore<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Qt,<sp/>Signal,<sp/>Slot</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..custom<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ScalingTextEdit</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>....dataclasses<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Message</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget" kindref="compound">ChatInputWidget</ref>(ScalingTextEdit):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>return_pressed<sp/>=<sp/>Signal()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a53a1ecbbdabdc29cd5ac64d085a29ee2" kindref="member">__init__</ref>(self,<sp/>contact,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a53a1ecbbdabdc29cd5ac64d085a29ee2" kindref="member">__init__</ref>(parent=parent)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setPlaceholderText(f</highlight><highlight class="stringliteral">&apos;Message<sp/>@{contact}&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a4fa4e0b69a519b4b629e1cdf8daf672a" kindref="member">return_pressed</ref>return_pressed.connect(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a5fa4b8fe03b8ca20a8a8022e0dc9289c" kindref="member">send_message</ref>send_message)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1aa325e86384b847c6c3a8edeb00fbb76b" kindref="member">max_height</ref>max_height<sp/>=<sp/>self.fontMetrics().height()<sp/>*<sp/>5<sp/>+<sp/>10</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1afaac3ef2a96b76a90f878fa18c6ddd12" kindref="member">min_height</ref>min_height<sp/>=<sp/>self.fontMetrics().height()<sp/>+<sp/>10</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@Slot()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a5fa4b8fe03b8ca20a8a8022e0dc9289c" kindref="member">send_message</ref>(self):</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>content<sp/>=<sp/>self.toPlainText().strip(</highlight><highlight class="stringliteral">&apos;\r\n<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>content<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>len(content)<sp/>&gt;<sp/>2000:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>message<sp/>=<sp/><ref refid="classClient_1_1client_1_1dataclasses_1_1Message" kindref="compound">Message</ref>(QApplication.instance().user,<sp/>content)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.setText(</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chat_scroll<sp/>=<sp/>self.parent().chat_scroll</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chat_scroll.add_textbox_from_message(message)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;request&quot;</highlight><highlight class="normal">:<sp/>[</highlight><highlight class="stringliteral">&quot;GAME&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MESSAGE&quot;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">:<sp/>{</highlight><highlight class="stringliteral">&quot;content&quot;</highlight><highlight class="normal">:<sp/>content},</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QApplication.instance().send_request(data)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a7042e7b7a624da378359152ab9d24f9e" kindref="member">keyPressEvent</ref>(self,<sp/>event):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>combination<sp/>=<sp/>event.keyCombination()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>combination.keyboardModifiers()<sp/>==<sp/>Qt.ShiftModifier<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>combination.key()<sp/>==<sp/>Qt.Key_Return:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.insertPlainText(</highlight><highlight class="stringliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>event.key()<sp/>==<sp/>Qt.Key_Return:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a4fa4e0b69a519b4b629e1cdf8daf672a" kindref="member">return_pressed</ref>return_pressed.emit()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a7042e7b7a624da378359152ab9d24f9e" kindref="member">keyPressEvent</ref>(event)</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/chat/chat_input_widget.py"/>
+  </compounddef>
+</doxygen>

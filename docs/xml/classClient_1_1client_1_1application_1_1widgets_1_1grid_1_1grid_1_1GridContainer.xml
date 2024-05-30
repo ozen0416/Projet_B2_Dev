@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::grid::grid::GridContainer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ae96284a3df45ba6f34afc19b2c61f536" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.GridContainer::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="135" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a17a73fd2411f517d1cd52b557f4c4437" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.GridContainer::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="137" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ab69f47cd0463ef4c4e41dca6c2f444d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.GridContainer::grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="138" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a75adc3fd504959849ae7298cf13bdb90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.GridContainer.__init__</definition>
+        <argsstring>(self, str title, parent=None, bool ally_grid=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ally_grid</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="133" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="133" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a2b7cd0b14e78dfdb4b1b5443952e5d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.GridContainer.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="143" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="143" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1adfbb96e0d9d4aca9486cf997cc2ba5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.GridContainer.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="147" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a660dfb962d8326ea28a57ec5479c45e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.GridContainer.get_placement</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_placement</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="151" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="151" bodyend="156"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Container of the grid and its title
+The title is either &quot;Ally&quot; or &quot;Enemy&quot;
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.grid.GridContainer</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.grid.GridContainer</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/grid/grid.py" line="127" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="127" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a75adc3fd504959849ae7298cf13bdb90" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ae96284a3df45ba6f34afc19b2c61f536" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>_parent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a660dfb962d8326ea28a57ec5479c45e6" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>get_placement</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1ab69f47cd0463ef4c4e41dca6c2f444d3" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>grid</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a2b7cd0b14e78dfdb4b1b5443952e5d32" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1adfbb96e0d9d4aca9486cf997cc2ba5b8" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1GridContainer_1a17a73fd2411f517d1cd52b557f4c4437" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::GridContainer</scope><name>label</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

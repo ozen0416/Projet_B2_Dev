@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1abc_1_1AbstractHandler" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::abc::AbstractHandler</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1abc_1_1Handler" prot="public" virt="non-virtual">Server.server.abc.Handler</basecompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1handlers_1_1GameHandler" prot="public" virt="non-virtual">Server.server.handlers.GameHandler</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler" prot="public" virt="non-virtual">Server.server.handlers.MatchmakingHandler</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1handlers_1_1RootHandler" prot="public" virt="non-virtual">Server.server.handlers.RootHandler</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1abc_1_1AbstractHandler_1a3ac3ca43473621da60f531b978c17953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.abc.AbstractHandler.add_tree_object</definition>
+        <argsstring>(self, str request_type, TreeObject tree_object)</argsstring>
+        <name>add_tree_object</name>
+        <reimplements refid="classServer_1_1server_1_1abc_1_1Handler_1a21a4706ac87fe29e58a546ee06bd8f4c">add_tree_object</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1abc_1_1TreeObject" kindref="compound">TreeObject</ref></type>
+          <declname>tree_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/abc.py" line="31" column="1" bodyfile="Server/server/abc.py" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1abc_1_1AbstractHandler_1a2a3a665aec7fce4515564e6f0f0eceb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.abc.AbstractHandler.add_check</definition>
+        <argsstring>(self, Callable check)</argsstring>
+        <name>add_check</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Callable</type>
+          <declname>check</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/abc.py" line="34" column="1" bodyfile="Server/server/abc.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1abc_1_1AbstractHandler_1a89827cdcd3f7e00f0c8426ca06996fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.abc.AbstractHandler.check</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>check</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/abc.py" line="37" column="1" bodyfile="Server/server/abc.py" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1abc_1_1AbstractHandler_1a911325f2bfbeb1a6190c51afaefc12aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[str]</type>
+        <definition> Optional[str] Server.server.abc.AbstractHandler.handle</definition>
+        <argsstring>(self, Any request_type, Any request)</argsstring>
+        <name>handle</name>
+        <reimplements refid="classServer_1_1server_1_1abc_1_1TreeObject_1a005c60fb2ec7e373cbf8979d0867f6d4">handle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The handle of the Handler is to pass through the tree the data.
+
+It also is intended to check
+
+this function is abstract, so you have to implement it to
+give it check decorators
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/abc.py" line="41" column="1" bodyfile="Server/server/abc.py" bodystart="41" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The default chaining behavior can be implemented inside a base handler
+class.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.abc.AbstractHandler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Server.server.handlers.MatchmakingHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Server.server.handlers.RootHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1RootHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="5">
+        <label>Server.server.handlers.GameHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1GameHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.Handler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.abc.AbstractHandler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.Handler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/abc.py" line="26" column="1" bodyfile="Server/server/abc.py" bodystart="26" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a2a3a665aec7fce4515564e6f0f0eceb8" prot="public" virt="non-virtual"><scope>Server::server::abc::AbstractHandler</scope><name>add_check</name></member>
+      <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a3ac3ca43473621da60f531b978c17953" prot="public" virt="non-virtual"><scope>Server::server::abc::AbstractHandler</scope><name>add_tree_object</name></member>
+      <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a89827cdcd3f7e00f0c8426ca06996fcf" prot="public" virt="non-virtual"><scope>Server::server::abc::AbstractHandler</scope><name>check</name></member>
+      <member refid="classServer_1_1server_1_1abc_1_1Handler_1ab96ab49b3dd90850ef9d33dbb3f79a0c" prot="public" virt="non-virtual"><scope>Server::server::abc::AbstractHandler</scope><name>dict</name></member>
+      <member refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a911325f2bfbeb1a6190c51afaefc12aa" prot="public" virt="non-virtual"><scope>Server::server::abc::AbstractHandler</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

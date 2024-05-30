@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::grid::grid::Grid</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a918e083bb8710395e602bab64a39f789" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::ship_dropped</definition>
+        <argsstring></argsstring>
+        <name>ship_dropped</name>
+        <initializer>=  Signal(int)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="22" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a83c19720ddd2334798b1015a770963d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="26" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ac481716a6764c697e7216d17f0014349" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::waiting_cell</definition>
+        <argsstring></argsstring>
+        <name>waiting_cell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="27" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a2b02fe03cd3f37406797406a1e7ad412" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::ally_grid</definition>
+        <argsstring></argsstring>
+        <name>ally_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="30" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3a9eaf570f54b836c9270c69ed518f01" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::placed_ships</definition>
+        <argsstring></argsstring>
+        <name>placed_ships</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="32" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a50319677d50711683130e292a6e855dc" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="28" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a8ff52c98daf7a20ad5c706de4a906af7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.grid.Grid::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="29" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a4405ee4d91a0ef1c8f02fe7343052b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.application.widgets.grid.grid.Grid.__init__</definition>
+        <argsstring>(self, int size, Optional[QWidget] parent=None, bool ally_grid=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[QWidget]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ally_grid</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="24" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="24" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a0fe5615abb66dd95bdff14e463cd1923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.set_cell_waiting</definition>
+        <argsstring>(self, x, y)</argsstring>
+        <name>set_cell_waiting</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="38" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3025f6d9fe4bffc5a96c67c53ff98878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.reset_waiting</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset_waiting</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="52" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="52" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a5af2d1ac7234fe1690a6f8a6e9b97442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.dragEnterEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>dragEnterEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="61" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a9248eb4eb5bfe166df65ba472334b5c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.dropEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>dropEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="67" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a51236767df372275f4ad62821f17d300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.place_ship</definition>
+        <argsstring>(self, size, start_row, start_col)</argsstring>
+        <name>place_ship</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>start_row</type>
+          <defname>start_row</defname>
+        </param>
+        <param>
+          <type>start_col</type>
+          <defname>start_col</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="81" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="81" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a448f2c4e25747f04a3cf3ea8658d1240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.update_grid_state</definition>
+        <argsstring>(self, int x, int y, GridCellState state)</argsstring>
+        <name>update_grid_state</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classClient_1_1client_1_1tools_1_1enums_1_1GridCellState" kindref="compound">GridCellState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="105" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a7714d6ed3537c0cc955e6dbc66548ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="109" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ab9e2ef5c04ccf02bcb3b71c47eb3c2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.grid.Grid.init_grid_button</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_grid_button</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initiate grid of Cells
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/grid.py" line="113" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="113" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A grid of multiple GridCell
+Instantiate all GridCell as WATER
+
+Once there are 5 placed ships, the data of the ships is sent to the server
+
+Whenever a ship is place emit a Signal that will be catched by every Ship
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.grid.Grid</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.grid.Grid</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/grid/grid.py" line="12" column="1" bodyfile="Client/client/application/widgets/grid/grid.py" bodystart="12" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a4405ee4d91a0ef1c8f02fe7343052b2b" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a8ff52c98daf7a20ad5c706de4a906af7" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>_parent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a50319677d50711683130e292a6e855dc" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>_size</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a2b02fe03cd3f37406797406a1e7ad412" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>ally_grid</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a83c19720ddd2334798b1015a770963d0" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>cells</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a5af2d1ac7234fe1690a6f8a6e9b97442" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>dragEnterEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a9248eb4eb5bfe166df65ba472334b5c9" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>dropEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ab9e2ef5c04ccf02bcb3b71c47eb3c2b4" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>init_grid_button</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a7714d6ed3537c0cc955e6dbc66548ab0" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a51236767df372275f4ad62821f17d300" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>place_ship</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3a9eaf570f54b836c9270c69ed518f01" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>placed_ships</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a3025f6d9fe4bffc5a96c67c53ff98878" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>reset_waiting</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a0fe5615abb66dd95bdff14e463cd1923" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>set_cell_waiting</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a918e083bb8710395e602bab64a39f789" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>ship_dropped</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1a448f2c4e25747f04a3cf3ea8658d1240" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>update_grid_state</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid_1ac481716a6764c697e7216d17f0014349" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::grid::Grid</scope><name>waiting_cell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

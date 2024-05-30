@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::play_button::play_button::SearchGame</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a41452f81975c3e8f5bc29dae8ec5e44b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.play_button.play_button.SearchGame::start_time</definition>
+        <argsstring></argsstring>
+        <name>start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="18" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a0acf8060495bf64699c4af2ce32e4d6f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.play_button.play_button.SearchGame::button_state</definition>
+        <argsstring></argsstring>
+        <name>button_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="19" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a9b0836b0719b19e1131234e53125cb1a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.play_button.play_button.SearchGame::play</definition>
+        <argsstring></argsstring>
+        <name>play</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="21" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a414180f1144ba165317f2ff46f67cb4d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.play_button.play_button.SearchGame::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="22" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a6ac46bdf89619de83841f3f2bf125870" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.play_button.play_button.SearchGame::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="23" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1adfe415d8d119c49086888a14ba34a27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.application.widgets.play_button.play_button.SearchGame.__init__</definition>
+        <argsstring>(self, Optional[QWidget] parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[QWidget]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="16" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="16" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a12dccf79e8ebef0a0f1e90f2eaed6010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="28" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1affba741923a171c71eb8039ca5aa984f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="31" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="31" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a498fb98aa1961480fbc28c78ab9b4cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.button_handler</definition>
+        <argsstring>(self)</argsstring>
+        <name>button_handler</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="38" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a43c13132978ac4fb531e040b48ed6023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.start_timer</definition>
+        <argsstring>(self)</argsstring>
+        <name>start_timer</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method that will be called each time the PlayButton is clicked
+and its state is PLAY
+
+Calls for a matchmaking request and wait for a response
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="52" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1aee06c7b498de626d1f320b1eb55f51f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.cancel_play</definition>
+        <argsstring>(self)</argsstring>
+        <name>cancel_play</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method that will be called each time the PlayButton is clicked
+and its state is CANCEL
+
+Cancels the matchmaking request
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="65" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="65" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a1e338b842ee6b93bac71f2adb53bf95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.play_button.play_button.SearchGame.update_time</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_time</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method that will be called each time the timer finishes.
+By default the timer finishes in one second.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/play_button/play_button.py" line="77" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="77" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Widget to search for a game or cancel the search.
+
+Shows the time that has past since the beginning of the search.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.play_button.play_button.SearchGame</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.play_button.play_button.SearchGame</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/play_button/play_button.py" line="9" column="1" bodyfile="Client/client/application/widgets/play_button/play_button.py" bodystart="9" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1adfe415d8d119c49086888a14ba34a27d" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a498fb98aa1961480fbc28c78ab9b4cf2" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>button_handler</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a0acf8060495bf64699c4af2ce32e4d6f" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>button_state</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1aee06c7b498de626d1f320b1eb55f51f9" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>cancel_play</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a12dccf79e8ebef0a0f1e90f2eaed6010" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1affba741923a171c71eb8039ca5aa984f" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a414180f1144ba165317f2ff46f67cb4d" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>label</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a9b0836b0719b19e1131234e53125cb1a" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>play</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a41452f81975c3e8f5bc29dae8ec5e44b" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>start_time</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a43c13132978ac4fb531e040b48ed6023" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>start_timer</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a6ac46bdf89619de83841f3f2bf125870" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>timer</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame_1a1e338b842ee6b93bac71f2adb53bf95f" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::play_button::play_button::SearchGame</scope><name>update_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

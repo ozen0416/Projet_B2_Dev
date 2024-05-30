@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1game_1_1game_1_1Game" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::game::game::Game</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public" virt="non-virtual">Server.server.tools.from_dict_mixin.FromDictMixin</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1game_1_1Game_1adfbc13a3e3279f680af1c4406f8e5b52" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Server.server.game.game.Game::int</definition>
+        <argsstring></argsstring>
+        <name>int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/game.py" line="19" column="1" bodyfile="Server/server/game/game.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1game_1_1Game_1a54a6d9fd564a846d662e36f3554d89a0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Server.server.game.game.Game::bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/game.py" line="20" column="1" bodyfile="Server/server/game/game.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1game_1_1Game_1a246bea85e2ddbf9bb5637c8ebb37d943" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.game.Game::finished</definition>
+        <argsstring></argsstring>
+        <name>finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/game.py" line="38" column="1" bodyfile="Server/server/game/game.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1game_1_1Game_1a81592769494eea38068dbcb60afaec99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.game.Game.process_turn</definition>
+        <argsstring>(self, Vector2 target_cell)</argsstring>
+        <name>process_turn</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>target_cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Try a hit at a location of a specific player according to the current turn
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/game.py" line="22" column="1" bodyfile="Server/server/game/game.py" bodystart="22" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1game_1_1Game_1a08dc4808b0d483ca152d7e55243f78b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.game.Game.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/game.py" line="42" column="1" bodyfile="Server/server/game/game.py" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>game Manager, stores all required data for the
+game to be functional. Also contains methods to
+instantiate and make the game progress
+
+`first_player`: Player 1 of the game
+`second_player`: Player 2 of the game
+`turn`: Current turn of the game
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.game.game.Game</label>
+        <link refid="classServer_1_1server_1_1game_1_1game_1_1Game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.game.game.Game</label>
+        <link refid="classServer_1_1server_1_1game_1_1game_1_1Game"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/game/game.py" line="6" column="1" bodyfile="Server/server/game/game.py" bodystart="6" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a08dc4808b0d483ca152d7e55243f78b1" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>__repr__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a54a6d9fd564a846d662e36f3554d89a0" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>bool</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a246bea85e2ddbf9bb5637c8ebb37d943" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>finished</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>from_dict</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1adfbc13a3e3279f680af1c4406f8e5b52" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>int</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a81592769494eea38068dbcb60afaec99" prot="public" virt="non-virtual"><scope>Server::server::game::game::Game</scope><name>process_turn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

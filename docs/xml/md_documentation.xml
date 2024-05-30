@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md_documentation" kind="page">
+    <compoundname>md_documentation</compoundname>
+    <title>Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><orderedlist>
+<listitem><para><bold>Game</bold></para>
+</listitem><listitem><para><bold>Matchmaking</bold></para>
+</listitem><listitem><para><bold><ref refid="namespaceClient" kindref="compound">Client</ref></bold></para>
+</listitem><listitem><para><bold><ref refid="namespaceServer" kindref="compound">Server</ref></bold></para>
+</listitem><listitem><para><bold>UI/UX</bold></para>
+</listitem><listitem><para><bold>BDD</bold></para>
+</listitem></orderedlist>
+</para>
+<sect1 id="md_documentation_1autotoc_md21">
+<title>1.  Game</title>
+<sect3 id="md_documentation_1autotoc_md22">
+<title>Typical game</title>
+<para>Game is turn-based Each player has to place his pieces onto his side of the map Once ships are placed, each player will have to choose a cell from its opponent grid. Either if a ship is touched or not, the player is noticed When a ship is sunk, the player is also noticed One player wins when every ship on its opponent side has been sunk</para>
+</sect3>
+</sect1>
+<sect1 id="md_documentation_1autotoc_md23">
+<title>3. Server</title>
+<para>The server will receive socket information containing both a header for server-side interpretation for the data and the actual data.</para>
+<para>A handler will have to give the data to the <computeroutput>Game</computeroutput> instance</para>
+<para>Example of data to be sent (clients would have to send its list of ships, or a target hit) <programlisting filename=".py"><codeline><highlight class="normal">ship_cells<sp/>=<sp/>[{</highlight><highlight class="stringliteral">&quot;_pos&quot;</highlight><highlight class="normal">:<sp/>{</highlight><highlight class="stringliteral">&quot;_x&quot;</highlight><highlight class="normal">:<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;_y&quot;</highlight><highlight class="normal">:<sp/>1}},<sp/>{</highlight><highlight class="stringliteral">&quot;_pos&quot;</highlight><highlight class="normal">:<sp/>{</highlight><highlight class="stringliteral">&quot;_x&quot;</highlight><highlight class="normal">:<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;_y&quot;</highlight><highlight class="normal">:<sp/>1}},<sp/>{</highlight><highlight class="stringliteral">&quot;_pos&quot;</highlight><highlight class="normal">:<sp/>{</highlight><highlight class="stringliteral">&quot;_x&quot;</highlight><highlight class="normal">:<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;_y&quot;</highlight><highlight class="normal">:<sp/>1}}]</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;_ships&quot;</highlight><highlight class="normal">:<sp/>[{</highlight><highlight class="stringliteral">&quot;_size&quot;</highlight><highlight class="normal">:<sp/>3,<sp/></highlight><highlight class="stringliteral">&quot;_pos&quot;</highlight><highlight class="normal">:<sp/>{</highlight><highlight class="stringliteral">&quot;_x&quot;</highlight><highlight class="normal">:<sp/>0,<sp/></highlight><highlight class="stringliteral">&quot;_y&quot;</highlight><highlight class="normal">:<sp/>1,},<sp/><sp/></highlight><highlight class="stringliteral">&quot;_ship_cells&quot;</highlight><highlight class="normal">:<sp/>ship_cells}]}</highlight></codeline>
+</programlisting></para>
+<para>A request <bold>MUST</bold> contain the type of the request and its sub-request, otherwise it will be discarded. <programlisting filename=".json"><codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;request&quot;:<sp/>[&quot;GAME&quot;,<sp/>&quot;HIT&quot;],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;client_id&quot;:<sp/>12,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;game_id&quot;:<sp/>34,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;data&quot;:<sp/>{&quot;_x&quot;:<sp/>1,<sp/>&quot;_y&quot;:<sp/>0}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<sect4 id="md_documentation_1autotoc_md24">
+<title>Requests:</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>GAME</computeroutput> this will inform the server your request is about an in-progress game.</para>
+</listitem><listitem><para><computeroutput>MATCHMAKING</computeroutput> this will inform the server your request is about the pregame matchmaking system.</para>
+</listitem></itemizedlist>
+</para>
+</sect4>
+<sect4 id="md_documentation_1autotoc_md25">
+<title>Sub-requests:</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>HIT</computeroutput> to inform the server that you want to try a hit at (<computeroutput>x</computeroutput>,<computeroutput>y</computeroutput>)</para>
+</listitem><listitem><para><computeroutput>QUEUE_IN</computeroutput> to inform the server that you are willing to join the matchmaking queue</para>
+</listitem><listitem><para><computeroutput>QUEUE_OUT</computeroutput> to inform the server that you are willing to leave the matchmaking queue</para>
+</listitem><listitem><para><computeroutput>MESSAGE</computeroutput> to send a message to the other client</para>
+</listitem></itemizedlist>
+</para>
+<para>This is best explained in the <computeroutput>Class Hierarchy</computeroutput> page</para>
+<para><computeroutput>WholeGameData</computeroutput>: The whole data that happened during the game, each turn is recorded and store from the beginning to the end of the game in the server.</para>
+</sect4>
+<sect3 id="md_documentation_1autotoc_md26">
+<title>/!\ Important point</title>
+<para>How are we going to handle a disconnected client when an opponent make a turn?</para>
+<para><anchor id="md_documentation_1autotoc_md27"/> <heading level="5">Possible solution</heading>
+</para>
+<para>When in a <computeroutput>pair</computeroutput>, one of the clients has lost connection to the server and is willing to reconnect to the game, the client will have to notice this event to the application to be prepared of receiving the <computeroutput>WholeGameData</computeroutput>. That will allow us to recreate the game at the point it actually is, even for turns that could be made after the <computeroutput>client</computeroutput> was disconnected.</para>
+<para>Server-side, it shall scan for whether new incoming socket connection was previously linked to another <computeroutput>client</computeroutput> as a <computeroutput>pair</computeroutput>. If so, we set to this <computeroutput>client</computeroutput> inside of the <computeroutput>pair</computeroutput> the previous disconnected one and send after the pairing the <computeroutput>WholeGameData</computeroutput> to this client.</para>
+<para>As for now, this is yet not implemented. If a client connection is closed the game will just be frozen to its state.</para>
+<sect4 id="md_documentation_1autotoc_md28">
+<title>What is a &lt;tt&gt;Pair&lt;/tt&gt; to the server?</title>
+<para>A <computeroutput>pair</computeroutput> is a set of two clients connections, that are currently linked by the server for post-matchmaking communication (either messaging or game-related events):</para>
+<para><itemizedlist>
+<listitem><para>The current <computeroutput>Game</computeroutput> instance to process the game and keep a track of its different states.</para>
+</listitem><listitem><para>An <computeroutput>id</computeroutput> that will be the game id</para>
+</listitem><listitem><para>A First <computeroutput><ref refid="namespaceClient" kindref="compound">Client</ref></computeroutput></para>
+</listitem><listitem><para>A Second <computeroutput><ref refid="namespaceClient" kindref="compound">Client</ref></computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</sect4>
+</sect3>
+<sect3 id="md_documentation_1autotoc_md29">
+<title>Bad data</title>
+<para>Bad data can happen as sockets could not send or receive properly the transmitted data. But there could be few cases in which a user would try breaking the behavior of the game and send data when it is not his turn, simulating an opponent attack</para>
+<para>To prevent that, we could possibly make an end and cancel any game receiving that kind of suspicious sent packets from one of its clients. We also could simply discard any data sent from clients attempting a request to a game they do not belong in.</para>
+<para>An ideal approach would be to blacklist every IP trying to perform too much illegal requests in a span of time, but it could also be some huge amount of work to get it as intended. </para>
+</sect3>
+</sect1>
+    </detaileddescription>
+    <location file="documentation.md"/>
+  </compounddef>
+</doxygen>

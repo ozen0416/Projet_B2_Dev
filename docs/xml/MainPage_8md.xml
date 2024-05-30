@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="MainPage_8md" kind="file" language="Markdown">
+    <compoundname>MainPage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">/mainpage<sp/>Main<sp/>Page</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>the<sp/>main<sp/>page<sp/>of<sp/>your<sp/>documentation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>information,<sp/>see<sp/>the<sp/>[Additional<sp/>Page](additional_page.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">\page<sp/>additional_page<sp/>Additional<sp/>Page</highlight></codeline>
+<codeline><highlight class="normal">\tableofcontents</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Section<sp/>1</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>is<sp/>some<sp/>content<sp/>for<sp/>section<sp/>1.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Section<sp/>2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Here<sp/>is<sp/>some<sp/>content<sp/>for<sp/>section<sp/>2.</highlight></codeline>
+    </programlisting>
+    <location file="MainPage.md"/>
+  </compounddef>
+</doxygen>

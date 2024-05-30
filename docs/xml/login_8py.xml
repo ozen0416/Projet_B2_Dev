@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="login_8py" kind="file" language="Python">
+    <compoundname>login.py</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login" prot="public">Client::client::application::widgets::login::login::Login</innerclass>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1login_1_1login">Client::client::application::widgets::login::login</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1login_1_1login" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PySide6.QtWidgets<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>QLineEdit,<sp/>QLabel,<sp/>QPushButton,<sp/>QWidget,<sp/>QFormLayout,<sp/>QApplication</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login" kindref="compound">Login</ref>(QWidget):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Login<sp/>widget<sp/>with<sp/>two<sp/>inputs,<sp/>the<sp/>username<sp/>and<sp/>the<sp/>password</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a728f56b78e48acaf7a5182929c888545" kindref="member">__init__</ref>(self,<sp/>parent=None):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a728f56b78e48acaf7a5182929c888545" kindref="member">__init__</ref>(parent)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a7b6f00a70efe5c1a37fe0bd842698dc3" kindref="member">lineedit_username</ref>lineedit_username<sp/>=<sp/>QLineEdit(self)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1aee4ef3ae2b7f939ed7805a3fdc3115b7" kindref="member">lineedit_id</ref>lineedit_id<sp/>=<sp/>QLineEdit(self)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a3b743f47f47497eced641447e7f09f01" kindref="member">label_username</ref>label_username<sp/>=<sp/>QLabel(</highlight><highlight class="stringliteral">&quot;Username&quot;</highlight><highlight class="normal">,<sp/>self)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a78c00de5f501864ac4bf11942f0e27c2" kindref="member">label_id</ref>label_id<sp/>=<sp/>QLabel(</highlight><highlight class="stringliteral">&quot;ID&quot;</highlight><highlight class="normal">,<sp/>self)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af30f92379c9a219c1de1963b08bab7b8" kindref="member">submit</ref>submit<sp/>=<sp/>QPushButton(</highlight><highlight class="stringliteral">&quot;Submit&quot;</highlight><highlight class="normal">,<sp/>self)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af744cdbfaa900f2c25d068f27e061011" kindref="member">init_layout</ref>init_layout()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a786e35b4e905902e70620e0e0000a749" kindref="member">init_widgets</ref>init_widgets()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af744cdbfaa900f2c25d068f27e061011" kindref="member">init_layout</ref>(self):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QFormLayout(self)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a786e35b4e905902e70620e0e0000a749" kindref="member">init_widgets</ref>(self):</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>self.lineedit_id.setEchoMode(QLineEdit.Password)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a7b6f00a70efe5c1a37fe0bd842698dc3" kindref="member">lineedit_username</ref>lineedit_username.setText(QApplication.instance().user)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1aee4ef3ae2b7f939ed7805a3fdc3115b7" kindref="member">lineedit_id</ref>lineedit_id.setText(QApplication.instance().client_id)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af30f92379c9a219c1de1963b08bab7b8" kindref="member">submit</ref>submit.clicked.connect(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1add939cfd01e45b73ed79d26c2980a44a" kindref="member">get_cred</ref>get_cred)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addRow(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a3b743f47f47497eced641447e7f09f01" kindref="member">label_username</ref>label_username,<sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a7b6f00a70efe5c1a37fe0bd842698dc3" kindref="member">lineedit_username</ref>lineedit_username)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addRow(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a78c00de5f501864ac4bf11942f0e27c2" kindref="member">label_id</ref>label_id,<sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1aee4ef3ae2b7f939ed7805a3fdc3115b7" kindref="member">lineedit_id</ref>lineedit_id)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.layout().addRow(self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1af30f92379c9a219c1de1963b08bab7b8" kindref="member">submit</ref>submit)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1add939cfd01e45b73ed79d26c2980a44a" kindref="member">get_cred</ref>(self):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QApplication.instance().user<sp/>=<sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1a7b6f00a70efe5c1a37fe0bd842698dc3" kindref="member">lineedit_username</ref>lineedit_username.text()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QApplication.instance().client_id<sp/>=<sp/>self.<ref refid="classClient_1_1client_1_1application_1_1widgets_1_1login_1_1login_1_1Login_1aee4ef3ae2b7f939ed7805a3fdc3115b7" kindref="member">lineedit_id</ref>lineedit_id.text()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QApplication.instance().save_settings()</highlight></codeline>
+    </programlisting>
+    <location file="Client/client/application/widgets/login/login.py"/>
+  </compounddef>
+</doxygen>

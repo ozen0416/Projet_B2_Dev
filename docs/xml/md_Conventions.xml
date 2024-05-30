@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md_Conventions" kind="page">
+    <compoundname>md_Conventions</compoundname>
+    <title>Conventions page</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md_Conventions_1autotoc_md1">
+<title>Git</title>
+<para>Commit message example: <programlisting filename=".sh"><codeline><highlight class="normal">git<sp/>commit<sp/>-m<sp/>&quot;[STATUS/STATUS1/...]<sp/>detailed<sp/>description&quot;</highlight></codeline>
+</programlisting></para>
+<para>STATUSES:<itemizedlist>
+<listitem><para><computeroutput>ADD</computeroutput></para>
+</listitem><listitem><para><computeroutput>UPDATE</computeroutput></para>
+</listitem><listitem><para><computeroutput>REMOVE</computeroutput></para>
+</listitem><listitem><para><computeroutput>MERGE</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md_Conventions_1autotoc_md2">
+<title>Python</title>
+<para>Usage of static typing and docstrings.</para>
+<para><bold>Casing</bold>:<itemizedlist>
+<listitem><para><computeroutput>CONSTANTS_DECLARATION</computeroutput></para>
+</listitem><listitem><para><computeroutput>ClassDeclaration</computeroutput></para>
+</listitem><listitem><para><computeroutput>method_declaration</computeroutput></para>
+</listitem><listitem><para><computeroutput>property_declaration</computeroutput> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="Conventions.md"/>
+  </compounddef>
+</doxygen>

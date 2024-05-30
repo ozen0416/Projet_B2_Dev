@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::custom</compoundname>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window">Client::client::application::widgets::custom::battleships_window</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1frameless__widget">Client::client::application::widgets::custom::frameless_widget</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit">Client::client::application::widgets::custom::scaling_textedit</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1timer">Client::client::application::widgets::custom::timer</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1username__input">Client::client::application::widgets::custom::username_input</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/custom/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

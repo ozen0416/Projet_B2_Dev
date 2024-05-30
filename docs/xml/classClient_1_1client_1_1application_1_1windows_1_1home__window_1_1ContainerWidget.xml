@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::windows::home_window::ContainerWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.home_window.ContainerWidget::play_button</definition>
+        <argsstring></argsstring>
+        <name>play_button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="41" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.windows.home_window.ContainerWidget::login</definition>
+        <argsstring></argsstring>
+        <name>login</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="42" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a508bbf4e7ceca72e09ce51d14d9db5e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.home_window.ContainerWidget.__init__</definition>
+        <argsstring>(self, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="38" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a3910cd9ac551882d33ba97deb4c9043d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.home_window.ContainerWidget.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="47" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1ad9d549bb65879839b583f04bb851df70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.windows.home_window.ContainerWidget.init_widget</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widget</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/windows/home_window.py" line="50" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="50" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class to group the SearchGame and the UserInput
+in a single widget
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.windows.home_window.ContainerWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.windows.home_window.ContainerWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/windows/home_window.py" line="33" column="1" bodyfile="Client/client/application/windows/home_window.py" bodystart="33" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a508bbf4e7ceca72e09ce51d14d9db5e5" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::ContainerWidget</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a3910cd9ac551882d33ba97deb4c9043d" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::ContainerWidget</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1ad9d549bb65879839b583f04bb851df70" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::ContainerWidget</scope><name>init_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1a98f51008a6af1a5116e63805e66b8f66" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::ContainerWidget</scope><name>login</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1ContainerWidget_1af9d59daa353218fb86dc1371e1a0fcee" prot="public" virt="non-virtual"><scope>Client::client::application::windows::home_window::ContainerWidget</scope><name>play_button</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

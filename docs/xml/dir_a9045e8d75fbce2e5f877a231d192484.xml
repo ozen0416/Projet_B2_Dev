@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a9045e8d75fbce2e5f877a231d192484" kind="dir">
+    <compoundname>Client/client/application</compoundname>
+    <innerdir refid="dir_71f09b1d021338fe339ece5ce40bf83b">Client/client/application/widgets</innerdir>
+    <innerdir refid="dir_e108ef9fd95c12060b4cce13cde4bbf1">Client/client/application/windows</innerdir>
+    <innerfile refid="Client_2client_2application_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="app_8py">app.py</innerfile>
+    <innerfile refid="controller_8py">controller.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/"/>
+  </compounddef>
+</doxygen>

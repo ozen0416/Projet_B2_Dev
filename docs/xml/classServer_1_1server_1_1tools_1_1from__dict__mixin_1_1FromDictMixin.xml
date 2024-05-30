@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::tools::from_dict_mixin::FromDictMixin</compoundname>
+    <derivedcompoundref refid="classServer_1_1server_1_1game_1_1game_1_1Game" prot="public" virt="non-virtual">Server.server.game.game.Game</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1game_1_1player_1_1Player" prot="public" virt="non-virtual">Server.server.game.player.Player</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1game_1_1ship_1_1Ship" prot="public" virt="non-virtual">Server.server.game.ship.Ship</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell" prot="public" virt="non-virtual">Server.server.game.ship_cell.ShipCell</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" prot="public" virt="non-virtual">Server.server.tools.vector2.Vector2</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin_1a31b3c40f7ba6d2fd1d70539d037c4108" kindref="member">T</ref></type>
+        <definition> T Server.server.tools.from_dict_mixin.FromDictMixin.from_dict</definition>
+        <argsstring>(Type[T] cls, dict data)</argsstring>
+        <name>from_dict</name>
+        <param>
+          <type>Type</type>
+          <declname>cls</declname>
+          <array>[T]</array>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/from_dict_mixin.py" line="8" column="1" bodyfile="Server/server/tools/from_dict_mixin.py" bodystart="8" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Server.server.game.ship_cell.ShipCell</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship__cell_1_1ShipCell"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Server.server.game.player.Player</label>
+        <link refid="classServer_1_1server_1_1game_1_1player_1_1Player"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Server.server.tools.vector2.Vector2</label>
+        <link refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.game.game.Game</label>
+        <link refid="classServer_1_1server_1_1game_1_1game_1_1Game"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+      <node id="4">
+        <label>Server.server.game.ship.Ship</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship_1_1Ship"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Server/server/tools/from_dict_mixin.py" line="6" column="1" bodyfile="Server/server/tools/from_dict_mixin.py" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::tools::from_dict_mixin::FromDictMixin</scope><name>from_dict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

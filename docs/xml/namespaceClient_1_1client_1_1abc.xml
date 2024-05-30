@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1abc" kind="namespace" language="Python">
+    <compoundname>Client::client::abc</compoundname>
+    <innerclass refid="classClient_1_1client_1_1abc_1_1TreeObject" prot="public">Client::client::abc::TreeObject</innerclass>
+    <innerclass refid="classClient_1_1client_1_1abc_1_1Handler" prot="public">Client::client::abc::Handler</innerclass>
+    <innerclass refid="classClient_1_1client_1_1abc_1_1AbstractHandler" prot="public">Client::client::abc::AbstractHandler</innerclass>
+    <innerclass refid="classClient_1_1client_1_1abc_1_1Worker" prot="public">Client::client::abc::Worker</innerclass>
+    <innerclass refid="classClient_1_1client_1_1abc_1_1AbstractWorker" prot="public">Client::client::abc::AbstractWorker</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>ABC file containing every abstract class of the server-side</verbatim> </para>
+    </detaileddescription>
+    <location file="Client/client/abc.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

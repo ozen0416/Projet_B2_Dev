@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScalingTextEdit</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a4fa4e0b69a519b4b629e1cdf8daf672a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget::return_pressed</definition>
+        <argsstring></argsstring>
+        <name>return_pressed</name>
+        <initializer>=  Signal()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="9" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1aa325e86384b847c6c3a8edeb00fbb76b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget::max_height</definition>
+        <argsstring></argsstring>
+        <name>max_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="17" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1afaac3ef2a96b76a90f878fa18c6ddd12" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget::min_height</definition>
+        <argsstring></argsstring>
+        <name>min_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="18" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a53a1ecbbdabdc29cd5ac64d085a29ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget.__init__</definition>
+        <argsstring>(self, contact, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>contact</type>
+          <defname>contact</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="11" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a5fa4b8fe03b8ca20a8a8022e0dc9289c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget.send_message</definition>
+        <argsstring>(self)</argsstring>
+        <name>send_message</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="21" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="21" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a7042e7b7a624da378359152ab9d24f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget.keyPressEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>keyPressEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="37" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="37" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ScalingTextEdit</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ScalingTextEdit</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/chat/chat_input_widget.py" line="8" column="1" bodyfile="Client/client/application/widgets/chat/chat_input_widget.py" bodystart="8" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a53a1ecbbdabdc29cd5ac64d085a29ee2" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a7042e7b7a624da378359152ab9d24f9e" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>keyPressEvent</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1aa325e86384b847c6c3a8edeb00fbb76b" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>max_height</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1afaac3ef2a96b76a90f878fa18c6ddd12" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>min_height</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a4fa4e0b69a519b4b629e1cdf8daf672a" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>return_pressed</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget_1a5fa4b8fe03b8ca20a8a8022e0dc9289c" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_input_widget::ChatInputWidget</scope><name>send_message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

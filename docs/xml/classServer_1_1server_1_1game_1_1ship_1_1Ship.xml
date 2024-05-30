@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1game_1_1ship_1_1Ship" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::game::ship::Ship</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public" virt="non-virtual">Server.server.tools.from_dict_mixin.FromDictMixin</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Server.server.game.ship.Ship::bool</definition>
+        <argsstring></argsstring>
+        <name>bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="21" column="1" bodyfile="Server/server/game/ship.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a5bdd67a47ddeac085edae5133ee95cc5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.game.ship.Ship::_is_sunk</definition>
+        <argsstring></argsstring>
+        <name>_is_sunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="75" column="1" bodyfile="Server/server/game/ship.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a320bc1cec94d5ed8365e2223e79e763b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Server.server.game.ship.Ship.__init__</definition>
+        <argsstring>(self, int size, Vector2 pos, bool vertical=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" kindref="member">bool</ref></type>
+          <declname>vertical</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="23" column="1" bodyfile="Server/server/game/ship.py" bodystart="23" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae468479ec8f62734d5cd5b51cd263f45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.game.ship.Ship.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="39" column="1" bodyfile="Server/server/game/ship.py" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a459c295f1e8e111d3834e3aed3abfda1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition> Vector2 Server.server.game.ship.Ship.pos</definition>
+        <argsstring>(self)</argsstring>
+        <name>pos</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>x position on the map</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="44" column="1" bodyfile="Server/server/game/ship.py" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1adb3b625b81e186b154d4dd25c35532de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int Server.server.game.ship.Ship.size</definition>
+        <argsstring>(self)</argsstring>
+        <name>size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>size of the ship, wich is its number of cells</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="49" column="1" bodyfile="Server/server/game/ship.py" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a752c0733d57cca1cfeeb709bbc5a81b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" kindref="member">bool</ref></type>
+        <definition> bool Server.server.game.ship.Ship.is_sunk</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_sunk</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>returns if the ship has been sunk</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="54" column="1" bodyfile="Server/server/game/ship.py" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ac954e1e4fc62afc2bfeb4b9f7f5caa6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1tools_1_1enums_1_1Status" kindref="compound">Status</ref></type>
+        <definition> Status Server.server.game.ship.Ship.check_for_hit</definition>
+        <argsstring>(self, Vector2 pos)</argsstring>
+        <name>check_for_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1tools_1_1vector2_1_1Vector2" kindref="compound">Vector2</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="58" column="1" bodyfile="Server/server/game/ship.py" bodystart="58" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae4a297602c59b82743c68e91e21115d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" kindref="member">bool</ref></type>
+        <definition> bool Server.server.game.ship.Ship.check_for_sunk</definition>
+        <argsstring>(self)</argsstring>
+        <name>check_for_sunk</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/game/ship.py" line="71" column="1" bodyfile="Server/server/game/ship.py" bodystart="71" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Ship class, intended to keep track of individual ShipCell.
+
+- `size`: the number of cells in the ship 
+- `pos`: Vector2 of the position of the first cell of the ship on the map
+- `vertical`: *optional* is the ship placed vertically or not on the map
+- `ship_cells`: A list of ShipCell objects
+- `is_sunk`: whether the ship is sunk or not
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+      <node id="1">
+        <label>Server.server.game.ship.Ship</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship_1_1Ship"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Server.server.tools.from_dict_mixin.FromDictMixin</label>
+        <link refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin"/>
+      </node>
+      <node id="1">
+        <label>Server.server.game.ship.Ship</label>
+        <link refid="classServer_1_1server_1_1game_1_1ship_1_1Ship"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/game/ship.py" line="7" column="1" bodyfile="Server/server/game/ship.py" bodystart="7" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a320bc1cec94d5ed8365e2223e79e763b" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae468479ec8f62734d5cd5b51cd263f45" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>__repr__</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a5bdd67a47ddeac085edae5133ee95cc5" prot="private" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>_is_sunk</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1af852a2255585ee565ae650251b700c0b" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>bool</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ac954e1e4fc62afc2bfeb4b9f7f5caa6a" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>check_for_hit</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1ae4a297602c59b82743c68e91e21115d8" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>check_for_sunk</name></member>
+      <member refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin_1a7db5336d7a62224d296ebfea4993b6c2" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>from_dict</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a752c0733d57cca1cfeeb709bbc5a81b5" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>is_sunk</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1a459c295f1e8e111d3834e3aed3abfda1" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>pos</name></member>
+      <member refid="classServer_1_1server_1_1game_1_1ship_1_1Ship_1adb3b625b81e186b154d4dd25c35532de" prot="public" virt="non-virtual"><scope>Server::server::game::ship::Ship</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

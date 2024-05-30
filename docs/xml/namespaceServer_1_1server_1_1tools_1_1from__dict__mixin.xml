@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin" kind="namespace" language="Python">
+    <compoundname>Server::server::tools::from_dict_mixin</compoundname>
+    <innerclass refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" prot="public">Server::server::tools::from_dict_mixin::FromDictMixin</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceServer_1_1server_1_1tools_1_1from__dict__mixin_1a31b3c40f7ba6d2fd1d70539d037c4108" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server::server::tools::from_dict_mixin.T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <initializer>=  TypeVar(&apos;T&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/tools/from_dict_mixin.py" line="3" column="1" bodyfile="Server/server/tools/from_dict_mixin.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/tools/from_dict_mixin.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

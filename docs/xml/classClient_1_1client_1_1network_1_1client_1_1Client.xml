@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1network_1_1client_1_1Client" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::network::client::Client</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1network_1_1client_1_1Client_1aae585bc7e3594fbff7fa7d6f732c5147" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>Client.client.network.client.Client::data_received</definition>
+        <argsstring></argsstring>
+        <name>data_received</name>
+        <initializer>=  Signal(dict)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="44" column="1" bodyfile="Client/client/network/client.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1network_1_1client_1_1Client_1ae0777049eaafda3a0ea9ff03e3f92946" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.network.client.Client::__SERVER_IP</definition>
+        <argsstring></argsstring>
+        <name>__SERVER_IP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="50" column="1" bodyfile="Client/client/network/client.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a2f62ccfa11a48f4983913160912ae7bb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.network.client.Client::__SERVER_PORT</definition>
+        <argsstring></argsstring>
+        <name>__SERVER_PORT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="51" column="1" bodyfile="Client/client/network/client.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1network_1_1client_1_1Client_1ab53a409fb79b63ce376a8e414de03e57" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.network.client.Client::_socket</definition>
+        <argsstring></argsstring>
+        <name>_socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="60" column="1" bodyfile="Client/client/network/client.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a84eddceb0513b45b1df8ef6d7b5d5890" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.network.client.Client::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="54" column="1" bodyfile="Client/client/network/client.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a48d145aa63ac8f676dc4d924d4a0c4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.Client.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="46" column="1" bodyfile="Client/client/network/client.py" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a7d2493be307d444c4014ab46b7c2b7d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.Client.start</definition>
+        <argsstring>(self)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>start the client socket communication with the server
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="56" column="1" bodyfile="Client/client/network/client.py" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a6361b5914a9b3cbe78ea534fd7d5a240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.Client.send_request</definition>
+        <argsstring>(self, dict request)</argsstring>
+        <name>send_request</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="64" column="1" bodyfile="Client/client/network/client.py" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a2156814494de0f709154dcc1d5e5d299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.Client.listen</definition>
+        <argsstring>(self)</argsstring>
+        <name>listen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>listen for server requests
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="69" column="1" bodyfile="Client/client/network/client.py" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1network_1_1client_1_1Client_1a4fbf7b48424351757a69c431434a4056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.network.client.Client.stop</definition>
+        <argsstring>(self)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Try to ensure closing connection when client object is deleted.
+Actually not really safe as we do not practically know where or if this will be called
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/network/client.py" line="82" column="1" bodyfile="Client/client/network/client.py" bodystart="82" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Client application side that will communicate and listen
+for the server requests.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>Client.client.network.client.Client</label>
+        <link refid="classClient_1_1client_1_1network_1_1client_1_1Client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QObject</label>
+      </node>
+      <node id="1">
+        <label>Client.client.network.client.Client</label>
+        <link refid="classClient_1_1client_1_1network_1_1client_1_1Client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/network/client.py" line="38" column="1" bodyfile="Client/client/network/client.py" bodystart="38" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a48d145aa63ac8f676dc4d924d4a0c4ae" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1ae0777049eaafda3a0ea9ff03e3f92946" prot="private" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>__SERVER_IP</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a2f62ccfa11a48f4983913160912ae7bb" prot="private" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>__SERVER_PORT</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1ab53a409fb79b63ce376a8e414de03e57" prot="private" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>_socket</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1aae585bc7e3594fbff7fa7d6f732c5147" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>data_received</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a2156814494de0f709154dcc1d5e5d299" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>listen</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a84eddceb0513b45b1df8ef6d7b5d5890" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>running</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a6361b5914a9b3cbe78ea534fd7d5a240" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>send_request</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a7d2493be307d444c4014ab46b7c2b7d1" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>start</name></member>
+      <member refid="classClient_1_1client_1_1network_1_1client_1_1Client_1a4fbf7b48424351757a69c431434a4056" prot="public" virt="non-virtual"><scope>Client::client::network::client::Client</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

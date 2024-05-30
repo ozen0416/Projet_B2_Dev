@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1abc_1_1Worker" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::abc::Worker</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1abc_1_1TreeObject" prot="public" virt="non-virtual">Server.server.abc.TreeObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1abc_1_1AbstractWorker" prot="public" virt="non-virtual">Server.server.abc.AbstractWorker</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Worker will process the data given to its handle method</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Server.server.abc.Worker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Worker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Server.server.workers.MatchmakingInWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Server.server.workers.HitWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1HitWorker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Server.server.workers.PlacementWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1PlacementWorker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Server.server.workers.MatchmakingOutWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="5">
+        <label>Server.server.workers.GameMessageWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1GameMessageWorker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Server.server.abc.AbstractWorker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Server.server.abc.Worker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Worker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/abc.py" line="63" column="1" bodyfile="Server/server/abc.py" bodystart="63" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1abc_1_1TreeObject_1a005c60fb2ec7e373cbf8979d0867f6d4" prot="public" virt="non-virtual"><scope>Server::server::abc::Worker</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

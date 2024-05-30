@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="documentation_8md" kind="file" language="Markdown">
+    <compoundname>documentation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>**Game**</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>**Matchmaking**</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>**Client**</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>**Server**</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>**UI/UX**</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>**BDD**</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>1.<sp/><sp/>Game</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Typical<sp/>game</highlight></codeline>
+<codeline><highlight class="normal">Game<sp/>is<sp/>turn-based</highlight></codeline>
+<codeline><highlight class="normal">Each<sp/>player<sp/>has<sp/>to<sp/>place<sp/>his<sp/>pieces<sp/>onto<sp/>his<sp/>side<sp/>of<sp/>the<sp/>map</highlight></codeline>
+<codeline><highlight class="normal">Once<sp/>ships<sp/>are<sp/>placed,<sp/>each<sp/>player<sp/>will<sp/>have<sp/>to<sp/>choose<sp/>a<sp/>cell<sp/>from<sp/>its<sp/>opponent<sp/>grid.</highlight></codeline>
+<codeline><highlight class="normal">Either<sp/>if<sp/>a<sp/>ship<sp/>is<sp/>touched<sp/>or<sp/>not,<sp/>the<sp/>player<sp/>is<sp/>noticed</highlight></codeline>
+<codeline><highlight class="normal">When<sp/>a<sp/>ship<sp/>is<sp/>sunk,<sp/>the<sp/>player<sp/>is<sp/>also<sp/>noticed</highlight></codeline>
+<codeline><highlight class="normal">One<sp/>player<sp/>wins<sp/>when<sp/>every<sp/>ship<sp/>on<sp/>its<sp/>opponent<sp/>side<sp/>has<sp/>been<sp/>sunk</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>3.<sp/>Server</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>server<sp/>will<sp/>receive<sp/>socket<sp/>information<sp/>containing<sp/>both<sp/>a<sp/>header<sp/>for<sp/>server-side<sp/>interpretation<sp/>for<sp/>the<sp/>data<sp/>and<sp/>the<sp/>actual<sp/>data.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>handler<sp/>will<sp/>have<sp/>to<sp/>give<sp/>the<sp/>data<sp/>to<sp/>the<sp/>`Game`<sp/>instance</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>of<sp/>data<sp/>to<sp/>be<sp/>sent<sp/>(clients<sp/>would<sp/>have<sp/>to<sp/>send<sp/>its<sp/>list<sp/>of<sp/>ships,<sp/>or<sp/>a<sp/>target<sp/>hit)</highlight></codeline>
+<codeline><highlight class="normal">```py</highlight></codeline>
+<codeline><highlight class="normal">ship_cells<sp/>=<sp/>[{&quot;_pos&quot;:<sp/>{&quot;_x&quot;:<sp/>0,<sp/>&quot;_y&quot;:<sp/>1}},<sp/>{&quot;_pos&quot;:<sp/>{&quot;_x&quot;:<sp/>0,<sp/>&quot;_y&quot;:<sp/>1}},<sp/>{&quot;_pos&quot;:<sp/>{&quot;_x&quot;:<sp/>0,<sp/>&quot;_y&quot;:<sp/>1}}]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">data<sp/>=<sp/>{&quot;_ships&quot;:<sp/>[{&quot;_size&quot;:<sp/>3,<sp/>&quot;_pos&quot;:<sp/>{&quot;_x&quot;:<sp/>0,<sp/>&quot;_y&quot;:<sp/>1,},<sp/><sp/>&quot;_ship_cells&quot;:<sp/>ship_cells}]}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>request<sp/>**MUST**<sp/>contain<sp/>the<sp/>type<sp/>of<sp/>the<sp/>request<sp/>and<sp/>its<sp/>sub-request,<sp/>otherwise<sp/>it<sp/>will<sp/>be<sp/>discarded.</highlight></codeline>
+<codeline><highlight class="normal">```json</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;request&quot;:<sp/>[&quot;GAME&quot;,<sp/>&quot;HIT&quot;],</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;client_id&quot;:<sp/>12,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;game_id&quot;:<sp/>34,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;data&quot;:<sp/>{&quot;_x&quot;:<sp/>1,<sp/>&quot;_y&quot;:<sp/>0}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Requests:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`GAME`<sp/>this<sp/>will<sp/>inform<sp/>the<sp/>server<sp/>your<sp/>request<sp/>is<sp/>about<sp/>an<sp/>in-progress<sp/>game.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MATCHMAKING`<sp/>this<sp/>will<sp/>inform<sp/>the<sp/>server<sp/>your<sp/>request<sp/>is<sp/>about<sp/>the<sp/>pregame<sp/>matchmaking<sp/>system.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Sub-requests:</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`HIT`<sp/>to<sp/>inform<sp/>the<sp/>server<sp/>that<sp/>you<sp/>want<sp/>to<sp/>try<sp/>a<sp/>hit<sp/>at<sp/>(`x`,`y`)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`QUEUE_IN`<sp/>to<sp/>inform<sp/>the<sp/>server<sp/>that<sp/>you<sp/>are<sp/>willing<sp/>to<sp/>join<sp/>the<sp/>matchmaking<sp/>queue</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`QUEUE_OUT`<sp/>to<sp/>inform<sp/>the<sp/>server<sp/>that<sp/>you<sp/>are<sp/>willing<sp/>to<sp/>leave<sp/>the<sp/>matchmaking<sp/>queue</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`MESSAGE`<sp/>to<sp/>send<sp/>a<sp/>message<sp/>to<sp/>the<sp/>other<sp/>client</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>best<sp/>explained<sp/>in<sp/>the<sp/>`Class<sp/>Hierarchy`<sp/>page</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`WholeGameData`:<sp/>The<sp/>whole<sp/>data<sp/>that<sp/>happened<sp/>during<sp/>the<sp/>game,<sp/>each<sp/>turn<sp/>is<sp/>recorded<sp/>and<sp/>store<sp/>from<sp/>the<sp/>beginning<sp/>to<sp/>the<sp/>end<sp/>of<sp/>the<sp/>game<sp/>in<sp/>the<sp/>server.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>/!\<sp/>Important<sp/>point</highlight></codeline>
+<codeline><highlight class="normal">How<sp/>are<sp/>we<sp/>going<sp/>to<sp/>handle<sp/>a<sp/>disconnected<sp/>client<sp/>when<sp/>an<sp/>opponent<sp/>make<sp/>a<sp/>turn?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Possible<sp/>solution</highlight></codeline>
+<codeline><highlight class="normal">When<sp/>in<sp/>a<sp/>`pair`,<sp/>one<sp/>of<sp/>the<sp/>clients<sp/>has<sp/>lost<sp/>connection<sp/>to<sp/>the<sp/>server<sp/>and<sp/>is<sp/>willing<sp/>to<sp/>reconnect<sp/>to<sp/>the<sp/>game,<sp/>the<sp/>client<sp/>will<sp/>have<sp/>to<sp/>notice<sp/>this<sp/>event<sp/>to<sp/>the<sp/>application<sp/>to<sp/>be<sp/>prepared<sp/>of<sp/>receiving<sp/>the<sp/>`WholeGameData`.</highlight></codeline>
+<codeline><highlight class="normal">That<sp/>will<sp/>allow<sp/>us<sp/>to<sp/>recreate<sp/>the<sp/>game<sp/>at<sp/>the<sp/>point<sp/>it<sp/>actually<sp/>is,<sp/>even<sp/>for<sp/>turns<sp/>that<sp/>could<sp/>be<sp/>made<sp/>after<sp/>the<sp/>`client`<sp/>was<sp/>disconnected.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Server-side,<sp/>it<sp/>shall<sp/>scan<sp/>for<sp/>whether<sp/>new<sp/>incoming<sp/>socket<sp/>connection<sp/>was<sp/>previously<sp/>linked<sp/>to<sp/>another<sp/>`client`<sp/>as<sp/>a<sp/>`pair`.<sp/>If<sp/>so,<sp/>we<sp/>set<sp/>to<sp/>this<sp/>`client`<sp/>inside<sp/>of<sp/>the<sp/>`pair`<sp/>the<sp/>previous<sp/>disconnected<sp/>one<sp/>and<sp/>send<sp/>after<sp/>the<sp/>pairing<sp/>the<sp/>`WholeGameData`<sp/>to<sp/>this<sp/>client.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>for<sp/>now,<sp/>this<sp/>is<sp/>yet<sp/>not<sp/>implemented.<sp/>If<sp/>a<sp/>client<sp/>connection<sp/>is<sp/>closed<sp/>the<sp/>game<sp/>will<sp/>just<sp/>be<sp/>frozen<sp/>to<sp/>its<sp/>state.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>What<sp/>is<sp/>a<sp/>`Pair`<sp/>to<sp/>the<sp/>server?</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>`pair`<sp/>is<sp/>a<sp/>set<sp/>of<sp/>two<sp/>clients<sp/>connections,<sp/>that<sp/>are<sp/>currently<sp/>linked<sp/>by<sp/>the<sp/>server<sp/>for<sp/>post-matchmaking<sp/>communication<sp/>(either<sp/>messaging<sp/>or<sp/>game-related<sp/>events):</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>The<sp/>current<sp/>`Game`<sp/>instance<sp/>to<sp/>process<sp/>the<sp/>game<sp/>and<sp/>keep<sp/>a<sp/>track<sp/>of<sp/>its<sp/>different<sp/>states.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>An<sp/>`id`<sp/>that<sp/>will<sp/>be<sp/>the<sp/>game<sp/>id</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>A<sp/>First<sp/>`Client`</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>A<sp/>Second<sp/>`Client`</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Bad<sp/>data</highlight></codeline>
+<codeline><highlight class="normal">Bad<sp/>data<sp/>can<sp/>happen<sp/>as<sp/>sockets<sp/>could<sp/>not<sp/>send<sp/>or<sp/>receive<sp/>properly<sp/>the<sp/>transmitted<sp/>data.</highlight></codeline>
+<codeline><highlight class="normal">But<sp/>there<sp/>could<sp/>be<sp/>few<sp/>cases<sp/>in<sp/>which<sp/>a<sp/>user<sp/>would<sp/>try<sp/>breaking<sp/>the<sp/>behavior<sp/>of<sp/>the<sp/>game<sp/>and<sp/>send<sp/>data<sp/>when<sp/>it<sp/>is<sp/>not<sp/>his<sp/>turn,<sp/>simulating<sp/>an<sp/>opponent<sp/>attack</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>prevent<sp/>that,<sp/>we<sp/>could<sp/>possibly<sp/>make<sp/>an<sp/>end<sp/>and<sp/>cancel<sp/>any<sp/>game<sp/>receiving<sp/>that<sp/>kind<sp/>of<sp/>suspicious<sp/>sent<sp/>packets<sp/>from<sp/>one<sp/>of<sp/>its<sp/>clients.</highlight></codeline>
+<codeline><highlight class="normal">We<sp/>also<sp/>could<sp/>simply<sp/>discard<sp/>any<sp/>data<sp/>sent<sp/>from<sp/>clients<sp/>attempting<sp/>a<sp/>request<sp/>to<sp/>a<sp/>game<sp/>they<sp/>do<sp/>not<sp/>belong<sp/>in.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>ideal<sp/>approach<sp/>would<sp/>be<sp/>to<sp/>blacklist<sp/>every<sp/>IP<sp/>trying<sp/>to<sp/>perform<sp/>too<sp/>much<sp/>illegal<sp/>requests<sp/>in<sp/>a<sp/>span<sp/>of<sp/>time,<sp/>but<sp/>it<sp/>could<sp/>also<sp/>be<sp/>some<sp/>huge<sp/>amount<sp/>of<sp/>work<sp/>to<sp/>get<sp/>it<sp/>as<sp/>intended.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="documentation.md"/>
+  </compounddef>
+</doxygen>

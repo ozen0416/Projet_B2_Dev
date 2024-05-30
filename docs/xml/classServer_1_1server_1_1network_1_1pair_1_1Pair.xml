@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1network_1_1pair_1_1Pair" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::network::pair::Pair</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a3b23026209535ccd8924778630f8e01e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.pair.Pair::game_id</definition>
+        <argsstring></argsstring>
+        <name>game_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="24" column="1" bodyfile="Server/server/network/pair.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8d42d65a1d7f7885ed399648c4d76b6d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.pair.Pair::first_client</definition>
+        <argsstring></argsstring>
+        <name>first_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="25" column="1" bodyfile="Server/server/network/pair.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aceccd5500dd6abc0286856b07cddd7b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.pair.Pair::second_client</definition>
+        <argsstring></argsstring>
+        <name>second_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="26" column="1" bodyfile="Server/server/network/pair.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aa1dbcdcc842f40f7795dfb2d4f8d1836" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Server.server.network.pair.Pair::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="145" column="1" bodyfile="Server/server/network/pair.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a35e71b0ada560e64b42707f6eb67d5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.__init__</definition>
+        <argsstring>(self, Client first_client, Client second_client)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client" kindref="compound">Client</ref></type>
+          <declname>first_client</declname>
+        </param>
+        <param>
+          <type><ref refid="classServer_1_1server_1_1network_1_1client_1_1Client" kindref="compound">Client</ref></type>
+          <declname>second_client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="23" column="1" bodyfile="Server/server/network/pair.py" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a91dfb04c4ad4b4b8a81f754aeaa71227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.init_pair</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_pair</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extension to `__init__` call
+will send to both clients that they
+were matched in a game
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="30" column="1" bodyfile="Server/server/network/pair.py" bodystart="30" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a10a59887265a4c7d08ed487e05ec7666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.client_placement</definition>
+        <argsstring>(self, dict request)</argsstring>
+        <name>client_placement</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Called by `PlacementWorker` when a client requests for his placement
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="51" column="1" bodyfile="Server/server/network/pair.py" bodystart="51" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a9bf99c6aba8c6b8e890c14bde1785298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.client_hit</definition>
+        <argsstring>(self, dict request)</argsstring>
+        <name>client_hit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Called by `HitWorker` when a client requests to hit a target cell
+on the enemy side.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="76" column="1" bodyfile="Server/server/network/pair.py" bodystart="76" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a68a4db0f0ecfc03c7c3ace4080a68b1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.game_finish</definition>
+        <argsstring>(self)</argsstring>
+        <name>game_finish</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="120" column="1" bodyfile="Server/server/network/pair.py" bodystart="120" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f4189318057475391621f90ecb33efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.start_game</definition>
+        <argsstring>(self)</argsstring>
+        <name>start_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Only called when both clients have set up their ships and
+told the server.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="134" column="1" bodyfile="Server/server/network/pair.py" bodystart="134" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f57b33213f5d654fc488f703eb2fb71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.send_message</definition>
+        <argsstring>(self, dict request)</argsstring>
+        <name>send_message</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="165" column="1" bodyfile="Server/server/network/pair.py" bodystart="165" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a19ca4c075a8c4b33ba6e1dbc47cbdacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.get_client_by_id</definition>
+        <argsstring>(self, str _id)</argsstring>
+        <name>get_client_by_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="184" column="1" bodyfile="Server/server/network/pair.py" bodystart="184" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1ad4f02f7c0643ce2eebc0a16099b5e200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair.is_id_in_pair</definition>
+        <argsstring>(self, str _id)</argsstring>
+        <name>is_id_in_pair</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="191" column="1" bodyfile="Server/server/network/pair.py" bodystart="191" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a677acd2287b53860b1704cbc2e37b86e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Server.server.network.pair.Pair._get_paired_client</definition>
+        <argsstring>(self, str client_id)</argsstring>
+        <name>_get_paired_client</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>client_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/network/pair.py" line="181" column="1" bodyfile="Server/server/network/pair.py" bodystart="181" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A `Pair` is a set of few things:
+    - The current `Game` instance to process the game and keep a track of its different states.
+    - An `id` that will be the game id
+    - A First `Client`
+    - A Second `Client`
+</verbatim> </para>
+    </detaileddescription>
+    <location file="Server/server/network/pair.py" line="10" column="1" bodyfile="Server/server/network/pair.py" bodystart="10" bodyend="193"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a35e71b0ada560e64b42707f6eb67d5a7" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>__init__</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a677acd2287b53860b1704cbc2e37b86e" prot="private" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>_get_paired_client</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a9bf99c6aba8c6b8e890c14bde1785298" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>client_hit</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a10a59887265a4c7d08ed487e05ec7666" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>client_placement</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8d42d65a1d7f7885ed399648c4d76b6d" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>first_client</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aa1dbcdcc842f40f7795dfb2d4f8d1836" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>game</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a68a4db0f0ecfc03c7c3ace4080a68b1f" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>game_finish</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a3b23026209535ccd8924778630f8e01e" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>game_id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a19ca4c075a8c4b33ba6e1dbc47cbdacf" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>get_client_by_id</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a91dfb04c4ad4b4b8a81f754aeaa71227" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>init_pair</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1ad4f02f7c0643ce2eebc0a16099b5e200" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>is_id_in_pair</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1aceccd5500dd6abc0286856b07cddd7b5" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>second_client</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f57b33213f5d654fc488f703eb2fb71" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>send_message</name></member>
+      <member refid="classServer_1_1server_1_1network_1_1pair_1_1Pair_1a8f4189318057475391621f90ecb33efd" prot="public" virt="non-virtual"><scope>Server::server::network::pair::Pair</scope><name>start_game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

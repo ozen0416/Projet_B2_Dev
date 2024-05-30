@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::custom::scaling_textedit</compoundname>
+    <innerclass refid="classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit" prot="public">Client::client::application::widgets::custom::scaling_textedit::ScalingTextEdit</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/custom/scaling_textedit.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

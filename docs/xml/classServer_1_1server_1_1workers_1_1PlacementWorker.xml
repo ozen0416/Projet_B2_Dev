@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1workers_1_1PlacementWorker" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::workers::PlacementWorker</compoundname>
+    <basecompoundref refid="classServer_1_1server_1_1abc_1_1AbstractWorker" prot="public" virt="non-virtual">Server.server.abc.AbstractWorker</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1workers_1_1PlacementWorker_1a951f3ddc2a2931aecd88af6d97406758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[str]</type>
+        <definition> Optional[str] Server.server.workers.PlacementWorker.handle</definition>
+        <argsstring>(self, Any request_type, Any request)</argsstring>
+        <name>handle</name>
+        <reimplements refid="classServer_1_1server_1_1abc_1_1AbstractWorker_1aeee293002f617d60e1dc13b095f5080f">handle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/workers.py" line="23" column="1" bodyfile="Server/server/workers.py" bodystart="23" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Gets the placement request of a client and add it to its pair data
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Server.server.abc.Worker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Worker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Server.server.workers.PlacementWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1PlacementWorker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="4">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.AbstractWorker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Server.server.abc.Worker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Worker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Server.server.workers.PlacementWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1PlacementWorker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="4">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Server.server.abc.AbstractWorker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/workers.py" line="19" column="1" bodyfile="Server/server/workers.py" bodystart="19" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1workers_1_1PlacementWorker_1a951f3ddc2a2931aecd88af6d97406758" prot="public" virt="non-virtual"><scope>Server::server::workers::PlacementWorker</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

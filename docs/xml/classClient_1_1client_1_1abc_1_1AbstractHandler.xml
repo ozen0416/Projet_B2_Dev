@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1abc_1_1AbstractHandler" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::abc::AbstractHandler</compoundname>
+    <basecompoundref refid="classClient_1_1client_1_1abc_1_1Handler" prot="public" virt="non-virtual">Client.client.abc.Handler</basecompoundref>
+    <derivedcompoundref refid="classClient_1_1client_1_1handlers_1_1GameHandler" prot="public" virt="non-virtual">Client.client.handlers.GameHandler</derivedcompoundref>
+    <derivedcompoundref refid="classClient_1_1client_1_1handlers_1_1RootHandler" prot="public" virt="non-virtual">Client.client.handlers.RootHandler</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1abc_1_1AbstractHandler_1ae53b676de421612b711bd4a7a9cceb02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.abc.AbstractHandler.add_tree_object</definition>
+        <argsstring>(self, str request_type, TreeObject tree_object)</argsstring>
+        <name>add_tree_object</name>
+        <reimplements refid="classClient_1_1client_1_1abc_1_1Handler_1a5c1a251471c22b864426ed31a9b0db96">add_tree_object</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type><ref refid="classClient_1_1client_1_1abc_1_1TreeObject" kindref="compound">TreeObject</ref></type>
+          <declname>tree_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/abc.py" line="31" column="1" bodyfile="Client/client/abc.py" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1abc_1_1AbstractHandler_1a0c573ec93c7b6c8761c8f0f4e1613595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.abc.AbstractHandler.add_check</definition>
+        <argsstring>(self, Callable check)</argsstring>
+        <name>add_check</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Callable</type>
+          <declname>check</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/abc.py" line="34" column="1" bodyfile="Client/client/abc.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1abc_1_1AbstractHandler_1a666a4d003eb8821eed297be5a346dfd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.abc.AbstractHandler.check</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>check</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/abc.py" line="37" column="1" bodyfile="Client/client/abc.py" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1abc_1_1AbstractHandler_1a66cb9cba027a3249a466c4db1181d2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classClient_1_1client_1_1abc_1_1Handler_1a5a38de2e17f7c9fa92faba82d0082eec" kindref="member">dict</ref>]</type>
+        <definition> Optional[dict] Client.client.abc.AbstractHandler.handle</definition>
+        <argsstring>(self, Any request_type, Any request)</argsstring>
+        <name>handle</name>
+        <reimplements refid="classClient_1_1client_1_1abc_1_1TreeObject_1a5bcf652f35072071a65e551453f772b2">handle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The handle of the Handler is to pass through the tree the data.
+
+It also is intended to check
+
+this function is abstract, so you have to implement it to
+give it check decorators
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/abc.py" line="41" column="1" bodyfile="Client/client/abc.py" bodystart="41" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The default chaining behavior can be implemented inside a base handler
+class.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.Handler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Client.client.handlers.RootHandler</label>
+        <link refid="classClient_1_1client_1_1handlers_1_1RootHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Client.client.abc.AbstractHandler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="5">
+        <label>Client.client.handlers.GameHandler</label>
+        <link refid="classClient_1_1client_1_1handlers_1_1GameHandler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.Handler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Handler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Client.client.abc.AbstractHandler</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/abc.py" line="26" column="1" bodyfile="Client/client/abc.py" bodystart="26" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a0c573ec93c7b6c8761c8f0f4e1613595" prot="public" virt="non-virtual"><scope>Client::client::abc::AbstractHandler</scope><name>add_check</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1ae53b676de421612b711bd4a7a9cceb02" prot="public" virt="non-virtual"><scope>Client::client::abc::AbstractHandler</scope><name>add_tree_object</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a666a4d003eb8821eed297be5a346dfd9" prot="public" virt="non-virtual"><scope>Client::client::abc::AbstractHandler</scope><name>check</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1Handler_1a5a38de2e17f7c9fa92faba82d0082eec" prot="public" virt="non-virtual"><scope>Client::client::abc::AbstractHandler</scope><name>dict</name></member>
+      <member refid="classClient_1_1client_1_1abc_1_1AbstractHandler_1a66cb9cba027a3249a466c4db1181d2c9" prot="public" virt="non-virtual"><scope>Client::client::abc::AbstractHandler</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::chat::chat_area::ChatArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ac46c02ae3961fb62f2913893f92b66f9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_area.ChatArea::_contact</definition>
+        <argsstring></argsstring>
+        <name>_contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="9" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1aa022e914c47d96a837cecddcef0aa5e3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_area.ChatArea::_textboxes</definition>
+        <argsstring></argsstring>
+        <name>_textboxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="11" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_area.ChatArea::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="12" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a1301ecbb32bb91b02ccf27eca439fa82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea.__init__</definition>
+        <argsstring>(self, contact, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a05e59b56401978d23db6226e4219a1a1" kindref="member">contact</ref></type>
+          <defname>contact</defname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="7" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a4502b8481c2621929a43555a8acbeaf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="16" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a6147e6476962df7b428650bbe4c81b6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea.add_textbox_from_message</definition>
+        <argsstring>(self, message)</argsstring>
+        <name>add_textbox_from_message</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="22" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a829bd7c750fb43e023ed0b67e797ebc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea.resizeEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>resizeEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="33" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a05e59b56401978d23db6226e4219a1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea.contact</definition>
+        <argsstring>(self)</argsstring>
+        <name>contact</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="46" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="46" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a929b6d70dd8106e64ffa89f6a02216c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_area.ChatArea._add_textbox</definition>
+        <argsstring>(self, textbox)</argsstring>
+        <name>_add_textbox</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>textbox</type>
+          <defname>textbox</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_area.py" line="26" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_area.ChatArea</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_area.ChatArea</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/chat/chat_area.py" line="6" column="1" bodyfile="Client/client/application/widgets/chat/chat_area.py" bodystart="6" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a1301ecbb32bb91b02ccf27eca439fa82" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a929b6d70dd8106e64ffa89f6a02216c7" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>_add_textbox</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ac46c02ae3961fb62f2913893f92b66f9" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>_contact</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1ad252f94567e152a65218b6bbbe95d37d" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1aa022e914c47d96a837cecddcef0aa5e3" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>_textboxes</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a6147e6476962df7b428650bbe4c81b6f" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>add_textbox_from_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a05e59b56401978d23db6226e4219a1a1" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>contact</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a4502b8481c2621929a43555a8acbeaf9" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea_1a829bd7c750fb43e023ed0b67e797ebc2" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_area::ChatArea</scope><name>resizeEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

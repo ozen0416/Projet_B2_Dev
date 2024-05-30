@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid" kind="namespace" language="Python">
+    <compoundname>Client::client::application::widgets::grid</compoundname>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship">Client::client::application::widgets::grid::display_ship</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid">Client::client::application::widgets::grid::grid</innernamespace>
+    <innernamespace refid="namespaceClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid__cell">Client::client::application::widgets::grid::grid_cell</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/grid/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::grid::display_ship::DisplayShip</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab6ca85a04a856b4b426c60cf3f39af36" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.display_ship.DisplayShip::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="57" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab13cb025442afc9368e56748c6bc87f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.display_ship.DisplayShip::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="58" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a4074073db56d97c3de4369c8c9e72643" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.display_ship.DisplayShip::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="59" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ae2dcac50b139fa0aaddbb4f14702b1b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.grid.display_ship.DisplayShip::ship_widget</definition>
+        <argsstring></argsstring>
+        <name>ship_widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="60" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1aae900d2075f9ac2bc996887a4a51899d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None Client.client.application.widgets.grid.display_ship.DisplayShip.__init__</definition>
+        <argsstring>(self, int count, int size, Optional[QWidget] parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[QWidget]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="55" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a2885026826b9168e3f8a6af377105758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.display_ship.DisplayShip.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="65" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1adad345fbbc7b7de2ee3c72b8369a3acf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.display_ship.DisplayShip.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="69" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a227993efe3a45bf3dd654c17155bf124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.grid.display_ship.DisplayShip.use_ship</definition>
+        <argsstring>(self, size)</argsstring>
+        <name>use_ship</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/grid/display_ship.py" line="73" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="73" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Ship and a label displayed in the GUI to keep track of the count of ship left to be placed.
+This ship is not part of the map.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.display_ship.DisplayShip</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Client.client.application.widgets.grid.display_ship.DisplayShip</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/grid/display_ship.py" line="49" column="1" bodyfile="Client/client/application/widgets/grid/display_ship.py" bodystart="49" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1aae900d2075f9ac2bc996887a4a51899d" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab6ca85a04a856b4b426c60cf3f39af36" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>_size</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ab13cb025442afc9368e56748c6bc87f8" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>count</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a2885026826b9168e3f8a6af377105758" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1adad345fbbc7b7de2ee3c72b8369a3acf" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a4074073db56d97c3de4369c8c9e72643" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>label</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1ae2dcac50b139fa0aaddbb4f14702b1b2" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>ship_widget</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1display__ship_1_1DisplayShip_1a227993efe3a45bf3dd654c17155bf124" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::grid::display_ship::DisplayShip</scope><name>use_ship</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

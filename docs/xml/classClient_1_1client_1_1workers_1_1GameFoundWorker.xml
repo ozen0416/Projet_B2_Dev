@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1workers_1_1GameFoundWorker" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::workers::GameFoundWorker</compoundname>
+    <basecompoundref refid="classClient_1_1client_1_1abc_1_1AbstractWorker" prot="public" virt="non-virtual">Client.client.abc.AbstractWorker</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1workers_1_1GameFoundWorker_1ab4bdb41c86f76950fd00f9d37dc91ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[dict]</type>
+        <definition> Optional[dict] Client.client.workers.GameFoundWorker.handle</definition>
+        <argsstring>(self, Any request_type, Any request)</argsstring>
+        <name>handle</name>
+        <reimplements refid="classClient_1_1client_1_1abc_1_1AbstractWorker_1a56b7dc25f88c20fa65b083d21dca2b03">handle</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/workers.py" line="15" column="1" bodyfile="Client/client/workers.py" bodystart="15" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>HitWorker will give to the proper game instance of a pair
+the current turn processed by a player.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Client.client.abc.Worker</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Worker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Client.client.workers.GameFoundWorker</label>
+        <link refid="classClient_1_1client_1_1workers_1_1GameFoundWorker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.AbstractWorker</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Client.client.abc.Worker</label>
+        <link refid="classClient_1_1client_1_1abc_1_1Worker"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Client.client.abc.TreeObject</label>
+        <link refid="classClient_1_1client_1_1abc_1_1TreeObject"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Client.client.workers.GameFoundWorker</label>
+        <link refid="classClient_1_1client_1_1workers_1_1GameFoundWorker"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="2">
+        <label>Client.client.abc.AbstractWorker</label>
+        <link refid="classClient_1_1client_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/workers.py" line="10" column="1" bodyfile="Client/client/workers.py" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1workers_1_1GameFoundWorker_1ab4bdb41c86f76950fd00f9d37dc91ba2" prot="public" virt="non-virtual"><scope>Client::client::workers::GameFoundWorker</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

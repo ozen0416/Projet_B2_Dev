@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Server_2server_2matchmaking_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespaceServer_1_1server_1_1matchmaking">Server::server::matchmaking</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceServer_1_1server_1_1matchmaking" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.queue<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Queue</highlight></codeline>
+    </programlisting>
+    <location file="Server/server/matchmaking/__init__.py"/>
+  </compounddef>
+</doxygen>

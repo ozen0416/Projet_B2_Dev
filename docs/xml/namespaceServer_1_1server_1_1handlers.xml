@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1handlers" kind="namespace" language="Python">
+    <compoundname>Server::server::handlers</compoundname>
+    <innerclass refid="classServer_1_1server_1_1handlers_1_1RootHandler" prot="public">Server::server::handlers::RootHandler</innerclass>
+    <innerclass refid="classServer_1_1server_1_1handlers_1_1GameHandler" prot="public">Server::server::handlers::GameHandler</innerclass>
+    <innerclass refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler" prot="public">Server::server::handlers::MatchmakingHandler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>File containing every handler we will use in our chain of responsibility.</verbatim> </para>
+    </detaileddescription>
+    <location file="Server/server/handlers.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

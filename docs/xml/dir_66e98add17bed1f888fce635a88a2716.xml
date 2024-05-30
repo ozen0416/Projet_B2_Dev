@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_66e98add17bed1f888fce635a88a2716" kind="dir">
+    <compoundname>Server/server/tools</compoundname>
+    <innerfile refid="Server_2server_2tools_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="Server_2server_2tools_2enums_8py">enums.py</innerfile>
+    <innerfile refid="from__dict__mixin_8py">from_dict_mixin.py</innerfile>
+    <innerfile refid="vector2_8py">vector2.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/tools/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_71f09b1d021338fe339ece5ce40bf83b" kind="dir">
+    <compoundname>Client/client/application/widgets</compoundname>
+    <innerdir refid="dir_77ef8da73ba4630f229251630a178884">Client/client/application/widgets/chat</innerdir>
+    <innerdir refid="dir_32c6512934ef6465ec36643f19b9ad80">Client/client/application/widgets/custom</innerdir>
+    <innerdir refid="dir_eb4dd81cf444509379d66bab4e8bf058">Client/client/application/widgets/grid</innerdir>
+    <innerdir refid="dir_2f5c9cf67e3f618e4a2c4f2e586608bd">Client/client/application/widgets/login</innerdir>
+    <innerdir refid="dir_97461845f2c044b0171e9d120c8db310">Client/client/application/widgets/play_button</innerdir>
+    <innerfile refid="Client_2client_2application_2widgets_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Client/client/application/widgets/"/>
+  </compounddef>
+</doxygen>

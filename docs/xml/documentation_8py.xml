@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="documentation_8py" kind="file" language="Python">
+    <compoundname>documentation.py</compoundname>
+    <innernamespace refid="namespacedocumentation">documentation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacedocumentation" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="2"><highlight class="stringliteral">\page<sp/>arduino<sp/>Separation<sp/>of<sp/>concerns</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">1.<sp/>**Game**</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral">2.<sp/>**Matchmaking**</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral">3.<sp/>**Client**</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral">4.<sp/>**Server**</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral">5.<sp/>**UI/UX**</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">6.<sp/>**BDD**</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+    </programlisting>
+    <location file="documentation.py"/>
+  </compounddef>
+</doxygen>

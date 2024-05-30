@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="game_8py" kind="file" language="Python">
+    <compoundname>game.py</compoundname>
+    <innerclass refid="classServer_1_1server_1_1game_1_1game_1_1Game" prot="public">Server::server::game::game::Game</innerclass>
+    <innernamespace refid="namespaceServer_1_1server_1_1game_1_1game">Server::server::game::game</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceServer_1_1server_1_1game_1_1game" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;game<sp/>manager<sp/>for<sp/>our<sp/>battleships<sp/>game&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>..tools<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>FromDictMixin,<sp/>Vector2,<sp/>Status</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.player<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Player</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classServer_1_1server_1_1game_1_1game_1_1Game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1game_1_1Game" kindref="compound">Game</ref>(<ref refid="classServer_1_1server_1_1tools_1_1from__dict__mixin_1_1FromDictMixin" kindref="compound">FromDictMixin</ref>):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>game<sp/>Manager,<sp/>stores<sp/>all<sp/>required<sp/>data<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>game<sp/>to<sp/>be<sp/>functional.<sp/>Also<sp/>contains<sp/>methods<sp/>to</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>instantiate<sp/>and<sp/>make<sp/>the<sp/>game<sp/>progress</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`first_player`:<sp/>Player<sp/>1<sp/>of<sp/>the<sp/>game</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`second_player`:<sp/>Player<sp/>2<sp/>of<sp/>the<sp/>game</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`turn`:<sp/>Current<sp/>turn<sp/>of<sp/>the<sp/>game</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>first_player:<sp/>Player</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>second_player:<sp/>Player</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>turn:<sp/>int<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>finished:<sp/>bool<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a81592769494eea38068dbcb60afaec99" kindref="member">process_turn</ref>(self,<sp/>target_cell:<sp/>Vector2):</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Try<sp/>a<sp/>hit<sp/>at<sp/>a<sp/>location<sp/>of<sp/>a<sp/>specific<sp/>player<sp/>according<sp/>to<sp/>the<sp/>current<sp/>turn</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a246bea85e2ddbf9bb5637c8ebb37d943" kindref="member">finished</ref>finished:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.turn<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>first_player_turn<sp/>=<sp/>self.turn<sp/>%<sp/>2</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>first_player_turn:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>self.second_player.check_ship_hit(target_cell)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>self.first_player.check_ship_hit(target_cell)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>result<sp/>==<sp/>Status.ALL_SUNK:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a246bea85e2ddbf9bb5637c8ebb37d943" kindref="member">finished</ref>finished<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classServer_1_1server_1_1game_1_1game_1_1Game_1a08dc4808b0d483ca152d7e55243f78b1" kindref="member">__repr__</ref>(self):</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;game(first_player:<sp/>{self.first_player},<sp/>second_player:<sp/>{self.second_player},<sp/>turn:<sp/>{self.turn})&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Server/server/game/game.py"/>
+  </compounddef>
+</doxygen>

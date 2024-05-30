@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classServer_1_1server_1_1abc_1_1TreeObject" kind="class" language="Python" prot="public">
+    <compoundname>Server::server::abc::TreeObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1abc_1_1Handler" prot="public" virt="non-virtual">Server.server.abc.Handler</derivedcompoundref>
+    <derivedcompoundref refid="classServer_1_1server_1_1abc_1_1Worker" prot="public" virt="non-virtual">Server.server.abc.Worker</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServer_1_1server_1_1abc_1_1TreeObject_1a005c60fb2ec7e373cbf8979d0867f6d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[str]</type>
+        <definition> Optional[str] Server.server.abc.TreeObject.handle</definition>
+        <argsstring>(self, Any request_type, Any request)</argsstring>
+        <name>handle</name>
+        <reimplementedby refid="classServer_1_1server_1_1abc_1_1AbstractHandler_1a911325f2bfbeb1a6190c51afaefc12aa">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1abc_1_1AbstractWorker_1aeee293002f617d60e1dc13b095f5080f">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1workers_1_1HitWorker_1aa761fd4cb4375223ccb667cd57c393bb">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1workers_1_1PlacementWorker_1a951f3ddc2a2931aecd88af6d97406758">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker_1ac1625b8c0be4c313dad4b7c9dbcb1d12">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker_1ad4d092e7e1fb538c28e4370247e1c38a">handle</reimplementedby>
+        <reimplementedby refid="classServer_1_1server_1_1workers_1_1GameMessageWorker_1a745288011f1a5ae640556e7e5bcf18a8">handle</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request_type</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Server/server/abc.py" line="10" column="1" bodyfile="Server/server/abc.py" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Tree Object, being either a Handler or a Worker later</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>Server.server.abc.Worker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Worker"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Server.server.workers.MatchmakingInWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1MatchmakingInWorker"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Server.server.abc.AbstractHandler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractHandler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Server.server.workers.HitWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1HitWorker"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Server.server.workers.PlacementWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1PlacementWorker"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Server.server.handlers.MatchmakingHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1MatchmakingHandler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Server.server.workers.MatchmakingOutWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1MatchmakingOutWorker"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Server.server.handlers.RootHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1RootHandler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="5">
+        <label>Server.server.handlers.GameHandler</label>
+        <link refid="classServer_1_1server_1_1handlers_1_1GameHandler"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Server.server.workers.GameMessageWorker</label>
+        <link refid="classServer_1_1server_1_1workers_1_1GameMessageWorker"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Server.server.abc.Handler</label>
+        <link refid="classServer_1_1server_1_1abc_1_1Handler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Server.server.abc.AbstractWorker</label>
+        <link refid="classServer_1_1server_1_1abc_1_1AbstractWorker"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>Server.server.abc.TreeObject</label>
+        <link refid="classServer_1_1server_1_1abc_1_1TreeObject"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Server/server/abc.py" line="7" column="1" bodyfile="Server/server/abc.py" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classServer_1_1server_1_1abc_1_1TreeObject_1a005c60fb2ec7e373cbf8979d0867f6d4" prot="public" virt="non-virtual"><scope>Server::server::abc::TreeObject</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

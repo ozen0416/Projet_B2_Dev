@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget" kind="class" language="Python" prot="public">
+    <compoundname>Client::client::application::widgets::chat::chat_widget::ChatWidget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad002ff2a4fd4bf41fe994100d2a94f2b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_widget.ChatWidget::_contact</definition>
+        <argsstring></argsstring>
+        <name>_contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="11" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad063d5eb13b5607bf94bc604dd260c9c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_widget.ChatWidget::_layout</definition>
+        <argsstring></argsstring>
+        <name>_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="13" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1abc36b683a819fc8124e16dc26c3a1310" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_widget.ChatWidget::_chat_scroll</definition>
+        <argsstring></argsstring>
+        <name>_chat_scroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="15" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a593a4c95bcd829ac55904647d5252e64" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>Client.client.application.widgets.chat.chat_widget.ChatWidget::_chat_input</definition>
+        <argsstring></argsstring>
+        <name>_chat_input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="16" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a98b0b8c55215d69f6083e1edfc5e878c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.__init__</definition>
+        <argsstring>(self, str contact, parent=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>contact</declname>
+        </param>
+        <param>
+          <type>parent</type>
+          <defname>parent</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="8" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="8" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a90c0c5106ac596132056e84e7624c5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.init_layout</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_layout</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="21" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a3fb2999ff709b264e05b2080f9fb0c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.init_widgets</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_widgets</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="24" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2b7b0a7197792c45c7e95238dfaf156e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.showEvent</definition>
+        <argsstring>(self, event)</argsstring>
+        <name>showEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>event</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="29" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2dcf429341fd484dc7ef0bd15e00ad5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.send_message</definition>
+        <argsstring>(self)</argsstring>
+        <name>send_message</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="33" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a1d77b1227d0e4d37bc1707b8a8683431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.chat_input</definition>
+        <argsstring>(self)</argsstring>
+        <name>chat_input</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="37" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1af3ae781c16317ff912cedcc6f0e1d45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.chat_scroll</definition>
+        <argsstring>(self)</argsstring>
+        <name>chat_scroll</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="41" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ae468e3cb0496d3c8205417f8ddbea985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def Client.client.application.widgets.chat.chat_widget.ChatWidget.contact</definition>
+        <argsstring>(self)</argsstring>
+        <name>contact</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client/client/application/widgets/chat/chat_widget.py" line="45" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_widget.ChatWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>Client.client.application.widgets.chat.chat_widget.ChatWidget</label>
+        <link refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Client/client/application/widgets/chat/chat_widget.py" line="7" column="1" bodyfile="Client/client/application/widgets/chat/chat_widget.py" bodystart="7" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a98b0b8c55215d69f6083e1edfc5e878c" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>__init__</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a593a4c95bcd829ac55904647d5252e64" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>_chat_input</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1abc36b683a819fc8124e16dc26c3a1310" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>_chat_scroll</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad002ff2a4fd4bf41fe994100d2a94f2b" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>_contact</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ad063d5eb13b5607bf94bc604dd260c9c" prot="private" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a1d77b1227d0e4d37bc1707b8a8683431" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>chat_input</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1af3ae781c16317ff912cedcc6f0e1d45d" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>chat_scroll</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1ae468e3cb0496d3c8205417f8ddbea985" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>contact</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a90c0c5106ac596132056e84e7624c5cd" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>init_layout</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a3fb2999ff709b264e05b2080f9fb0c44" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>init_widgets</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2dcf429341fd484dc7ef0bd15e00ad5c" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>send_message</name></member>
+      <member refid="classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget_1a2b7b0a7197792c45c7e95238dfaf156e" prot="public" virt="non-virtual"><scope>Client::client::application::widgets::chat::chat_widget::ChatWidget</scope><name>showEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

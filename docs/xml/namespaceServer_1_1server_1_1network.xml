@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceServer_1_1server_1_1network" kind="namespace" language="Python">
+    <compoundname>Server::server::network</compoundname>
+    <innernamespace refid="namespaceServer_1_1server_1_1network_1_1client">Server::server::network::client</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1network_1_1pair">Server::server::network::pair</innernamespace>
+    <innernamespace refid="namespaceServer_1_1server_1_1network_1_1server">Server::server::network::server</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Server/server/network/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
