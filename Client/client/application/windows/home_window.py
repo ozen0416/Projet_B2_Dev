@@ -3,12 +3,10 @@ from typing import Optional
 from PySide6.QtCore import QSettings
 from PySide6.QtWidgets import QHBoxLayout, QSizePolicy, QWidget, QLabel, QVBoxLayout, QGridLayout
 
-from ..widgets import FramelessWidget
-from ..widgets import SearchGame
-from ..widgets import Login 
+from ..widgets import SearchGame, Login, BattleshipWindow
 
 
-class HomeWindow(QWidget):
+class HomeWindow(BattleshipWindow):
     """
     Home window before a game is played.
 
