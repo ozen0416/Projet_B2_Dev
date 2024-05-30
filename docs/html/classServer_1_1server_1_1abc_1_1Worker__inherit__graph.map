@@ -1,0 +1,11 @@
+<map id="Server.server.abc.Worker" name="Server.server.abc.Worker">
+<area shape="rect" id="node1" title=" " alt="" coords="357,143,540,170"/>
+<area shape="rect" id="node4" href="$classServer_1_1server_1_1abc_1_1AbstractWorker.html" title=" " alt="" coords="588,136,780,177"/>
+<area shape="rect" id="node2" href="$classServer_1_1server_1_1abc_1_1TreeObject.html" title=" " alt="" coords="103,169,309,195"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,143,55,170"/>
+<area shape="rect" id="node5" href="$classServer_1_1server_1_1workers_1_1GameMessageWorker.html" title=" " alt="" coords="853,5,1058,47"/>
+<area shape="rect" id="node6" href="$classServer_1_1server_1_1workers_1_1HitWorker.html" title=" " alt="" coords="863,71,1048,112"/>
+<area shape="rect" id="node7" href="$classServer_1_1server_1_1workers_1_1MatchmakingInWorker.html" title=" " alt="" coords="828,136,1083,177"/>
+<area shape="rect" id="node8" href="$classServer_1_1server_1_1workers_1_1MatchmakingOutWorker.html" title=" " alt="" coords="828,201,1083,243"/>
+<area shape="rect" id="node9" href="$classServer_1_1server_1_1workers_1_1PlacementWorker.html" title=" " alt="" coords="838,267,1073,308"/>
+</map>

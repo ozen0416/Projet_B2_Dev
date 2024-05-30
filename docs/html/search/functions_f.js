@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['receive_5fmessage_518',['receive_message',['../classClient_1_1client_1_1application_1_1app_1_1App.html#a1ff38bd58ea18d100fe6e3a15a09682a',1,'Client.client.application.app.App.receive_message()'],['../classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1battleships__window_1_1BattleshipWindow.html#ad957d4470269eff2dd70638dd1cfcdc5',1,'Client.client.application.widgets.custom.battleships_window.BattleshipWindow.receive_message()'],['../classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow.html#a31f3f59d4ebd633c435af5dc95179370',1,'Client.client.application.windows.game_window.GameWindow.receive_message()']]],
+  ['remove_5fclient_519',['remove_client',['../classServer_1_1server_1_1matchmaking_1_1queue_1_1Queue.html#adea3abbf0c910936518aa8d27297df7c',1,'Server::server::matchmaking::queue::Queue']]],
+  ['resizeevent_520',['resizeEvent',['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea.html#a829bd7c750fb43e023ed0b67e797ebc2',1,'Client.client.application.widgets.chat.chat_area.ChatArea.resizeEvent()'],['../classClient_1_1client_1_1application_1_1widgets_1_1custom_1_1scaling__textedit_1_1ScalingTextEdit.html#a8035066bef4737322c30d92eec91beb3',1,'Client.client.application.widgets.custom.scaling_textedit.ScalingTextEdit.resizeEvent()']]],
+  ['right_521',['right',['../classServer_1_1server_1_1tools_1_1vector2_1_1Vector2.html#a09399cd12b960f3417d3df93627d0c5f',1,'Server::server::tools::vector2::Vector2']]]
+];

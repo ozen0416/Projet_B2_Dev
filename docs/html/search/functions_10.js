@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['save_5fsettings_522',['save_settings',['../classClient_1_1client_1_1application_1_1app_1_1App.html#afbdf503aabe4989a973681e2dd914eff',1,'Client::client::application::app::App']]],
+  ['send_5fmessage_523',['send_message',['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__input__widget_1_1ChatInputWidget.html#a5fa4b8fe03b8ca20a8a8022e0dc9289c',1,'Client.client.application.widgets.chat.chat_input_widget.ChatInputWidget.send_message()'],['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget.html#a2dcf429341fd484dc7ef0bd15e00ad5c',1,'Client.client.application.widgets.chat.chat_widget.ChatWidget.send_message()'],['../classServer_1_1server_1_1network_1_1pair_1_1Pair.html#a8f57b33213f5d654fc488f703eb2fb71',1,'Server.server.network.pair.Pair.send_message()']]],
+  ['send_5frequest_524',['send_request',['../classClient_1_1client_1_1application_1_1app_1_1App.html#a53ee74fb02ee03388514adeb1ca69362',1,'Client.client.application.app.App.send_request()'],['../classClient_1_1client_1_1network_1_1client_1_1Client.html#a6361b5914a9b3cbe78ea534fd7d5a240',1,'Client.client.network.client.Client.send_request()']]],
+  ['sender_525',['sender',['../classClient_1_1client_1_1dataclasses_1_1Message.html#a8713219f6ae0eda40028520b776b5305',1,'Client::client::dataclasses::Message']]],
+  ['show_5fgame_526',['show_game',['../classClient_1_1client_1_1application_1_1controller_1_1Controller.html#aab6c1c320d125cb1b6ecab657dfa57dc',1,'Client::client::application::controller::Controller']]],
+  ['show_5fhome_527',['show_home',['../classClient_1_1client_1_1application_1_1controller_1_1Controller.html#a8440a9908fc1c2ed417d88cef8d7d84e',1,'Client::client::application::controller::Controller']]],
+  ['showevent_528',['showEvent',['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__widget_1_1ChatWidget.html#a2b7b0a7197792c45c7e95238dfaf156e',1,'Client::client::application::widgets::chat::chat_widget::ChatWidget']]],
+  ['size_529',['size',['../classServer_1_1server_1_1game_1_1ship_1_1Ship.html#adb3b625b81e186b154d4dd25c35532de',1,'Server::server::game::ship::Ship']]],
+  ['socket_5fclient_530',['socket_client',['../classClient_1_1client_1_1application_1_1app_1_1App.html#afdab6035e7f6fcefabf456747e2fc6fb',1,'Client::client::application::app::App']]],
+  ['start_531',['start',['../classClient_1_1client_1_1network_1_1client_1_1Client.html#a7d2493be307d444c4014ab46b7c2b7d1',1,'Client.client.network.client.Client.start()'],['../classServer_1_1server_1_1network_1_1server_1_1Server.html#af081f1dede38481d7ff2d93086631659',1,'Server.server.network.server.Server.start()']]],
+  ['start_5fgame_532',['start_game',['../classServer_1_1server_1_1network_1_1pair_1_1Pair.html#a8f4189318057475391621f90ecb33efd',1,'Server::server::network::pair::Pair']]],
+  ['start_5ftimer_533',['start_timer',['../classClient_1_1client_1_1application_1_1widgets_1_1play__button_1_1play__button_1_1SearchGame.html#a43c13132978ac4fb531e040b48ed6023',1,'Client::client::application::widgets::play_button::play_button::SearchGame']]],
+  ['stop_534',['stop',['../classClient_1_1client_1_1network_1_1client_1_1Client.html#a4fbf7b48424351757a69c431434a4056',1,'Client::client::network::client::Client']]],
+  ['switch_5femitted_535',['switch_emitted',['../classClient_1_1client_1_1application_1_1controller_1_1Controller.html#ac026bf5ff210b550f86dc6009d6d6c73',1,'Client::client::application::controller::Controller']]]
+];

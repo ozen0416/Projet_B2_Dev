@@ -1,0 +1,8 @@
+<map id="Client.client.abc.AbstractWorker" name="Client.client.abc.AbstractWorker">
+<area shape="rect" id="node1" title=" " alt="" coords="123,229,308,271"/>
+<area shape="rect" id="node5" href="$classClient_1_1client_1_1workers_1_1GameFoundWorker.html" title=" " alt="" coords="5,319,204,360"/>
+<area shape="rect" id="node6" href="$classClient_1_1client_1_1workers_1_1GameMessageWorker.html" title=" " alt="" coords="228,319,427,360"/>
+<area shape="rect" id="node2" href="$classClient_1_1client_1_1abc_1_1Worker.html" title=" " alt="" coords="127,155,303,181"/>
+<area shape="rect" id="node3" href="$classClient_1_1client_1_1abc_1_1TreeObject.html" title=" " alt="" coords="185,80,385,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="191,5,240,32"/>
+</map>

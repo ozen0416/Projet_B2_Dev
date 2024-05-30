@@ -1,0 +1,6 @@
+<map id="Client.client.application.widgets.custom.battleships_window.BattleshipWindow" name="Client.client.application.widgets.custom.battleships_window.BattleshipWindow">
+<area shape="rect" id="node1" title=" " alt="" coords="132,39,491,80"/>
+<area shape="rect" id="node3" href="$classClient_1_1client_1_1application_1_1windows_1_1game__window_1_1GameWindow.html" title=" " alt="" coords="539,5,817,47"/>
+<area shape="rect" id="node4" href="$classClient_1_1client_1_1application_1_1windows_1_1home__window_1_1HomeWindow.html" title=" " alt="" coords="539,71,817,112"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,46,84,73"/>
+</map>
