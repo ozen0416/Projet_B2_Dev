@@ -3,6 +3,7 @@ import json
 import time
 import uuid
 import socket
+import struct
 from PySide6.QtCore import QObject, Slot, Signal
 
 
@@ -62,8 +63,11 @@ class Client(QObject):
         self._socket.connect((self.__SERVER_IP, self.__SERVER_PORT))
 
     def send_request(self, request: dict):
-        formatted_request = dict_to_encoded_utf_8(request)
-        self._socket.send(formatted_request)
+        encoded_request = dict_to_encoded_utf_8(request)
+        size = struct.pack('!I', len(encoded_request))
+        
+        self._socket.sendall(size)
+        self._socket.sendall(encoded_request)
 
     @Slot()
     def listen(self):
@@ -71,7 +75,10 @@ class Client(QObject):
         listen for server requests
         """
         while self.running:
-            response = self._socket.recv(1024).decode('utf-8')
+            response = self._socket.recv(4)
+            size = struct.unpack('!I', response)[0]
+
+            response = self._socket.recv(size).decode('utf-8')
             print("RESPONSE", response)
             json_response = json.loads(response)
             print(json_response)

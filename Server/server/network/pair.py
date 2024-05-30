@@ -39,14 +39,12 @@ class Pair:
         }
         json_data = json.dumps(data)
 
-        self.second_client.writer.write(json_data.encode('utf-8'))
-        await self.second_client.writer.drain()
+        await self.second_client.send_data(json_data.encode('utf-8'))
 
         data["data"]["nickname"] = self.second_client.nickname
         json_data = json.dumps(data)
 
-        self.first_client.writer.write(json_data.encode('utf-8'))
-        await self.first_client.writer.drain()
+        await self.first_client.send_data(json_data.encode('utf-8'))
 
     async def client_placement(self, request: dict):
         """
@@ -109,8 +107,7 @@ class Pair:
         paired_json_data = json.dumps(paired_data)
 
         paired_client = self._get_paired_client(client_id)
-        paired_client.writer.write(paired_json_data.encode('utf-8'))
-        await paired_client.writer.drain()
+        await paired_client.send_data(paired_json_data.encode('utf-8'))
 
         if turn_result == Status.ALL_SUNK:
             await self.game_finish()
@@ -125,11 +122,9 @@ class Pair:
         json_data = json.dumps(data)
         encoded_data = json_data.encode('utf-8')
 
-        self.first_client.writer.write(encoded_data)
-        await self.first_client.writer.drain()
+        await self.first_client.send_data(encoded_data)
 
-        self.second_client.writer.write(encoded_data)
-        await self.second_client.writer.drain()
+        await self.second_client.send_data(encoded_data)
 
     async def start_game(self):
         """
@@ -152,15 +147,13 @@ class Pair:
         json_data = json.dumps(data)
         encoded_data = json_data.encode('utf-8')
 
-        self.first_client.writer.write(encoded_data)
-        await self.first_client.writer.drain()
+        await self.first_client.send_data(encoded_data)
 
         data["data"]["start"] = False
         json_data = json.dumps(data)
         encoded_data = json_data.encode('utf-8')
 
-        self.second_client.writer.write(encoded_data)
-        await self.second_client.writer.drain()
+        await self.second_client.send_data(encoded_data)
 
     async def send_message(self, request: dict):
         client_id = request["client_id"]

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from asyncio import StreamWriter, StreamReader
+import struct
 
 
 @dataclass
@@ -29,3 +30,11 @@ class Client:
         self.reader = reader
         self.writer = writer
         self.ships_data = ships_data
+
+    async def send_data(self, data):
+        size = struct.pack('!I', len(data))
+
+        self.writer.write(size)
+        self.writer.write(data)
+        await self.writer.drain()
+

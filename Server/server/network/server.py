@@ -2,6 +2,7 @@ import json
 import asyncio
 from asyncio import StreamWriter, StreamReader
 from typing import List, Optional
+import struct
 
 from .pair import Pair
 from .client import Client
@@ -58,9 +59,14 @@ class Server:
 
         try:
             while True:
-                data = await reader.read(1024)
+                data = await reader.read(4)
                 if not data:
                     break
+
+                size = struct.unpack('!I', data)[0]
+
+                data = await reader.readexactly(size)
+
                 response = data.decode('utf-8')
                 json_response = json.loads(response)
                 if not ("client_id" in json_response and "nickname" in json_response and "request" in json_response):
@@ -74,8 +80,7 @@ class Server:
                 print(f"Worker response: {res}")
                 await asyncio.sleep(1)
 
-                writer.write(res.encode('utf-8'))
-                await writer.drain()
+                client.send_data(res.encode('utf-8'))
         except ConnectionResetError as cre:
             print(f"Error occurred with client {addr}: {cre}")
         finally:
