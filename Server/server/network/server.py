@@ -63,16 +63,18 @@ class Server:
                     break
                 response = data.decode('utf-8')
                 json_response = json.loads(response)
+                if not ("client_id" in json_response and "nickname" in json_response and "request" in json_response):
+                    continue
                 client.id = json_response["client_id"]
+                client.nickname = json_response["nickname"]
                 print(f"Data received {json_response}")
-                if "request" in json_response:
-                    request_base = json_response["request"][0]
-                    print("Sending to RootHandler...")
-                    res = await self._root_handler.handle(request_base, json_response)
-                    print(f"Worker response: {res}")
+                request_base = json_response["request"][0]
+                print("Sending to RootHandler...")
+                res = await self._root_handler.handle(request_base, json_response)
+                print(f"Worker response: {res}")
 
-                    writer.write(res.encode('utf-8'))
-                    await writer.drain()
+                writer.write(res.encode('utf-8'))
+                await writer.drain()
         except ConnectionResetError as cre:
             print(f"Error occurred with client {addr}: {cre}")
         finally:

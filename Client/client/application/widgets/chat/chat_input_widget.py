@@ -27,6 +27,12 @@ class ChatInputWidget(ScalingTextEdit):
         self.setText('')
         chat_scroll = self.parent().chat_scroll
         chat_scroll.add_textbox_from_message(message)
+        data = {
+            "request": ["GAME", "MESSAGE"],
+            "data": {"content": content},
+        }
+
+        QApplication.instance().send_request(data)
 
     def keyPressEvent(self, event):
         combination = event.keyCombination()

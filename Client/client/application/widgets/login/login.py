@@ -1,6 +1,4 @@
-from PySide6.QtWidgets import QLineEdit, QLabel, QPushButton, QWidget, QGridLayout, QFormLayout
-from PySide6.QtCore import Qt
-from ..custom import FramelessWidget
+from PySide6.QtWidgets import QLineEdit, QLabel, QPushButton, QWidget, QFormLayout, QApplication
 
 
 class Login(QWidget):
@@ -25,7 +23,9 @@ class Login(QWidget):
         QFormLayout(self)
 
     def init_widgets(self):
-        self.lineedit_id.setEchoMode(QLineEdit.Password)
+        # self.lineedit_id.setEchoMode(QLineEdit.Password)
+        self.lineedit_username.setText(QApplication.instance().user)
+        self.lineedit_id.setText(QApplication.instance().client_id)
 
         self.submit.clicked.connect(self.get_cred)
 
@@ -34,5 +34,6 @@ class Login(QWidget):
         self.layout().addRow(self.submit)
 
     def get_cred(self):
-        print(self.lineedit_username.text())
-        print(self.lineedit_id.text())
+        QApplication.instance().user = self.lineedit_username.text()
+        QApplication.instance().client_id = self.lineedit_id.text()
+        QApplication.instance().save_settings()

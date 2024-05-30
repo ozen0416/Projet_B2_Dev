@@ -35,14 +35,14 @@ class Pair:
         """
         data = {
             "request": ["GAME", "FOUND"],
-            "data": {"client_id": self.first_client.id, "game_id": self.game_id}
+            "data": {"nickname": self.first_client.nickname, "game_id": self.game_id}
         }
         json_data = json.dumps(data)
 
         self.second_client.writer.write(json_data.encode('utf-8'))
         await self.second_client.writer.drain()
 
-        data["data"]["client_id"] = self.second_client.id
+        data["data"]["nickname"] = self.second_client.nickname
         json_data = json.dumps(data)
 
         self.first_client.writer.write(json_data.encode('utf-8'))
@@ -109,7 +109,13 @@ class Pair:
         client_id = request["client_id"]
         paired_client = self._get_paired_client(client_id)
 
-        data = request["data"]
+        data = {
+            "data": request["data"],
+            "request": ["GAME", "MESSAGE"],
+            "nickname": request["nickname"]
+        }
+
+        data["data"]["nickname"] = paired_client.nickname
         json_data = json.dumps(data)
 
         paired_client.writer.write(json_data.encode('utf-8'))
