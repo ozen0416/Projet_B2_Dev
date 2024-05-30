@@ -47,8 +47,8 @@ class Client(QObject):
         super().__init__()
         # self.__SERVER_IP = '2.9.106.99'
         # self.__SERVER_PORT = 4704
-        self.__SERVER_IP = 'localhost'
-        self.__SERVER_PORT = 39688
+        self.__SERVER_IP = '2.9.106.99'
+        self.__SERVER_PORT = 4704
 
         self.start()
         self.running = True

@@ -9,7 +9,8 @@ var searchData=
   ['add_5ftextbox_5ffrom_5fmessage_12',['add_textbox_from_message',['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__area_1_1ChatArea.html#a6147e6476962df7b428650bbe4c81b6f',1,'Client.client.application.widgets.chat.chat_area.ChatArea.add_textbox_from_message()'],['../classClient_1_1client_1_1application_1_1widgets_1_1chat_1_1chat__scroll__area_1_1ChatScrollArea.html#a51321c41b8ed5b58f7b6408c450fc587',1,'Client.client.application.widgets.chat.chat_scroll_area.ChatScrollArea.add_textbox_from_message()']]],
   ['add_5ftree_5fobject_13',['add_tree_object',['../classClient_1_1client_1_1abc_1_1Handler.html#a5c1a251471c22b864426ed31a9b0db96',1,'Client.client.abc.Handler.add_tree_object()'],['../classClient_1_1client_1_1abc_1_1AbstractHandler.html#ae53b676de421612b711bd4a7a9cceb02',1,'Client.client.abc.AbstractHandler.add_tree_object()'],['../classServer_1_1server_1_1abc_1_1Handler.html#a21a4706ac87fe29e58a546ee06bd8f4c',1,'Server.server.abc.Handler.add_tree_object()'],['../classServer_1_1server_1_1abc_1_1AbstractHandler.html#a3ac3ca43473621da60f531b978c17953',1,'Server.server.abc.AbstractHandler.add_tree_object()']]],
   ['all_5fsunk_14',['ALL_SUNK',['../classServer_1_1server_1_1tools_1_1enums_1_1Status.html#a87e5a12089260cec40a0e66cd611d85b',1,'Server::server::tools::enums::Status']]],
-  ['app_15',['app',['../namespaceClient_1_1main.html#a4fa19b9e9f404c6cf8f08e415474790d',1,'Client::main']]],
-  ['app_16',['App',['../classClient_1_1client_1_1application_1_1app_1_1App.html',1,'Client::client::application::app']]],
-  ['app_2epy_17',['app.py',['../app_8py.html',1,'']]]
+  ['ally_5fgrid_15',['ally_grid',['../classClient_1_1client_1_1application_1_1widgets_1_1grid_1_1grid_1_1Grid.html#a2b02fe03cd3f37406797406a1e7ad412',1,'Client::client::application::widgets::grid::grid::Grid']]],
+  ['app_16',['app',['../namespaceClient_1_1main.html#a4fa19b9e9f404c6cf8f08e415474790d',1,'Client::main']]],
+  ['app_17',['App',['../classClient_1_1client_1_1application_1_1app_1_1App.html',1,'Client::client::application::app']]],
+  ['app_2epy_18',['app.py',['../app_8py.html',1,'']]]
 ];

@@ -34,6 +34,8 @@ class GameWindow(BattleshipWindow):
         self.init_widgets()
 
     def update_state(self, game_state: GameState):
+        if self.game_state == GameState.FINISHED:
+            return
         self.game_state = game_state
         if self.game_state == GameState.WAITING:
             self.game_state_label.setText("WAITING")

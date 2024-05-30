@@ -1,8 +1,12 @@
 <map id="Client.client.abc.Worker" name="Client.client.abc.Worker">
-<area shape="rect" id="node1" title=" " alt="" coords="127,155,303,181"/>
-<area shape="rect" id="node4" href="$classClient_1_1client_1_1abc_1_1AbstractWorker.html" title=" " alt="" coords="123,229,308,271"/>
-<area shape="rect" id="node2" href="$classClient_1_1client_1_1abc_1_1TreeObject.html" title=" " alt="" coords="185,80,385,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="191,5,240,32"/>
-<area shape="rect" id="node5" href="$classClient_1_1client_1_1workers_1_1GameFoundWorker.html" title=" " alt="" coords="5,319,204,360"/>
-<area shape="rect" id="node6" href="$classClient_1_1client_1_1workers_1_1GameMessageWorker.html" title=" " alt="" coords="228,319,427,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="351,177,527,203"/>
+<area shape="rect" id="node4" href="$classClient_1_1client_1_1abc_1_1AbstractWorker.html" title=" " alt="" coords="575,169,760,211"/>
+<area shape="rect" id="node2" href="$classClient_1_1client_1_1abc_1_1TreeObject.html" title=" " alt="" coords="103,202,303,229"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,177,55,203"/>
+<area shape="rect" id="node5" href="$classClient_1_1client_1_1workers_1_1GameFinishedWorker.html" title=" " alt="" coords="808,5,1007,47"/>
+<area shape="rect" id="node6" href="$classClient_1_1client_1_1workers_1_1GameFoundWorker.html" title=" " alt="" coords="808,71,1007,112"/>
+<area shape="rect" id="node7" href="$classClient_1_1client_1_1workers_1_1GameMessageWorker.html" title=" " alt="" coords="808,136,1007,177"/>
+<area shape="rect" id="node8" href="$classClient_1_1client_1_1workers_1_1GameStartWorker.html" title=" " alt="" coords="808,201,1007,243"/>
+<area shape="rect" id="node9" href="$classClient_1_1client_1_1workers_1_1HitRequestWorker.html" title=" " alt="" coords="818,267,997,308"/>
+<area shape="rect" id="node10" href="$classClient_1_1client_1_1workers_1_1HitResponseWorker.html" title=" " alt="" coords="818,332,997,373"/>
 </map>
