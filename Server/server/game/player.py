@@ -21,7 +21,6 @@ class Player(FromDictMixin):
         for ship in self._ships:
             status = ship.check_for_hit(pos)
             if status != Status.MISS:
-                print(f"\nPLAYER HIT 0: {str(self)}\n")
                 break
         if status == Status.SUNK:
             status = self.check_all_sunk(status)

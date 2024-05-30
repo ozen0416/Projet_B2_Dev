@@ -61,19 +61,22 @@ class Vector2(FromDictMixin):
     def right():
         return Vector2(1,0)
 
+    def equals(self, other):
+        return self._x == other._x and self._y == other._y
+
     def __mul__(self, other):
         if isinstance(other, Vector2):
-            return Vector2(self.x * other.x, self.y * other.y)
+            return Vector2(self._x * other.x, self._y * other.y)
         elif isinstance(other, int):
-            return Vector2(self.x * other, self.y * other)
+            return Vector2(self._x * other, self._y * other)
         else:
             raise TypeError("Multiplication is only supported between Vector2 instances or scalars.")
 
     def __eq__(self, other: Vector2):
-        return self.x == other.x and self.y == other.y
+        return self._x == other._x and self._y == other._y
 
     def __add__(self, other: Vector2):
-        return Vector2(self.x + other.x, self.y + other.y)
+        return Vector2(self._x + other._x, self._y + other._y)
 
     def __repr__(self):
-        return f"Vector2(x: {self.x}, y: {self.y})"
+        return f"Vector2(x: {self._x}, y: {self._y})"

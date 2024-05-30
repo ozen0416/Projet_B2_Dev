@@ -4,7 +4,7 @@ import uuid
 
 from .client import Client
 from ..game import Game
-from ..tools import Vector2
+from ..tools import Vector2, Status
 
 
 class Pair:
@@ -83,20 +83,23 @@ class Pair:
         if client is None:
             raise Exception("client not in pair")
 
-        target_cell = Vector2.from_dict(request["data"])
+        request_pos = request["data"]["_pos"]
+
+        target_cell = Vector2(request_pos["_x"], request_pos["_y"])
 
         turn_result = self.game.process_turn(target_cell)
+        turn_result = int(turn_result)
 
         data = {
             "status": "OK",
-            "response": "HIT RESPONSE",
+            "request": ["GAME", "HIT_RESPONSE"],
             "data": request["data"]
         }
 
         data["data"]["status"] = turn_result
 
         paired_data = {
-            "request": ["GAME", "HIT_RESPONSE"],
+            "request": ["GAME", "HIT_REQUEST"],
             "data": request["data"]
         }
 
@@ -109,7 +112,24 @@ class Pair:
         paired_client.writer.write(paired_json_data.encode('utf-8'))
         await paired_client.writer.drain()
 
+        if turn_result == Status.ALL_SUNK:
+            await self.game_finish()
+
         return json_data
+
+    async def game_finish(self):
+        data = {
+            "request": ["GAME", "FINISHED"]
+        }
+
+        json_data = json.dumps(data)
+        encoded_data = json_data.encode('utf-8')
+
+        self.first_client.writer.write(encoded_data)
+        await self.first_client.writer.drain()
+
+        self.second_client.writer.write(encoded_data)
+        await self.second_client.writer.drain()
 
     async def start_game(self):
         """
@@ -125,7 +145,8 @@ class Pair:
         self.game = Game.from_dict(data)
 
         data = {
-            "request": ["GAME", "START"]
+            "request": ["GAME", "START"],
+            "data": {"start": True}
         }
 
         json_data = json.dumps(data)
@@ -133,6 +154,10 @@ class Pair:
 
         self.first_client.writer.write(encoded_data)
         await self.first_client.writer.drain()
+
+        data["data"]["start"] = False
+        json_data = json.dumps(data)
+        encoded_data = json_data.encode('utf-8')
 
         self.second_client.writer.write(encoded_data)
         await self.second_client.writer.drain()

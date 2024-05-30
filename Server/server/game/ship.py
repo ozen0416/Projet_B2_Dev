@@ -61,7 +61,6 @@ class Ship(FromDictMixin):
         for cell in self._ship_cells:
             if cell.check_for_hit(pos):
                 status = Status.HIT
-                print(f"SHIP HIT: {str(self)}")
                 break
 
         if status == Status.HIT and self.check_for_sunk():

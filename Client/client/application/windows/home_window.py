@@ -16,12 +16,9 @@ class HomeWindow(BattleshipWindow):
     def __init__(self, parent: Optional[QWidget] = None) -> None:
         super().__init__(parent)
 
-        #self.timer = SearchGame(self)
         self.left_widget = ContainerWidget(self)
-        self.label_test = QLabel("feurhahahaha", self)
 
         self.setWindowTitle("Battleships")
-        #self.setWindowIcon()
 
         self.init_layout()
         self.init_widget()
@@ -31,7 +28,6 @@ class HomeWindow(BattleshipWindow):
 
     def init_widget(self):
         self.layout().addWidget(self.left_widget)
-        self.layout().addWidget(self.label_test, 0, 1, 2, 2)
 
 
 class ContainerWidget(QWidget):

@@ -72,6 +72,7 @@ class Server:
                 print("Sending to RootHandler...")
                 res = await self._root_handler.handle(request_base, json_response)
                 print(f"Worker response: {res}")
+                await asyncio.sleep(1)
 
                 writer.write(res.encode('utf-8'))
                 await writer.drain()

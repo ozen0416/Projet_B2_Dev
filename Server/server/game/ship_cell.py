@@ -37,7 +37,7 @@ class ShipCell(FromDictMixin):
 
     def check_for_hit(self, pos: Vector2) -> bool:
         """check if cell is hit. if so change `is_hit` and return True"""
-        if pos == self.pos:
+        if pos.x == self.pos.x and pos.y == self.pos.y:
             self.is_hit = True
             print(f"CELL HIT: {str(self)}")
             return True

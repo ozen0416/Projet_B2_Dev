@@ -1,7 +1,7 @@
-from enum import Enum
+from enum import IntEnum
 
 
-class Status(Enum):
+class Status(IntEnum):
     MISS = 0
     HIT = 1
     SUNK = 2

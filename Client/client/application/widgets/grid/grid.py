@@ -5,7 +5,7 @@ from PySide6.QtCore import Signal
 from typing import Optional
 
 from ....dataclasses import Ship, Cell
-from ....tools import GridCellState
+from ....tools import GridCellState, GameState
 from .grid_cell import GridCell
 
 
@@ -23,8 +23,10 @@ class Grid(QWidget):
 
     def __init__(self, size: int, parent: Optional[QWidget] = None, ally_grid: bool = False) -> None:
         super().__init__(parent)
-        self.buttons = []
+        self.cells = []
+        self.waiting_cell = None
         self._size = size
+        self._parent = parent
         self.ally_grid = ally_grid
 
         self.placed_ships = []
@@ -32,6 +34,29 @@ class Grid(QWidget):
         self.init_layout()
         self.init_grid_button()
         self.setAcceptDrops(True)
+
+    def set_cell_waiting(self, x, y):
+        if self.ally_grid:
+            return
+
+        if self._parent._parent.game_state != GameState.PROGRESS:
+            return
+
+        cell = self.layout().itemAtPosition(x, y).widget()
+        if cell._cell_state != GridCellState.WATER:
+            return
+        self.reset_waiting()
+        cell.update_style(GridCellState.WAITING)
+        self.waiting_cell = cell
+
+    def reset_waiting(self):
+        if self.waiting_cell is None:
+            return
+        for cell in self.cells:
+            if cell._cell_state == GridCellState.WAITING:
+                cell.update_style(GridCellState.WATER)
+                self.waiting_cell = None
+                break
 
     def dragEnterEvent(self, event):
         if not self.ally_grid:
@@ -78,8 +103,8 @@ class Grid(QWidget):
         self.placed_ships.append(ship)
 
     def update_grid_state(self, x: int, y: int, state: GridCellState):
-        cell = self.layout().itemAtPosition(x, y)
-        cell.update_styles(state)
+        cell = self.layout().itemAtPosition(x, y).widget()
+        cell.update_style(state)
 
     def init_layout(self):
         QGridLayout(self)
@@ -87,15 +112,16 @@ class Grid(QWidget):
 
     def init_grid_button(self):
         """
-        Initiate grid of buttons
+        Initiate grid of Cells
         """
         for i in range(self._size):
             for j in range(self._size):
-                button = GridCell(j, i, GridCellState.WATER, self)
-                button.setFixedSize(40, 40)
-                self.layout().addWidget(button, j, i)
+                cell = GridCell(j, i, GridCellState.WATER, self)
+                cell.cell_clicked.connect(self.set_cell_waiting)
+                cell.setFixedSize(40, 40)
+                self.layout().addWidget(cell, j, i)
                 self.layout().setContentsMargins(0, 0, 0, 0)
-                self.buttons.append(button)
+                self.cells.append(cell)
 
 
 class GridContainer(QWidget):
@@ -106,6 +132,7 @@ class GridContainer(QWidget):
 
     def __init__(self, title: str, parent=None, ally_grid: bool = False):
         super().__init__(parent)
+        self._parent = parent
 
         self.label = QLabel(title, self)
         self.grid = Grid(10, self, ally_grid)
@@ -121,10 +148,6 @@ class GridContainer(QWidget):
         self.layout().addWidget(self.label)
         self.layout().addWidget(self.grid)
 
-
-    """
-    ship_cells = [{"_pos": {"_x": 0, "_y": 1}}, {"_pos": {"_x": 0, "_y": 2}}, {"_pos": {"_x": 0, "_y": 3}}]
-    """
     def get_placement(self):
         placement = []
         for ship in self.grid.placed_ships:

@@ -1,6 +1,6 @@
 from PySide6.QtGui import QPainter
 from PySide6.QtWidgets import QWidget, QStyleOption, QStyle, QLabel, QVBoxLayout
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Signal
 
 from ....tools import GridCellState
 
@@ -12,6 +12,8 @@ class GridCell(QWidget):
     The Cell can have the state WATER or the state SHIP
     """
 
+    cell_clicked = Signal(int, int)
+
     def __init__(self, x: int, y: int, cell_state: GridCellState, parent=None):
         super().__init__(parent)
 
@@ -21,6 +23,9 @@ class GridCell(QWidget):
         self.init_layout()
         self.init_widgets()
         self.setObjectName("dummy")
+
+    def mousePressEvent(self, event):
+        self.cell_clicked.emit(self._x, self._y)
 
     # paintEvent is overriden to make sure we can change background
     # color of custom widgets
@@ -37,6 +42,7 @@ class GridCell(QWidget):
         self.update_style(self._cell_state)
 
     def update_style(self, cell_state: GridCellState):
+        print("NEW STATE:", cell_state)
         self._cell_state = cell_state
         if self._cell_state == GridCellState.SHIP:
             self.setStyleSheet("QWidget { background-color: red; }")

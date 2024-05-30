@@ -27,7 +27,7 @@ class Ship:
     def to_dict(self) -> dict:
         data = {
             "_size": self.size,
-            "_pos": {"_pos": {"_x": self.start_cell.x, "_y": self.start_cell.y}},
+            "_pos": {"_pos": {"_x": self.cells[0].x, "_y": self.cells[0].y}},
             "_ship_cells": []
         }
         for cell in self.cells:

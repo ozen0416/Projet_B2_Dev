@@ -22,7 +22,6 @@ class App(QApplication):
 
         self._settings_file = QApplication.applicationDirPath() + "/settings.ini"
 
-
         self._user = ""
         self._client_id = ""  # str(uuid.uuid4())
 
@@ -65,10 +64,11 @@ class App(QApplication):
         self._socket_client.send_request(request)
 
     def handle_request(self, request: dict):
-        if not "request" in request:
+        if "request" not in request:
             return
         handler_response = self._root_handler.handle(request["request"], request)
-        print(handler_response, type(handler_response))
+        if handler_response is None:
+            return
 
         handler_response["client_id"] = self._client_id
         handler_response["nickname"] = self.user
