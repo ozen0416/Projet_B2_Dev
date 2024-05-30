@@ -36,12 +36,12 @@ class App(QApplication):
         settings = QSettings(self._settings_file, QSettings.IniFormat)
         nickname = settings.value("nickname", "")
         if nickname:
-            self._user = nickname
+            self._user = str(nickname)
         else:
             self._user = "DefaultNick"
         client_id = settings.value("client_id", "")
         if client_id:
-            self._client_id = client_id
+            self._client_id = str(client_id)
         else:
             self._client_id = str(uuid.uuid4())
 
@@ -55,12 +55,18 @@ class App(QApplication):
         return self._controller.current_window
 
     def send_request(self, request: dict):
+        """
+        Adds to the dict object to be sent through the socket to
+        integrate the nickname and the ID of the player (for easier data handling server-side)
+        """
         request["client_id"] = self._client_id
         request["nickname"] = self.user
 
         self._socket_client.send_request(request)
 
     def handle_request(self, request: dict):
+        if not "request" in request:
+            return
         handler_response = self._root_handler.handle(request["request"], request)
         print(handler_response, type(handler_response))
 

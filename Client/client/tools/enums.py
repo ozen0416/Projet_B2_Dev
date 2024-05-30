@@ -2,10 +2,20 @@ from enum import Enum
 
 
 class ButtonState(Enum):
-    PLAY = 1
-    CANCEL = 2
+    PLAY = 0
+    CANCEL = 1
 
 
 class GridCellState(Enum):
-    WATER = 0
-    SHIP = 1
+    MISS = 0
+    HIT = 1
+    WATER = 2
+    SHIP = 3
+    WAITING = 4
+
+
+class GameState(Enum):
+    PLACEMENT = 0
+    PROGRESS = 1
+    FINISHED = 2
+    WAITING = 3

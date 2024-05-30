@@ -4,7 +4,8 @@ from typing import Any, Optional
 from .abc import AbstractHandler
 from .workers import (
     GameFoundWorker,
-    GameMessageWorker
+    GameMessageWorker,
+    GameStartWorker
 )
 
 
@@ -17,3 +18,4 @@ class GameHandler(AbstractHandler):
     def __init__(self):
         self.add_tree_object("FOUND", GameFoundWorker())
         self.add_tree_object("MESSAGE", GameMessageWorker())
+        self.add_tree_object("START", GameStartWorker())

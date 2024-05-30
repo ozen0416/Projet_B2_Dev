@@ -36,15 +36,17 @@ class SearchGame(QWidget):
         self.layout().addWidget(self.play)
 
     def button_handler(self):
-        matchmaking_in_data = {
-            "request": ["MATCHMAKING", "IN"],
-            "client_id": QApplication.instance().client_id,
-            "nickname": QApplication.instance().user
-        }
         if self.button_state == ButtonState.PLAY:
-            QApplication.instance().socket_client.send_request(matchmaking_in_data)
+            matchmaking_in_data = {
+                "request": ["MATCHMAKING", "IN"],
+            }
+            QApplication.instance().send_request(matchmaking_in_data)
             self.start_timer()
         else:
+            matchmaking_out_data = {
+                "request": ["MATCHMAKING", "OUT"],
+            }
+            QApplication.instance().send_request(matchmaking_out_data)
             self.cancel_play()
 
     def start_timer(self):

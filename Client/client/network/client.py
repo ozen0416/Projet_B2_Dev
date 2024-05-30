@@ -17,13 +17,11 @@ data = {
 }
 
 ship_cells = [{"_pos": {"_x": 0, "_y": 1}}, {"_pos": {"_x": 0, "_y": 2}}, {"_pos": {"_x": 0, "_y": 3}}]
-
 data_placement = {
     "request": ["GAME", "PLACEMENT"],
     "client_id": client_id,
     "data": {"_ships": [{"_size": 3, "_pos": {"_x": 0, "_y": 1}, "_ship_cells": ship_cells}]}
 }
-
 
 data_message = {
     "request": ["GAME", "MESSAGE"],

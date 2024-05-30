@@ -2,7 +2,7 @@ from enum import Enum
 
 
 class Status(Enum):
-    MISS = 1
-    HIT = 2
-    SUNK = 3
-    ALL_SUNK = 4
+    MISS = 0
+    HIT = 1
+    SUNK = 2
+    ALL_SUNK = 3

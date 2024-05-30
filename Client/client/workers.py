@@ -27,3 +27,29 @@ class GameMessageWorker(AbstractWorker):
 
         response = {"status": "OK", "response": "MESSAGE RECEIVED OK"}
         return response
+
+
+class HitResponseWorker(AbstractWorker):
+    def handle(self, request_type: Any, request: Any) -> Optional[dict]:
+        QApplication.instance().current_window.update_enemy_grid(request["data"])
+
+        response = {"status": "OK", "response": "HIT RESPONSE RECEIVED OK"}
+
+        return response
+
+
+class GameStartWorker(AbstractWorker):
+    def handle(self, request_type: Any, request: Any) -> Optional[dict]:
+        QApplication.instance().current_window.start_game()
+
+        response = {"status": "OK", "response": "GAME START RECEIVED OK"}
+        return response
+
+
+class HitRequestWorker(AbstractWorker):
+    def handle(self, request_type: Any, request: Any) -> Optional[dict]:
+        QApplication.instance().current_window.update_ally_grid(request["data"])
+
+        response = {"status": "OK", "response": "HIT REQUEST RECEIVED OK"}
+
+        return response

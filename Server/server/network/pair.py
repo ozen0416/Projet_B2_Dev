@@ -85,12 +85,31 @@ class Pair:
 
         target_cell = Vector2.from_dict(request["data"])
 
+        turn_result = self.game.process_turn(target_cell)
+
         data = {
             "status": "OK",
             "response": "HIT RESPONSE",
-            "data": self.game.process_turn(target_cell)
+            "data": request["data"]
         }
-        return json.dumps(data)
+
+        data["data"]["status"] = turn_result
+
+        paired_data = {
+            "request": ["GAME", "HIT_RESPONSE"],
+            "data": request["data"]
+        }
+
+        paired_data["data"]["status"] = turn_result
+
+        json_data = json.dumps(data)
+        paired_json_data = json.dumps(paired_data)
+
+        paired_client = self._get_paired_client(client_id)
+        paired_client.writer.write(paired_json_data.encode('utf-8'))
+        await paired_client.writer.drain()
+
+        return json_data
 
     async def start_game(self):
         """
@@ -104,6 +123,19 @@ class Pair:
         }
 
         self.game = Game.from_dict(data)
+
+        data = {
+            "request": ["GAME", "START"]
+        }
+
+        json_data = json.dumps(data)
+        encoded_data = json_data.encode('utf-8')
+
+        self.first_client.writer.write(encoded_data)
+        await self.first_client.writer.drain()
+
+        self.second_client.writer.write(encoded_data)
+        await self.second_client.writer.drain()
 
     async def send_message(self, request: dict):
         client_id = request["client_id"]
